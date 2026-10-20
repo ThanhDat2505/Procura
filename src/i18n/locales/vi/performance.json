@@ -1,0 +1,90 @@
+{
+  "title": "Hiệu suất Trúng thầu & Phân tích Đấu giá",
+  "badge": "Supplier Analytics",
+  "subtitle": "Báo cáo tỷ lệ thành công của các gói thầu và gợi ý cải thiện năng lực cạnh tranh.",
+  "period_one": "{{count}} tháng gần nhất (T{{from}} – T{{to}}/{{year}})",
+  "period_other": "{{count}} tháng gần nhất (T{{from}} – T{{to}}/{{year}})",
+  "periodAria": "Khoảng thời gian",
+  "export": "Xuất báo cáo",
+  "unit": {
+    "package": "gói"
+  },
+  "kpi": {
+    "received": "RFQ nhận được",
+    "receivedNote": "Lời mời báo giá từ người mua",
+    "submitted": "Đã nộp báo giá",
+    "responseRate": "Tỷ lệ phản hồi {{value}}",
+    "responseRateLabel": "Tỷ lệ phản hồi",
+    "awarded": "Trúng thầu thành công",
+    "awardedChip": "Trúng thầu",
+    "winRate": "Tỷ lệ trúng thầu",
+    "winRateNote": "{{awarded}} / {{submitted}} báo giá đã nộp",
+    "avgResponse": "Thời gian phản hồi TB",
+    "avgResponseNote": "Từ lúc nhận lời mời đến khi nộp báo giá"
+  },
+  "chart": {
+    "title": "Báo giá đã gửi vs Trúng thầu theo tháng",
+    "subtitle": "Dữ liệu từ Tháng {{from}} đến Tháng {{to}}/{{year}}",
+    "legend": "Chú thích biểu đồ",
+    "submitted": "Đã nộp báo giá",
+    "awarded": "Trúng thầu",
+    "unit": "Đơn vị: Số lượng gói RFQ",
+    "best_one": "Tỷ lệ thắng cao nhất: Tháng {{months}} ({{rate}})",
+    "best_other": "Tỷ lệ thắng cao nhất: Tháng {{months}} ({{rate}})",
+    "month": "Tháng",
+    "monthShort": "T{{month}}",
+    "monthLong": "Tháng {{month}}/{{year}}",
+    "aria": "Biểu đồ cột số báo giá đã nộp và số gói trúng thầu theo tháng: {{items}}",
+    "ariaItem": "{{month}}: {{submitted}} đã nộp, {{awarded}} trúng thầu"
+  },
+  "loss": {
+    "title": "Phân tích lý do không được chọn",
+    "subtitle_one": "Dựa trên {{count}} gói thầu không được chọn trong {{months}} tháng qua",
+    "subtitle_other": "Dựa trên {{count}} gói thầu không được chọn trong {{months}} tháng qua",
+    "empty": "Chưa có gói thầu nào không được chọn trong kỳ này.",
+    "count_one": "({{count}} gói thầu)",
+    "count_other": "({{count}} gói thầu)",
+    "reason": {
+      "price": "Giá cao hơn đối thủ",
+      "leadTime": "Lead time dài hơn yêu cầu",
+      "moq": "MOQ không phù hợp số lượng nhỏ",
+      "other": "Khác"
+    },
+    "tipTitle": "Gợi ý cải thiện",
+    "tip": {
+      "price": "Giá là lý do phổ biến nhất. Cân nhắc giảm 3–5% đơn giá ở phân khúc thường không được chọn, hoặc đưa ra bậc giá theo số lượng để cạnh tranh hơn.",
+      "leadTime": "Lead time là lý do phổ biến nhất. Cân nhắc rút ngắn thời gian sản xuất cam kết hoặc đề xuất giao hàng từng đợt cho đơn gấp.",
+      "moq": "MOQ là lý do phổ biến nhất. Cân nhắc nhận đơn số lượng nhỏ với khuôn bế sẵn có, hoặc nêu rõ MOQ linh hoạt trong báo giá.",
+      "other": "Đọc kỹ phản hồi của người mua ở các gói không được chọn và bổ sung thông tin còn thiếu (chứng chỉ, năng lực xưởng) vào hồ sơ."
+    }
+  },
+  "recent": {
+    "title": "Kết quả gần đây & Thứ hạng ẩn danh",
+    "subtitle": "Thứ hạng giá ẩn danh",
+    "anonymous": "Ẩn danh 100%",
+    "anonymousHint": "Không hiển thị tên và giá của nhà cung cấp khác",
+    "empty": "Chưa có báo giá nào được nộp.",
+    "buyer": "Bên mua:",
+    "rankLabel": "Thứ hạng giá:",
+    "rank": "Hạng {{rank}} / {{of}} báo giá",
+    "noteComparing": "Ẩn danh đối thủ",
+    "noteBestPrice": "Giá tốt nhất",
+    "noteAwarded": "Được người mua chọn",
+    "noteClosed": "Đã đóng",
+    "feedback": "Phản hồi từ người mua:",
+    "showing": "Hiển thị {{shown}}/{{total}} gói thầu đã nộp",
+    "viewAll": "Xem toàn bộ lịch sử thầu",
+    "status": {
+      "awarded": "Trúng thầu",
+      "comparing": "Đang so sánh",
+      "notSelected": "Không được chọn",
+      "closed": "Đã đóng"
+    }
+  },
+  "csv": {
+    "metric": "Chỉ số",
+    "value": "Giá trị",
+    "count": "Số gói",
+    "share": "Tỷ lệ"
+  }
+}

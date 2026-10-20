@@ -1,0 +1,260 @@
+{
+  "breadcrumb": {
+    "search": "Tìm nhà cung cấp",
+    "detail": "Chi tiết đối tác"
+  },
+  "backToSearch": "Quay lại tìm nhà cung cấp",
+  "tabs": {
+    "overview": "Tổng quan năng lực",
+    "products": "Danh mục sản phẩm & MOQ",
+    "history": "Lịch sử báo giá & RFQ",
+    "legal": "Hồ sơ pháp lý & Chứng chỉ",
+    "reviews": "Đánh giá từ người mua"
+  },
+  "leadTimeRange": "{{min}} - {{max}} ngày",
+  "addToRfq": "Thêm vào RFQ",
+  "header": {
+    "strategicPartner": "Đối tác chiến lược Q4",
+    "taxCode": "MST",
+    "founded": "Thành lập: {{year}}",
+    "avgResponse": "Thời gian phản hồi TB",
+    "underHours_one": "< {{count}} giờ",
+    "underHours_other": "< {{count}} giờ",
+    "createRfq": "Tạo RFQ với NCC này",
+    "contact": "Liên hệ tư vấn",
+    "noContact": "Nhà cung cấp chưa công bố người liên hệ.",
+    "savedToast": "Đã lưu {{name}} vào danh sách nhà cung cấp",
+    "unsavedToast": "Đã bỏ lưu {{name}}"
+  },
+  "overview": {
+    "capability": {
+      "title": "Giới thiệu năng lực công ty",
+      "ownFactory": "Xưởng sản xuất trực tiếp",
+      "lines": "Dây chuyền sản xuất",
+      "linesValue_one": "{{count}} Dây chuyền",
+      "linesValue_other": "{{count}} Dây chuyền",
+      "lineMix": "{{corrugating}} dàn sóng · {{printing}} máy in",
+      "capacity": "Công suất bình quân",
+      "capacityValue": "{{value}} SP",
+      "capacityHint": "Sản lượng hàng tháng",
+      "area": "Diện tích nhà xưởng",
+      "areaValue": "{{value}} m²",
+      "areaHint": "Tại {{location}}"
+    },
+    "products": {
+      "title": "Danh mục sản phẩm chính & MOQ mẫu",
+      "subtitle": "Đơn giá dự kiến dựa trên khung MOQ và thông số tiêu chuẩn",
+      "viewAll": "Xem báo giá chi tiết",
+      "leadTime": "Thời gian giao (Lead time)"
+    },
+    "photos": {
+      "title": "Hình ảnh nhà xưởng & dây chuyền máy móc thực tế",
+      "subtitle": "Đã được Procura thẩm định và kiểm tra thực địa (On-site Audit {{year}})",
+      "audited": "Thẩm định {{date}}",
+      "empty": "Nhà cung cấp chưa đăng hình ảnh nhà xưởng."
+    },
+    "rep": {
+      "title": "Đại diện kinh doanh",
+      "online": "Đang trực tuyến",
+      "copyEmail": "Sao chép email",
+      "showPhone": "Hiện số",
+      "hours": "Thời gian làm việc: {{hours}}",
+      "email": "Gửi email",
+      "call": "Gọi trực tiếp"
+    },
+    "interaction": {
+      "title": "Lịch sử tương tác",
+      "yourCompany": "Công ty của bạn",
+      "none": "Công ty bạn chưa mời nhà cung cấp này tham gia RFQ nào.",
+      "completed_one": "Đã hoàn tất {{count}} RFQ",
+      "completed_other": "Đã hoàn tất {{count}} RFQ",
+      "invited_one": "Trúng thầu trên tổng số {{count}} RFQ đã mời",
+      "invited_other": "Trúng thầu trên tổng số {{count}} RFQ đã mời",
+      "latest": "Báo giá gần nhất: {{when}}",
+      "latestFor": "Cho yêu cầu",
+      "internalRating": "Đánh giá chất lượng nội bộ:",
+      "notRated": "Chưa đánh giá"
+    },
+    "certs": {
+      "title": "Chứng chỉ đạt được",
+      "checked": "Đã thẩm tra",
+      "empty": "Chưa có chứng chỉ được Procura xác thực.",
+      "verified": "Đã xác thực",
+      "validTo": "Hiệu lực: Đến {{date}}"
+    },
+    "bar": {
+      "label": "Thao tác nhanh",
+      "title": "Tạo đợt mua hàng mới từ nhà cung cấp này?",
+      "subtitle": "Chọn các mã sản phẩm yêu cầu và gửi bản chào giá trực tiếp",
+      "profilePdf": "Tải hồ sơ năng lực (Profile PDF)",
+      "addToRfq": "Thêm vào danh sách tạo RFQ"
+    }
+  },
+  "products": {
+    "empty": "Nhà cung cấp chưa công bố danh mục sản phẩm.",
+    "searchPlaceholder": "Tìm kiếm sản phẩm, quy cách, mã SKU...",
+    "searchLabel": "Tìm kiếm sản phẩm",
+    "groupsLabel": "Lọc theo nhóm sản phẩm",
+    "allGroups": "Tất cả ({{count}})",
+    "footer": "Hiển thị <b>{{shown}}</b> trên tổng số <b>{{total}}</b> sản phẩm tiêu chuẩn",
+    "vatNote": "Đơn giá tham khảo chưa bao gồm VAT và có thể thay đổi theo khối lượng đặt hàng thực tế",
+    "cols": {
+      "name": "Tên sản phẩm & Quy cách",
+      "sku": "Mã SKU",
+      "moq": "MOQ tối thiểu",
+      "price": "Đơn giá tham khảo"
+    }
+  },
+  "history": {
+    "stats": {
+      "invited": "RFQ đã mời",
+      "quoted": "Đã nộp báo giá",
+      "awarded": "Trúng thầu",
+      "avgResponse": "Thời gian phản hồi TB",
+      "times": "lượt",
+      "quoteRate": "Tỷ lệ {{rate}}",
+      "winRate": "Tỷ lệ trúng {{rate}}"
+    },
+    "table": {
+      "title": "Lịch sử tham gia RFQ của công ty bạn với {{name}}",
+      "source": "Dữ liệu từ tài khoản doanh nghiệp của bạn",
+      "rfq": "Mã RFQ & Tên dự án",
+      "invitedAt": "Ngày mời",
+      "price": "Giá chào thầu",
+      "moq": "MOQ đề xuất",
+      "outcome": "Kết quả",
+      "note": "Ghi chú đánh giá",
+      "perUnit": "{{price}}/{{unit}}",
+      "footer_one": "Hiển thị {{count}} trên {{count}} dự án RFQ",
+      "footer_other": "Hiển thị {{count}} trên {{count}} dự án RFQ"
+    },
+    "outcome": {
+      "awarded": "Trúng thầu",
+      "not_selected": "Không được chọn",
+      "pending": "Đang chờ kết quả",
+      "no_response": "Không phản hồi"
+    },
+    "empty": {
+      "title": "Chưa có lịch sử RFQ",
+      "description": "Công ty bạn chưa mời {{name}} tham gia yêu cầu báo giá nào.",
+      "action": "Mời tham gia RFQ"
+    },
+    "sla": {
+      "title": "Quy chuẩn báo giá",
+      "body": "{{name}} cam kết phản hồi RFQ trong thời gian {{sla}} làm việc."
+    },
+    "rating": {
+      "title": "Đánh giá nội bộ",
+      "empty": "Công ty bạn chưa có đánh giá nội bộ cho nhà cung cấp này.",
+      "overall": "Điểm tổng thể",
+      "gradeA": "Đối tác Hạng A",
+      "breakdown": "Phân rã tiêu chí",
+      "criteria": {
+        "quality": "Độ tin cậy chất lượng",
+        "onTime": "Đúng hẹn giao hàng",
+        "price": "Tính cạnh tranh về giá",
+        "support": "Hỗ trợ dịch vụ & đổi trả"
+      },
+      "note": "Ghi chú nhân viên mua hàng",
+      "updatedAt": "Cập nhật: {{date}}",
+      "updatedBy": "Bởi: {{name}}",
+      "update": "Cập nhật đánh giá"
+    }
+  },
+  "legal": {
+    "banner": {
+      "title": "Hồ sơ pháp lý đã được thẩm định và xác thực trực tiếp bởi Procura Verification Team",
+      "subtitle": "Cập nhật lần cuối: Tháng {{date}} · Báo cáo kiểm định độc lập không phát hiện rủi ro nợ thuế hay vi phạm pháp lý.",
+      "pill": "Đã xác thực cấp độ Enterprise"
+    },
+    "pending": {
+      "title": "Hồ sơ pháp lý đang chờ thẩm định",
+      "body": "Procura Verification Team đang kiểm tra giấy tờ của nhà cung cấp này."
+    },
+    "info": {
+      "title": "Thông tin đăng ký kinh doanh & Pháp nhân",
+      "statusNormal": "Đang hoạt động bình thường",
+      "taxCode": "Mã số thuế",
+      "active": "Đang hoạt động",
+      "license": "Giấy phép ĐKKD",
+      "licenseValue": "{{license}} ngày {{date}}",
+      "representative": "Người đại diện theo pháp luật",
+      "capital": "Vốn điều lệ đăng ký",
+      "address": "Địa chỉ trụ sở chính",
+      "business": "Ngành nghề chính"
+    },
+    "certs": {
+      "title": "Chứng chỉ chất lượng & Tiêu chuẩn môi trường",
+      "count_one": "{{count}} chứng chỉ quốc tế được nộp hồ sơ gốc",
+      "count_other": "{{count}} chứng chỉ quốc tế được nộp hồ sơ gốc",
+      "empty": "Chưa có chứng chỉ được Procura xác thực.",
+      "valid": "Còn hiệu lực",
+      "expiring_one": "Sắp hết hạn: Còn {{count}} ngày",
+      "expiring_other": "Sắp hết hạn: Còn {{count}} ngày",
+      "expired": "Đã hết hiệu lực",
+      "issuer": "Tổ chức cấp:",
+      "validity": "Hiệu lực:",
+      "viewPdf": "Xem tài liệu PDF",
+      "download": "Tải về {{name}}"
+    },
+    "audit": {
+      "title": "Biên bản đánh giá hiện trường xưởng (On-site Factory Audit)",
+      "empty": "Nhà cung cấp chưa có biên bản đánh giá hiện trường.",
+      "download": "Tải toàn văn biên bản kiểm định (PDF)",
+      "result": {
+        "passed": "Kết quả: Đạt tiêu chuẩn xuất khẩu",
+        "failed": "Kết quả: Chưa đạt tiêu chuẩn"
+      },
+      "performed": "Thực hiện: Tháng {{date}} bởi {{auditor}}",
+      "score": "Điểm audit",
+      "area": "Diện tích m²",
+      "lines": "Dây chuyền"
+    }
+  },
+  "reviews": {
+    "filters": {
+      "label": "Lọc đánh giá",
+      "all": "Tất cả ({{count}})",
+      "stars": "{{stars}}★ ({{count}})",
+      "withText": "Có nhận xét chi tiết",
+      "sameCategory": "Cùng ngành hàng ({{category}})"
+    },
+    "sort": {
+      "label": "Sắp xếp đánh giá",
+      "newest": "Sắp xếp: Mới nhất",
+      "highest": "Sắp xếp: Điểm cao nhất",
+      "lowest": "Sắp xếp: Điểm thấp nhất"
+    },
+    "empty": "Không có đánh giá phù hợp với bộ lọc.",
+    "summary": {
+      "caption_one": "{{count}} đánh giá từ doanh nghiệp đã chọn NCC này trên Procura",
+      "caption_other": "{{count}} đánh giá từ doanh nghiệp đã chọn NCC này trên Procura",
+      "distribution": "Phân bố số sao",
+      "starsLabel": "{{stars}} sao"
+    },
+    "criteria": {
+      "quality": "Độ tin cậy chất lượng",
+      "onTime": "Đúng hẹn theo cam kết",
+      "price": "Cạnh tranh về giá",
+      "support": "Hỗ trợ & phản hồi"
+    },
+    "card": {
+      "verifiedBuyer": "Đã chọn NCC qua RFQ trên Procura",
+      "reply": "Phản hồi từ {{name}}:"
+    },
+    "yours": {
+      "title": "Đánh giá của bạn",
+      "info": "Bạn có thể đánh giá sau khi chọn NCC trúng thầu cho một RFQ.",
+      "none": "Hiện chưa có RFQ nào đã chốt với nhà cung cấp này đang chờ bạn đánh giá.",
+      "awarded": "Đã chốt trúng thầu",
+      "notReviewed": "Chưa đánh giá",
+      "write": "Viết đánh giá",
+      "trust": "100% đánh giá xác thực từ các đợt mở thầu thực tế trên sàn Procura, không có đánh giá ảo."
+    },
+    "cta": {
+      "title": "Cần báo giá từ xưởng này?",
+      "body": "{{name}} có thể tham gia chào thầu trực tiếp, cam kết phản hồi {{sla}} kể từ khi bạn phát hành yêu cầu báo giá (RFQ).",
+      "action": "Mời tham gia thầu"
+    }
+  }
+}

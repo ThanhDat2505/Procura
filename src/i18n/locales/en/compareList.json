@@ -1,0 +1,73 @@
+{
+  "eyebrow": "Bid evaluation process",
+  "quarter": "Q{{quarter}}/{{year}}",
+  "title": "Quote Comparison & Bid Analysis",
+  "subtitle": "One place for sealed-bid price comparison, technical matrices and winning-supplier recommendations across your RFQs.",
+  "categoryFilter": "Filter by category",
+  "allCategories": "All categories",
+  "packages_one": "{{count}} RFQ",
+  "packages_other": "{{count}} RFQs",
+  "stats": {
+    "ready": "Open for comparison",
+    "readyFoot": "Ready for a decision",
+    "waiting": "Waiting for more quotes",
+    "waitingFoot": "Needs ≥ {{min}} quotes",
+    "awarded": "Awarded",
+    "avgSavings": "Avg. savings {{value}}",
+    "avgOver": "Avg. over budget {{value}}",
+    "noSavings": "No budget data yet",
+    "budget": "Total budget under negotiation",
+    "budgetFoot": "In {{month}}/{{year}}"
+  },
+  "deadline": {
+    "overdue": "Expired",
+    "today": "Today",
+    "inDays_one": "in {{count}} day",
+    "inDays_other": "in {{count}} days"
+  },
+  "budget": "Estimated budget:",
+  "budgetFrom": "From {{value}}",
+  "budgetNone": "Not specified",
+  "progress": "Quote progress:",
+  "progressValue": "{{done}} / {{total}} suppliers submitted",
+  "lowestPrice": "Lowest offer:",
+  "priceBy": "{{price}} ({{supplier}})",
+  "fastestLead": "Fastest lead time:",
+  "leadBy": "{{days}} ({{supplier}})",
+  "ready": {
+    "title": "Ready to compare",
+    "chip": "≥ {{min}} quotes received",
+    "count_one": "Showing {{count}} result",
+    "count_other": "Showing {{count}} results",
+    "suggested": "Evaluate now",
+    "expires": "Closes: {{when}}",
+    "open": "Open comparison matrix",
+    "emptyTitle": "No RFQ is ready for comparison",
+    "emptyDesc": "RFQs appear here once they have received {{min}} or more quotes."
+  },
+  "waiting": {
+    "title": "Waiting for more quotes",
+    "chip": "Not yet comparable",
+    "rule": "At least {{min}} competing quotes are required",
+    "deadline": "Deadline: {{date}}",
+    "progress": "{{done}} / {{total}} suppliers have quoted",
+    "note_one": "{{count}} more quote is needed to open the comparison matrix.",
+    "note_other": "{{count}} more quotes are needed to open the comparison matrix.",
+    "disabled": "At least {{min}} quotes needed to compare",
+    "emptyTitle": "No RFQ is waiting for more quotes"
+  },
+  "awarded": {
+    "title": "Winning suppliers selected",
+    "chip": "Evaluation completed",
+    "archive": "View full archive",
+    "selected": "Selected: {{name}}",
+    "decidedOn": "Decided on: {{date}}",
+    "unitPrice": "Awarded unit price:",
+    "savings": "Savings:",
+    "savingsValue": "{{value}} vs. budget",
+    "overValue": "{{value}} over budget",
+    "review": "Review archived comparison",
+    "emptyTitle": "No RFQ has been awarded yet",
+    "emptyDesc": "Winning-supplier decisions will be kept here."
+  }
+}

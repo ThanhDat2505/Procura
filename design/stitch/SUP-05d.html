@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-[#F6F9FF]" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SUP-05d: Hồ sơ năng lực – Chứng chỉ &amp; Pháp lý | Procura</title>
+<!-- Google Font: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-high": "#e5e8ee",
+            "background": "#f7f9ff",
+            "on-primary-fixed": "#001a40",
+            "secondary": "#5256a6",
+            "on-secondary-fixed-variant": "#3a3e8c",
+            "surface-container": "#ebeef4",
+            "on-tertiary": "#ffffff",
+            "inverse-surface": "#2d3135",
+            "on-secondary": "#ffffff",
+            "outline-variant": "#c1c6d7",
+            "on-error": "#ffffff",
+            "on-tertiary-container": "#fefcff",
+            "on-primary-fixed-variant": "#004492",
+            "tertiary-container": "#3b6ee3",
+            "surface-bright": "#f7f9ff",
+            "secondary-fixed-dim": "#bfc1ff",
+            "secondary-container": "#a5a9ff",
+            "inverse-on-surface": "#eef1f7",
+            "on-secondary-container": "#373a89",
+            "primary": "#0059ba",
+            "on-surface-variant": "#414754",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed": "#001849",
+            "tertiary": "#1654c9",
+            "outline": "#717786",
+            "tertiary-fixed-dim": "#b3c5ff",
+            "surface-dim": "#d7dae0",
+            "secondary-fixed": "#e1e0ff",
+            "primary-container": "#0070e9",
+            "on-background": "#181c20",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-highest": "#dfe3e8",
+            "primary-fixed-dim": "#acc7ff",
+            "primary-fixed": "#d7e2ff",
+            "tertiary-fixed": "#dbe1ff",
+            "on-secondary-fixed": "#090a61",
+            "inverse-primary": "#acc7ff",
+            "error-container": "#ffdad6",
+            "surface-variant": "#dfe3e8",
+            "on-primary-container": "#fefcff",
+            "on-surface": "#181c20",
+            "surface-container-low": "#f1f4fa",
+            "error": "#ba1a1a",
+            "surface": "#f7f9ff",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed-variant": "#003fa4",
+            "surface-tint": "#005bbf",
+            /* Enterprise design system brand anchors */
+            "procura-blue": "#0078F8",
+            "procura-navy": "#080860"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-lg": "1rem",
+            "margin": "1.5rem",
+            "space-2xs": "0.125rem",
+            "space-md": "0.75rem",
+            "space-xs": "0.25rem",
+            "space-2xl": "2rem",
+            "space-xl": "1.5rem",
+            "gutter": "1rem"
+          },
+          "fontFamily": {
+            "display-sm": ["Inter"],
+            "code-tabular": ["Inter"],
+            "headline-md": ["Inter"],
+            "label-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "display-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-lg": ["Inter"],
+            "body-sm": ["Inter"],
+            "headline-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "label-lg": ["Inter"]
+          },
+          "fontSize": {
+            "display-sm": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "code-tabular": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: #F6F9FF;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+    }
+    .material-symbols-outlined.fill-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 20;
+    }
+  </style>
+</head>
+<body class="h-full text-[#181C20] flex overflow-hidden">
+<!-- ==================== SIDEBAR ==================== -->
+<aside class="fixed top-0 left-0 h-screen w-64 flex flex-col justify-between p-4 z-40 bg-surface-container-lowest border-r border-[#E2E8F0] shadow-sm">
+<!-- Top Section -->
+<div class="flex flex-col gap-4">
+<!-- Brand Logo & Context -->
+<div class="flex items-center gap-3 px-2 py-1">
+<img alt="Procura Enterprise Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCokZDjGpXUljh5Fvrhjn2_Ros6U9Y9O_v-zRNWZGf7riSClUjv1DHoVQY-9HU14kB5EK6rCR9H3Jxn3xAG_kdtFqCRNTysZ4EF0X81x6PPXEfYG3ErI347gPkorUb3yXbfEhZZUbyw_dTRjtKFVwYAOpAdjEGFWCjlMV7LGdYazS1a2UcYNdnMLBarYajhd_NWzn7PgW2xb2UDQD-aCOHJzucJGEIvFEjk541tBGlABGU-cHliWC1Ou963A7rBG9dY-H0"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-[#080860] font-bold leading-tight">Procura</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Supplier Portal</span>
+</div>
+</div>
+<!-- Active Supplier Entity Card -->
+<div class="p-2.5 rounded-lg bg-surface-container-low border border-[#E2E8F0] flex items-center justify-between">
+<div class="flex items-center gap-2.5 overflow-hidden">
+<div class="w-8 h-8 rounded-md bg-[#080860] text-white flex items-center justify-center font-bold text-xs shrink-0">
+            TP
+          </div>
+<div class="flex flex-col truncate">
+<span class="font-label-md text-label-md text-[#080860] font-semibold truncate">Tân Phát Packaging</span>
+<div class="flex items-center gap-1 text-emerald-600">
+<span class="material-symbols-outlined text-[13px] fill-icon">verified</span>
+<span class="font-label-sm text-[10px] leading-tight font-semibold">Đối tác xác thực</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px] cursor-pointer">unfold_more</span>
+</div>
+<!-- Main Navigation -->
+<nav class="flex flex-col gap-1 mt-2">
+<!-- Hộp thư RFQ -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">inbox</span>
+<span class="font-label-md text-label-md">Hộp thư RFQ (Inbox)</span>
+<span class="ml-auto bg-primary-fixed text-[#004492] font-label-sm text-[10px] px-1.5 py-0.5 rounded-full font-bold">4</span>
+</a>
+<!-- Báo giá đã gửi -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">request_quote</span>
+<span class="font-label-md text-label-md">Báo giá đã gửi</span>
+</a>
+<!-- Hồ sơ năng lực (ACTIVE) -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-[#EFF6FF] border border-[#BFDBFE] text-[#0078F8] font-semibold" href="#">
+<span class="material-symbols-outlined text-[20px] text-[#0078F8] fill-icon">storefront</span>
+<span class="font-label-md text-label-md text-[#0078F8]">Hồ sơ năng lực</span>
+</a>
+<!-- Hiệu suất trúng thầu -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">leaderboard</span>
+<span class="font-label-md text-label-md">Hiệu suất trúng thầu</span>
+</a>
+</nav>
+</div>
+<!-- Bottom Sidebar Section -->
+<div class="flex flex-col gap-2 pt-3 border-t border-[#E2E8F0]">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+<span class="font-label-md text-label-md">Cài đặt</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[18px]">help</span>
+<span class="font-label-md text-label-md">Trợ giúp &amp; Hướng dẫn</span>
+</a>
+<!-- User Info Pill -->
+<div class="mt-2 p-2 rounded-lg bg-surface-container-low flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#0078F8] text-white flex items-center justify-center font-bold font-label-md text-xs">
+          TĐ
+        </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-[#080860] font-semibold truncate">Trần Đình Quân</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate text-[11px]">Quản lý dự án B2B</span>
+</div>
+<button class="text-outline hover:text-on-surface p-1">
+<span class="material-symbols-outlined text-[16px]">logout</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- ==================== MAIN CONTENT WRAPPER ==================== -->
+<div class="ml-64 flex-1 flex flex-col h-screen overflow-y-auto bg-[#F6F9FF]">
+<!-- ==================== TOP NAVIGATION BAR ==================== -->
+<header class="sticky top-0 right-0 h-16 w-full flex items-center justify-between px-8 z-30 bg-surface-container-lowest border-b border-[#E2E8F0] shadow-sm">
+<!-- Left: Search Box -->
+<div class="flex items-center gap-3 w-96">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-4 rounded-lg bg-surface-container-low border border-[#CBD5E1] text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-[#0078F8] focus:ring-2 focus:ring-[#0078F8]/20 transition-all" placeholder="Tìm chứng chỉ, hồ sơ, mã số thuế hoặc tiêu chuẩn..." type="text"/>
+</div>
+</div>
+<!-- Right: Company Switcher & Actions -->
+<div class="flex items-center gap-4">
+<!-- Switcher -->
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[#E2E8F0] bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[16px] text-[#0078F8]">corporate_fare</span>
+<span class="font-label-md text-label-md text-[#080860] font-semibold">Tân Phát Packaging</span>
+<span class="material-symbols-outlined text-[14px] text-outline">expand_more</span>
+</div>
+<div class="h-5 w-px bg-[#E2E8F0]"></div>
+<!-- Notification Bell -->
+<button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-red-500 ring-2 ring-white"></span>
+</button>
+<!-- Help -->
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[20px]">help</span>
+</button>
+<!-- User Chip -->
+<div class="flex items-center gap-2.5 pl-2">
+<div class="w-8 h-8 rounded-full bg-[#080860] text-white flex items-center justify-center font-bold text-xs">
+            TQ
+          </div>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md text-[#080860] font-semibold">Trần Đình Quân</span>
+<span class="font-label-sm text-[10px] text-emerald-600 font-bold uppercase tracking-wider">Enterprise Verified</span>
+</div>
+</div>
+</div>
+</header>
+<!-- ==================== BODY CONTENT CANVAS ==================== -->
+<main class="flex-1 px-8 py-6 max-w-[1400px] w-full mx-auto space-y-6">
+<!-- Breadcrumbs & Meta Navigation -->
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="hover:text-primary cursor-pointer">Hồ sơ nhà cung cấp</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary cursor-pointer">Tân Phát Packaging (PR-0314892011)</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-[#080860] font-semibold">Chứng chỉ &amp; Pháp lý</span>
+</div>
+<!-- PAGE HEADER -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pb-2">
+<div class="space-y-1">
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-[#080860] font-bold tracking-tight">Hồ sơ Năng lực Doanh nghiệp &amp; Nhà xưởng</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#F0FDF4] text-[#16A34A] border border-[#BBF7D0]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span>
+              Đã công khai
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Quản lý định danh pháp nhân, tiêu chuẩn kỹ thuật quốc tế và mức độ tuân thủ ESG phục vụ người mua công nghiệp.</p>
+</div>
+<!-- Action CTAs -->
+<div class="flex items-center gap-3 shrink-0">
+<button class="h-9 px-3.5 rounded-lg border border-[#CBD5E1] bg-white text-[#080860] font-label-md text-label-md hover:bg-slate-50 transition-colors flex items-center gap-2 shadow-xs">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+            Xem như người mua
+          </button>
+<button class="h-9 px-4 rounded-lg bg-[#0078F8] text-white font-label-md text-label-md font-semibold hover:bg-[#0062CA] transition-colors flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">save</span>
+            Lưu thay đổi
+          </button>
+</div>
+</div>
+<!-- PROFILE COMPLETENESS BAR -->
+<div class="bg-white rounded-xl p-4 border border-[#E2E8F0] shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3 w-full md:w-auto">
+<div class="w-10 h-10 rounded-lg bg-[#EFF6FF] border border-[#BFDBFE] flex items-center justify-center text-[#0078F8] shrink-0">
+<span class="material-symbols-outlined text-[22px] fill-icon">format_image_left</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-[#080860] font-bold">Mức độ hoàn thiện hồ sơ tín nhiệm:</span>
+<span class="font-headline-sm text-headline-sm text-[#0078F8] font-bold">85%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bổ sung thêm chứng nhận trách nhiệm xã hội (SEDEX/SMETA) để đạt 100% độ ưu tiên hiển thị RFQ.</p>
+</div>
+</div>
+<div class="w-full md:w-80 flex flex-col gap-1.5 shrink-0">
+<div class="w-full bg-[#E2E8F0] h-2.5 rounded-full overflow-hidden">
+<div class="bg-[#0078F8] h-full rounded-full transition-all duration-500" style="width: 85%;"></div>
+</div>
+<div class="flex justify-between text-[11px] font-label-sm text-on-surface-variant">
+<span>Tiêu chuẩn cơ bản</span>
+<span class="text-[#0078F8] font-bold">Hồ sơ Cấp độ Enterprise (Top 5%)</span>
+</div>
+</div>
+</div>
+<!-- NAVIGATION TABS -->
+<div class="border-b border-[#E2E8F0] flex gap-2 overflow-x-auto pt-1">
+<button class="px-4 py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-[#080860] whitespace-nowrap transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">info</span>
+          Thông tin chung
+        </button>
+<button class="px-4 py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-[#080860] whitespace-nowrap transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">precision_manufacturing</span>
+          Năng lực sản xuất
+        </button>
+<button class="px-4 py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-[#080860] whitespace-nowrap transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+          Danh mục sản phẩm (8 SKU)
+        </button>
+<!-- ACTIVE TAB -->
+<button class="px-4 py-2.5 font-label-md text-label-md text-[#0078F8] font-semibold border-b-2 border-[#0078F8] whitespace-nowrap transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] fill-icon">verified_user</span>
+          Chứng chỉ &amp; Pháp lý (3 hồ sơ)
+          <span class="w-2 h-2 rounded-full bg-[#0078F8]"></span>
+</button>
+<button class="px-4 py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-[#080860] whitespace-nowrap transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">contact_phone</span>
+          Liên hệ kinh doanh
+        </button>
+</div>
+<!-- ==================== TAB CONTENT ==================== -->
+<div class="space-y-6">
+<!-- 1. VERIFIED BANNER -->
+<div class="rounded-xl border border-emerald-200 bg-[#F0FDF4] p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 shadow-xs">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] fill-icon">verified</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-emerald-900 font-semibold flex items-center gap-1.5">
+                Hồ sơ pháp lý đã được Procura xác thực
+                <span class="text-emerald-600 font-normal">·</span>
+<span class="text-emerald-700 text-body-sm font-body-sm">Cập nhật lần cuối: 10/2024</span>
+</p>
+<p class="font-code-tabular text-[12px] text-emerald-800 tracking-wide mt-0.5">
+                Mã định danh xác thực: <span class="font-bold underline decoration-dotted">PR-VER-0314892011</span>
+</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-[11px] font-bold tracking-wider uppercase shadow-xs">
+            ĐÃ XÁC THỰC CẤP ĐỘ ENTERPRISE
+          </span>
+</div>
+<!-- 2. CARD "Thông tin đăng ký kinh doanh & Pháp nhân" -->
+<div class="bg-white rounded-xl border border-[#E2E8F0] shadow-sm overflow-hidden">
+<!-- Card Header -->
+<div class="p-5 border-b border-[#E2E8F0] flex flex-col md:flex-row md:items-center justify-between gap-3 bg-surface-container-lowest">
+<div>
+<div class="flex items-center gap-2.5">
+<h2 class="font-headline-md text-headline-md text-[#080860] font-bold">Thông tin pháp nhân</h2>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#F0FDF4] text-[#16A34A] border border-[#BBF7D0]">
+<span class="material-symbols-outlined text-[13px] fill-icon">check_circle</span>
+                  Đang hoạt động bình thường
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Thông tin đã được đối soát qua Cổng thông tin Quốc gia về Đăng ký Doanh nghiệp. Vui lòng liên hệ Procura để thay đổi thông tin đã xác thực.
+              </p>
+</div>
+<button class="h-8 px-3 rounded-lg border border-[#E2E8F0] text-on-surface-variant hover:text-[#080860] hover:bg-slate-50 text-[12px] font-label-md flex items-center gap-1.5 shrink-0 self-start md:self-center">
+<span class="material-symbols-outlined text-[15px]">history</span>
+              Nhật ký đối soát
+            </button>
+</div>
+<!-- Key-Values Grid -->
+<div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Item 1: MST -->
+<div class="space-y-1.5 p-3 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]/70">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline font-semibold">Mã số thuế (MST)</span>
+<div class="flex items-center justify-between gap-2">
+<span class="font-code-tabular text-[15px] font-bold text-[#080860]">0314892011</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-[#EFF6FF] text-[#0078F8] border border-[#BFDBFE]">
+<span class="material-symbols-outlined text-[12px] fill-icon">check</span>
+                  Đã xác thực
+                </span>
+</div>
+</div>
+<!-- Item 2: Giấy phép ĐKKD -->
+<div class="space-y-1.5 p-3 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]/70">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline font-semibold">Giấy phép ĐKKD</span>
+<div class="flex items-start justify-between gap-2">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-tight">Số 0314892011 do Sở KH&amp;ĐT TP.HCM cấp ngày 15/04/2015</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-[#EFF6FF] text-[#0078F8] border border-[#BFDBFE] shrink-0">
+<span class="material-symbols-outlined text-[12px] fill-icon">check</span>
+                  Đã xác thực
+                </span>
+</div>
+</div>
+<!-- Item 3: Người đại diện -->
+<div class="space-y-1.5 p-3 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]/70">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline font-semibold">Người đại diện theo pháp luật</span>
+<div class="flex items-center justify-between gap-2">
+<span class="font-body-md text-body-md text-[#080860] font-semibold">Ông Trần Đình Quân – Tổng Giám Đốc</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-[#EFF6FF] text-[#0078F8] border border-[#BFDBFE] shrink-0">
+<span class="material-symbols-outlined text-[12px] fill-icon">check</span>
+                  Đã xác thực
+                </span>
+</div>
+</div>
+<!-- Item 4: Vốn điều lệ -->
+<div class="space-y-1.5 p-3 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]/70">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline font-semibold">Vốn điều lệ đăng ký</span>
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="font-code-tabular text-[14px] font-bold text-[#080860] block">35.000.000.000 VND</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">(Ba mươi lăm tỷ đồng)</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-[#EFF6FF] text-[#0078F8] border border-[#BFDBFE] shrink-0">
+<span class="material-symbols-outlined text-[12px] fill-icon">check</span>
+                  Đã xác thực
+                </span>
+</div>
+</div>
+<!-- Item 5: Trụ sở chính -->
+<div class="space-y-1.5 p-3 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]/70 md:col-span-2">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline font-semibold">Địa chỉ trụ sở chính</span>
+<div class="flex items-start justify-between gap-2">
+<span class="font-body-md text-body-md text-on-surface font-medium">Lô C2-4, Đường số 3, KCN Tân Bình, Phường Tây Thạnh, Quận Tân Phú, TP.HCM</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-[#EFF6FF] text-[#0078F8] border border-[#BFDBFE] shrink-0">
+<span class="material-symbols-outlined text-[12px] fill-icon">check</span>
+                  Đã xác thực
+                </span>
+</div>
+</div>
+<!-- Item 6: Ngành nghề chính -->
+<div class="space-y-1.5 p-3 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]/70 lg:col-span-3">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline font-semibold">Ngành nghề kinh doanh chính</span>
+<div class="flex items-center justify-between gap-2">
+<span class="font-body-md text-body-md text-on-surface font-medium">Sản xuất bao bì giấy, in ấn công nghiệp, gia công thùng carton sóng chất lượng cao</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-[#EFF6FF] text-[#0078F8] border border-[#BFDBFE] shrink-0">
+<span class="material-symbols-outlined text-[12px] fill-icon">check</span>
+                  Đã xác thực
+                </span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. SECTION "Chứng chỉ chất lượng & Tiêu chuẩn môi trường" -->
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<h2 class="font-headline-md text-headline-md text-[#080860] font-bold">Chứng chỉ chất lượng &amp; Tiêu chuẩn môi trường</h2>
+<span class="px-2 py-0.5 rounded-full bg-[#E2E8F0] text-[#080860] font-label-sm text-[11px] font-bold">
+                3 chứng chỉ quốc tế đang áp dụng
+              </span>
+</div>
+<span class="text-body-sm text-outline font-body-sm">Được kiểm tra định kỳ thông qua hệ thống tự động API audit</span>
+</div>
+<!-- Grid of 3 Certificate Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+<!-- Card 1: ISO 9001:2015 -->
+<div class="bg-white rounded-xl border border-[#E2E8F0] shadow-sm hover:shadow-md transition-shadow p-5 flex flex-col justify-between">
+<div class="space-y-4">
+<!-- Header Badge -->
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 text-[#0078F8] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-[#F0FDF4] text-[#16A34A] border border-[#BBF7D0]">
+<span class="material-symbols-outlined text-[12px] fill-icon">check_circle</span>
+                    Còn hiệu lực
+                  </span>
+</div>
+<!-- Title & Meta -->
+<div>
+<h3 class="font-headline-sm text-headline-sm text-[#080860] font-bold">ISO 9001:2015</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hệ thống Quản lý Chất lượng Sản xuất</p>
+</div>
+<!-- Details Table -->
+<div class="space-y-2 pt-2 border-t border-[#E2E8F0] text-[12px]">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Tổ chức cấp:</span>
+<span class="font-semibold text-on-surface">TÜV SÜD Vietnam</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Số hiệu chứng chỉ:</span>
+<span class="font-code-tabular font-bold text-[#080860]">QS-9001-VN2388</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Thời hạn hiệu lực:</span>
+<span class="font-medium text-on-surface">15/06/2023 – 14/06/2026</span>
+</div>
+<div class="flex justify-between items-center pt-1">
+<span class="text-on-surface-variant">Trạng thái:</span>
+<span class="text-emerald-600 font-semibold flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[13px] fill-icon">shield</span>
+                      Đã xác thực bởi Procura
+                    </span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center gap-2 pt-4 mt-4 border-t border-[#E2E8F0]">
+<button class="flex-1 h-8 rounded-lg border border-[#CBD5E1] text-[#080860] font-label-md text-[12px] hover:bg-slate-50 transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[15px]">picture_as_pdf</span>
+                  Xem tài liệu PDF
+                </button>
+<button class="h-8 px-3 rounded-lg border border-[#CBD5E1] text-on-surface-variant hover:text-[#080860] hover:bg-slate-50 text-[12px] font-label-md transition-colors">
+                  Thay thế
+                </button>
+</div>
+</div>
+<!-- Card 2: FSC CoC (Expiring Warning) -->
+<div class="bg-white rounded-xl border-2 border-amber-200 shadow-sm hover:shadow-md transition-shadow p-5 flex flex-col justify-between relative bg-amber-50/10">
+<div class="space-y-4">
+<!-- Header Badge -->
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200 text-amber-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">forest</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-[#FFFBEB] text-[#D97706] border border-[#FDE68A]">
+<span class="material-symbols-outlined text-[12px]">warning</span>
+                    Sắp hết hạn: còn 60 ngày
+                  </span>
+</div>
+<!-- Title & Meta -->
+<div>
+<h3 class="font-headline-sm text-headline-sm text-[#080860] font-bold">FSC CoC</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Chuỗi hành trình sản phẩm bao bì bền vững</p>
+</div>
+<!-- Details Table -->
+<div class="space-y-2 pt-2 border-t border-[#E2E8F0] text-[12px]">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Tổ chức cấp:</span>
+<span class="font-semibold text-on-surface">SGS International</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Số hiệu chứng chỉ:</span>
+<span class="font-code-tabular font-bold text-[#080860]">FSC-C154210</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Thời hạn hiệu lực:</span>
+<span class="font-medium text-amber-700 font-bold">20/12/2020 – 19/12/2025</span>
+</div>
+<div class="flex justify-between items-center pt-1">
+<span class="text-on-surface-variant">Trạng thái:</span>
+<span class="text-emerald-600 font-semibold flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[13px] fill-icon">shield</span>
+                      Đã xác thực bởi Procura
+                    </span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center gap-2 pt-4 mt-4 border-t border-[#E2E8F0]">
+<button class="h-8 px-3 rounded-lg border border-[#CBD5E1] text-[#080860] font-label-md text-[12px] hover:bg-slate-50 transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[15px]">picture_as_pdf</span>
+                  PDF
+                </button>
+<button class="flex-1 h-8 rounded-lg bg-[#0078F8] text-white font-label-md text-[12px] font-semibold hover:bg-[#0062CA] transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[15px]">upload_file</span>
+                  Cập nhật chứng chỉ
+                </button>
+</div>
+</div>
+<!-- Card 3: ISO 14001:2015 -->
+<div class="bg-white rounded-xl border border-[#E2E8F0] shadow-sm hover:shadow-md transition-shadow p-5 flex flex-col justify-between">
+<div class="space-y-4">
+<!-- Header Badge -->
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">eco</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-[#F0FDF4] text-[#16A34A] border border-[#BBF7D0]">
+<span class="material-symbols-outlined text-[12px] fill-icon">check_circle</span>
+                    Còn hiệu lực
+                  </span>
+</div>
+<!-- Title & Meta -->
+<div>
+<h3 class="font-headline-sm text-headline-sm text-[#080860] font-bold">ISO 14001:2015</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hệ thống Quản lý Môi trường Nhà xưởng</p>
+</div>
+<!-- Details Table -->
+<div class="space-y-2 pt-2 border-t border-[#E2E8F0] text-[12px]">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Tổ chức cấp:</span>
+<span class="font-semibold text-on-surface">Quacert Vietnam</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Số hiệu chứng chỉ:</span>
+<span class="font-code-tabular font-bold text-[#080860]">EMS-14001-QCT99</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Thời hạn hiệu lực:</span>
+<span class="font-medium text-on-surface">10/01/2024 – 09/01/2027</span>
+</div>
+<div class="flex justify-between items-center pt-1">
+<span class="text-on-surface-variant">Trạng thái:</span>
+<span class="text-emerald-600 font-semibold flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[13px] fill-icon">shield</span>
+                      Đã xác thực bởi Procura
+                    </span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center gap-2 pt-4 mt-4 border-t border-[#E2E8F0]">
+<button class="flex-1 h-8 rounded-lg border border-[#CBD5E1] text-[#080860] font-label-md text-[12px] hover:bg-slate-50 transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[15px]">picture_as_pdf</span>
+                  Xem tài liệu PDF
+                </button>
+<button class="h-8 px-3 rounded-lg border border-[#CBD5E1] text-on-surface-variant hover:text-[#080860] hover:bg-slate-50 text-[12px] font-label-md transition-colors">
+                  Thay thế
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. UPLOAD CARD "Thêm chứng chỉ mới & Thẩm định" -->
+<div class="bg-white rounded-xl border border-[#E2E8F0] shadow-sm p-6 space-y-5">
+<div class="flex items-center justify-between border-b border-[#E2E8F0] pb-3">
+<div>
+<h2 class="font-headline-md text-headline-md text-[#080860] font-bold">Thêm chứng chỉ mới &amp; Thẩm định</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tải lên hồ sơ chứng chỉ bổ sung để nâng hạng xếp hạng hồ sơ năng lực trên sàn giao dịch.</p>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">verified</span>
+</div>
+<!-- Dotted Drag and Drop Area -->
+<div class="border-2 border-dashed border-[#CBD5E1] rounded-xl p-6 text-center hover:border-[#0078F8] hover:bg-blue-50/20 transition-all cursor-pointer flex flex-col items-center justify-center gap-2">
+<div class="w-12 h-12 rounded-full bg-[#EFF6FF] text-[#0078F8] flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<div class="space-y-0.5">
+<p class="font-label-lg text-label-lg text-[#080860]">Kéo và thả tệp chứng nhận vào đây, hoặc <span class="text-[#0078F8] font-bold underline">chọn tệp từ máy tính</span></p>
+<p class="font-body-sm text-[12px] text-outline">Định dạng hỗ trợ: PDF có chữ ký số hoặc bản scan màu độ phân giải cao (Tối đa 15MB)</p>
+</div>
+</div>
+<!-- Form Fields Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Loại chứng chỉ -->
+<div class="space-y-1">
+<label class="font-label-sm text-[12px] text-[#080860] font-semibold">Loại chứng chỉ <span class="text-red-500">*</span></label>
+<select class="w-full h-9 rounded-lg border border-[#CBD5E1] bg-white text-body-md font-body-md text-on-surface px-3 focus:outline-none focus:border-[#0078F8] focus:ring-2 focus:ring-[#0078F8]/20">
+<option value="">-- Chọn danh mục --</option>
+<option value="ISO 22000">ISO 22000 (An toàn thực phẩm)</option>
+<option value="HACCP">HACCP (Phân tích mối nguy)</option>
+<option value="BRC">BRC Packaging Global Standard</option>
+<option value="RoHS">RoHS Compliance</option>
+<option value="REACH">REACH (Hóa chất Châu Âu)</option>
+<option value="Oeko-Tex">Oeko-Tex Standard 100</option>
+<option value="SMETA">SMETA / SEDEX (Audit xã hội)</option>
+</select>
+</div>
+<!-- Tổ chức cấp -->
+<div class="space-y-1">
+<label class="font-label-sm text-[12px] text-[#080860] font-semibold">Tổ chức cấp chứng nhận <span class="text-red-500">*</span></label>
+<input class="w-full h-9 rounded-lg border border-[#CBD5E1] bg-white text-body-md font-body-md text-on-surface px-3 placeholder:text-outline focus:outline-none focus:border-[#0078F8] focus:ring-2 focus:ring-[#0078F8]/20" placeholder="Ví dụ: SGS, TÜV SÜD, Intertek..." type="text"/>
+</div>
+<!-- Số hiệu chứng chỉ -->
+<div class="space-y-1">
+<label class="font-label-sm text-[12px] text-[#080860] font-semibold">Số hiệu chứng chỉ <span class="text-red-500">*</span></label>
+<input class="w-full h-9 rounded-lg border border-[#CBD5E1] bg-white text-body-md font-body-md text-on-surface px-3 placeholder:text-outline focus:outline-none focus:border-[#0078F8] focus:ring-2 focus:ring-[#0078F8]/20" placeholder="Nhập mã certificate ID" type="text"/>
+</div>
+<!-- Ngày hết hạn -->
+<div class="space-y-1">
+<label class="font-label-sm text-[12px] text-[#080860] font-semibold">Ngày hết hạn hiệu lực <span class="text-red-500">*</span></label>
+<input class="w-full h-9 rounded-lg border border-[#CBD5E1] bg-white text-body-md font-body-md text-on-surface px-3 text-on-surface focus:outline-none focus:border-[#0078F8] focus:ring-2 focus:ring-[#0078F8]/20" type="date"/>
+</div>
+</div>
+<!-- Upload Actions -->
+<div class="flex items-center justify-between pt-2">
+<span class="font-body-sm text-[12px] text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">info</span>
+              Hồ sơ tải lên sẽ được chuyên viên Tuân thủ Procura đối chiếu trong vòng 24 giờ làm việc.
+            </span>
+<button class="h-9 px-5 rounded-lg bg-[#0078F8] text-white font-label-md text-label-md font-semibold hover:bg-[#0062CA] transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">send</span>
+              + Gửi Procura xác thực
+            </button>
+</div>
+</div>
+<!-- 5. PENDING VERIFICATION LIST -->
+<div class="bg-white rounded-xl border border-[#E2E8F0] shadow-sm overflow-hidden mb-8">
+<div class="px-5 py-3.5 bg-surface-container-low border-b border-[#E2E8F0] flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#D97706]">pending_actions</span>
+<h3 class="font-headline-sm text-headline-sm text-[#080860] font-bold">Chứng chỉ đang thẩm định (1 hồ sơ)</h3>
+</div>
+<span class="font-label-sm text-[11px] text-outline">Quy trình thẩm định kiểm chuẩn 3 bước</span>
+</div>
+<div class="divide-y divide-[#E2E8F0]">
+<!-- Pending Row Item -->
+<div class="p-4 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 border border-amber-200 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">description</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-lg text-label-lg text-[#080860] font-bold">RoHS Compliance</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">(Kiểm nghiệm không chì &amp; kim loại nặng cho khay định hình)</span>
+</div>
+<div class="flex items-center gap-4 text-[12px] text-on-surface-variant font-body-sm">
+<span>Tổ chức cấp: <strong class="text-on-surface">SGS Vietnam</strong></span>
+<span>•</span>
+<span>Gửi ngày: <strong class="text-on-surface">17/10/2025</strong></span>
+<span>•</span>
+<span class="font-code-tabular">Tệp: RoHS-Test-Report-TP2025.pdf</span>
+</div>
+</div>
+</div>
+<!-- Status Badge & Action -->
+<div class="flex items-center gap-3 shrink-0 self-end md:self-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-[#FFFBEB] text-[#D97706] border border-[#FDE68A]">
+<span class="w-2 h-2 rounded-full bg-[#D97706] animate-pulse"></span>
+                  Đang chờ Procura kiểm duyệt hồ sơ (Dự kiến 24h)
+                </span>
+<button class="text-outline hover:text-red-600 p-1 rounded transition-colors" title="Thu hồi yêu cầu">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

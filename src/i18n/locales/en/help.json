@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "eyebrow": "Enterprise Procurement Knowledge & Support Centre",
+    "title": "Procura Help & Guides",
+    "subtitle": "How can we help with your sourcing and RFQ process today?",
+    "searchLabel": "Search the help centre",
+    "searchPlaceholder": "Search questions, guides or keywords (e.g. Create RFQ, Sealed quotation, MOQ...)",
+    "searchButton": "Search",
+    "popular": "Popular topics:",
+    "topics": {
+      "sealedBid": { "label": "Sealed quotation rules", "query": "sealed" },
+      "specs": { "label": "Setting technical criteria", "query": "technical" },
+      "iso": { "label": "Verifying factory ISO certificates", "query": "ISO" }
+    }
+  },
+  "search": {
+    "summary": "Results for “{{query}}”: {{guides}} guides, {{faqs}} questions",
+    "clear": "Clear search"
+  },
+  "guides": {
+    "title": "Quick-start guides",
+    "subtitle": "Best practices that save your team time across the procurement process",
+    "viewAll": "View all guides",
+    "readTime_one": "{{count}} min read",
+    "readTime_other": "{{count}} min read",
+    "items": {
+      "firstRfq": {
+        "title": "Create your first RFQ",
+        "description": "A 4-step flow from specifications and supplier selection to technical terms and the quotation deadline."
+      },
+      "findSuppliers": {
+        "title": "Find & save suppliers",
+        "description": "Filter by ISO and FSC certificates, factory location, minimum order quantity (MOQ) and independent audit reports."
+      },
+      "compare": {
+        "title": "Compare quotations & award",
+        "description": "Read the sealed price matrix, set technical scoring weights and standardise your internal approval export."
+      },
+      "supplierQuote": {
+        "title": "For suppliers: submit a quotation",
+        "description": "How factories upload capability profiles, send sealed quotations and update sample progress."
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions (FAQ)",
+    "subtitle": "Quick answers about price confidentiality, legal matters and platform operations",
+    "items": {
+      "blindBidding": {
+        "question": "How does Blind Bidding (sealed quotations) work on Procura?",
+        "answer": "To keep competition fair and objective, suppliers can never see each other's identity, the number of competitors or their prices. Only the buyer can open the quotation comparison matrix. Every quotation is recorded with an electronic timestamp to rule out data tampering."
+      },
+      "paymentsContracts": {
+        "question": "Does Procura handle payments or sign contracts?",
+        "answer": "No. Procura does not process payments and does not sign contracts. Procura is the infrastructure for connecting, comparing quotations and digitising supplier due diligence. Final commercial agreements, payment terms and contracts are negotiated and signed directly between the two parties under applicable law."
+      },
+      "verifiedSuppliers": {
+        "question": "How do I know a supplier has been verified on site by Procura?",
+        "answer": "Factories that have completed an on-site audit by Procura's experts carry the blue “Verified by Procura” badge. You can review legal details, machine capacity and ISO/BRC/Sedex certificates directly on the factory's capability profile."
+      },
+      "afterAward": {
+        "question": "What happens after I award an RFQ to a supplier?",
+        "answer": "The RFQ is marked as awarded. The selected supplier sees its quotation as “Awarded” and the other suppliers see “Not selected”, keeping supply-chain relationships healthy. Further commercial steps are handled directly between the two parties outside Procura."
+      },
+      "editQuote": {
+        "question": "Can a supplier change its price after submitting a quotation?",
+        "answer": "Suppliers can update or withdraw a quotation only while the RFQ is still accepting quotations. Once the deadline has passed or the RFQ has a result, the quotation is locked and can no longer be changed."
+      },
+      "exportExcel": {
+        "question": "Can I export the quotation comparison matrix to Excel?",
+        "answer": "Yes. On the Compare quotations page you can export unit prices, MOQ, lead time and supplier scores to an Excel file for internal approval in a single click."
+      }
+    }
+  },
+  "contact": {
+    "title": "Still can't find what you need?",
+    "subtitle": "Procura's procurement advisors are ready to help you directly.",
+    "emailLabel": "Email:",
+    "hotlineLabel": "Hotline:",
+    "hotline": "1900 68xx",
+    "hours": "(8:00 – 17:30, Mon – Fri)",
+    "cta": "Send a support request",
+    "mailSubject": "Procura support request"
+  }
+}

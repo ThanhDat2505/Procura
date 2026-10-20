@@ -1,0 +1,74 @@
+{
+  "title": "Quản lý Yêu cầu Báo giá (RFQ)",
+  "subtitle": "Theo dõi vòng đời RFQ từ bản nháp, tiếp nhận báo giá kín đến chốt nhà cung cấp trúng thầu.",
+  "untitled": "(Chưa đặt tiêu đề)",
+  "stats": {
+    "open": "Đang mở",
+    "openHint": "Đang chờ nhà cung ứng gửi báo giá",
+    "awaitingDecision": "Chờ quyết định",
+    "awaitingDecisionHint": "Đã đủ báo giá, cần so sánh",
+    "priority": "Ưu tiên",
+    "dueSoon": "Sắp hết hạn",
+    "dueSoonHint": "Hết hạn trong 3 ngày tới",
+    "urgent": "Gấp",
+    "awardedThisMonth": "Đã chốt tháng này",
+    "awardedHint": "Đã chọn nhà cung cấp trúng thầu"
+  },
+  "tabsLabel": "Lọc RFQ theo trạng thái",
+  "tabs": {
+    "all": "Tất cả",
+    "closed": "Hết hạn / Đã hủy"
+  },
+  "filters": {
+    "searchPlaceholder": "Tìm mã RFQ, tên sản phẩm...",
+    "category": "Ngành hàng",
+    "categoryAll": "Ngành hàng: Tất cả",
+    "deadline": "Thời hạn",
+    "deadlineAll": "Thời hạn: Tất cả",
+    "deadlineWithin_one": "Thời hạn: {{count}} ngày tới",
+    "deadlineWithin_other": "Thời hạn: {{count}} ngày tới",
+    "owner": "Người phụ trách",
+    "ownerAll": "Người phụ trách: Tất cả",
+    "ownerOption": "Người phụ trách: {{name}}"
+  },
+  "table": {
+    "codeTitle": "Mã & Tiêu đề RFQ",
+    "code": "Mã RFQ",
+    "title": "Tiêu đề",
+    "category": "Ngành hàng",
+    "quantity": "Số lượng",
+    "unit": "Đơn vị",
+    "invited": "NCC mời",
+    "invitedValue_one": "{{count}} NCC",
+    "invitedValue_other": "{{count}} NCC",
+    "quotes": "Báo giá nhận",
+    "quotesSuffix": "báo giá",
+    "deadline": "Thời hạn nhận báo giá",
+    "status": "Trạng thái",
+    "owner": "Phụ trách",
+    "actions": "Thao tác",
+    "notPublished": "Chưa phát hành",
+    "closedBidding": "Đã đóng thầu"
+  },
+  "actions": {
+    "continueDraft": "Tiếp tục soạn",
+    "compareNow": "So sánh ngay",
+    "viewResult": "Xem kết quả",
+    "more": "Thao tác khác",
+    "duplicate": "Nhân bản",
+    "cancel": "Hủy RFQ"
+  },
+  "empty": {
+    "title": "Không có RFQ phù hợp",
+    "description": "Thử đổi bộ lọc hoặc tạo một yêu cầu báo giá mới."
+  },
+  "cancelDialog": {
+    "title": "Hủy {{code}}?",
+    "description": "Nhà cung cấp sẽ không thể gửi thêm báo giá cho RFQ này. Thao tác này không thể hoàn tác.",
+    "confirm": "Hủy RFQ"
+  },
+  "toast": {
+    "duplicated": "Đã tạo bản nháp {{code}} từ RFQ gốc",
+    "cancelled": "Đã hủy {{code}}"
+  }
+}

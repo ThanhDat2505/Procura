@@ -1,0 +1,201 @@
+{
+  "title": "Submitted quotations",
+  "subtitle": "Track the status of your submitted quotations, their validity and the buyers' results.",
+  "actions": {
+    "export": "Export Excel (.csv)",
+    "advancedFilter": "Advanced filters",
+    "view": "View",
+    "edit": "Edit",
+    "withdraw": "Withdraw",
+    "continueDraft": "Continue draft"
+  },
+  "stats": {
+    "submitted": "Quotations submitted",
+    "files": "quotations",
+    "last30Days": "in the last 30 days",
+    "pending": "Awaiting results",
+    "packages": "tenders",
+    "pendingFooter": "Editable until the deadline",
+    "awarded": "Awarded",
+    "winRate": "Win rate: {{rate}}",
+    "notSelected": "Not selected",
+    "notSelectedFooter": "See buyer feedback in the details"
+  },
+  "tabs": {
+    "ariaLabel": "Filter by result",
+    "all": "All",
+    "pending": "Awaiting result",
+    "awarded": "Awarded",
+    "not_selected": "Not selected",
+    "closed": "Withdrawn / Expired"
+  },
+  "filters": {
+    "time": "Period",
+    "timeOptions": {
+      "all": "Period: All",
+      "30d": "Last 30 days",
+      "quarter": "This quarter",
+      "prevQuarter": "Last quarter"
+    },
+    "buyer": "Customer",
+    "buyerAll": "Customer: All"
+  },
+  "empty": {
+    "filtered": "No quotation on this page matches the filters. Change the filters or go to another page.",
+    "toInbox": "Open RFQ inbox",
+    "all": {
+      "title": "No quotations submitted yet",
+      "description": "Quotations you send from the RFQ inbox are tracked here."
+    },
+    "pending": {
+      "title": "No quotations awaiting results",
+      "description": "Submitted quotations without a buyer decision appear here."
+    },
+    "awarded": {
+      "title": "No awarded quotations yet",
+      "description": "When a buyer selects your factory, the quotation appears here."
+    },
+    "not_selected": {
+      "title": "No unsuccessful quotations",
+      "description": "Quotations that were not selected, with the buyer's feedback, are kept here."
+    },
+    "closed": {
+      "title": "No withdrawn or expired quotations",
+      "description": "Quotations you withdrew or that expired are kept here."
+    }
+  },
+  "table": {
+    "code": "Quotation code & date",
+    "rfq": "RFQ & buyer",
+    "unitPrice": "Unit price",
+    "total": "Total bid value",
+    "leadTime": "Lead time",
+    "validity": "Validity",
+    "status": "Status",
+    "actions": "Actions",
+    "copyCode": "Copy code {{code}}",
+    "withdrawnBySupplier": "Withdrawn by supplier",
+    "withdrawnOn": "Withdrawn on {{date}}",
+    "validUntil": "Until {{date}}",
+    "expired": "Expired",
+    "daysLeft_one": "{{count}} day left",
+    "daysLeft_other": "{{count}} days left"
+  },
+  "rules": {
+    "title": "Procura bid opening rules:",
+    "body": "A submitted quotation's unit price or committed delivery time can be updated until the buyer officially opens the bids (the quote deadline). After that, or once a result is announced, the values and committed terms are locked."
+  },
+  "withdraw": {
+    "title": "Withdraw this quotation?",
+    "description": "{{code}} for {{rfq}}",
+    "body": "The buyer will no longer see this quotation in the comparison. After withdrawing you can submit a new quotation while the RFQ is still open.",
+    "confirm": "Withdraw quotation",
+    "success": "Quotation {{code}} withdrawn"
+  },
+  "csv": {
+    "code": "Quotation code",
+    "submittedAt": "Submitted at",
+    "rfq": "RFQ code",
+    "title": "RFQ title",
+    "buyer": "Buyer",
+    "unitPrice": "Unit price (VND)",
+    "total": "Total value (VND, excl. VAT)",
+    "leadTime": "Lead time (days)",
+    "validUntil": "Valid until",
+    "status": "Status"
+  },
+  "detail": {
+    "backToList": "Back to submitted quotations",
+    "crumbList": "Submitted quotations",
+    "crumb": "Quotation #{{code}} ({{rfq}})",
+    "rfqTitle": "RFQ details from the buyer",
+    "buyer": "Buyer",
+    "taxCode": "Tax code: {{code}}",
+    "product": "Product & quantity",
+    "quantity": "Requested quantity: {{qty}} {{unit}}",
+    "delivery": "Delivery location",
+    "neededBy": "Needed by {{date}}",
+    "quoteTitle": "Official quotation from {{supplier}}",
+    "readOnly": "Read-only",
+    "unitPrice": "Unit price",
+    "perUnit": "₫ / {{unit}}",
+    "vatNote": "(Excluding 8% VAT)",
+    "total": "Total bid value",
+    "currency": "VND",
+    "committedQty": "Committed quantity: {{qty}} {{unit}}",
+    "moq": "Minimum order quantity (MOQ)",
+    "leadTime": "Production & delivery lead time",
+    "leadTimeValue": "{{days}} working days",
+    "validity": "Quotation validity",
+    "validityValue": "{{days}} days (valid until 23:59 on {{date}})",
+    "samplePolicy": "Sample policy",
+    "paymentTerms": "Proposed payment terms",
+    "tooling": "Tooling cost",
+    "offerNotes": "Special offers & commitments",
+    "certifications": "Technical certifications",
+    "attachments_one": "{{count}} file attached",
+    "attachments_other": "{{count}} files attached",
+    "notSpecified": "Not specified",
+    "technicalNotes": "Technical commitment notes"
+  },
+  "banner": {
+    "sent": "Quotation for {{rfq}} submitted at {{time}} on {{date}}",
+    "sentBody": "Your quotation is encrypted and recorded in the buyer's sealed bidding session.",
+    "editWindow": "Editing window",
+    "editDeadline": "Deadline: {{date}}",
+    "editClosed": "Editing closed",
+    "awarded": "Your quotation was awarded",
+    "awardedBody": "{{buyer}} selected your factory as the winning supplier for {{rfq}} on {{date}}. The buyer will contact you directly about next steps.",
+    "notSelected": "Quotation not selected for {{rfq}}",
+    "notSelectedBody": "The buyer selected another supplier for this tender.",
+    "feedback": "Buyer feedback: {{text}}",
+    "withdrawn": "You withdrew this quotation",
+    "withdrawnBody": "Withdrawn on {{date}}. The buyer no longer sees it in the comparison.",
+    "expired": "This quotation has expired",
+    "expiredBody": "The quotation's validity period has ended.",
+    "draft": "This quotation is still a draft",
+    "draftBody": "It has not been sent to the buyer yet. Finish and submit it before the deadline."
+  },
+  "progress": {
+    "title": "Review progress",
+    "step1": "1. Quotation submitted",
+    "step2": "2. Viewed by buyer",
+    "step3": "3. Awaiting bid opening",
+    "step4": "4. Supplier selection result",
+    "doneOn": "Completed {{date}}",
+    "at": "At {{time}}",
+    "drafting": "Drafting",
+    "waitingView": "Waiting for the buyer",
+    "notifyOnView": "You will be notified when the buyer opens it",
+    "verified": "Documents verified",
+    "notStarted": "Not started",
+    "inProgress": "In progress",
+    "done": "Completed",
+    "openingAt": "Opens at {{time}} {{date}}",
+    "expectedAfter": "Expected after {{date}}",
+    "announcedOn": "Announced {{date}}",
+    "notifyChannel": "Notified by email/SMS"
+  },
+  "actionsCard": {
+    "title": "Actions",
+    "edit": "Edit quotation",
+    "editUntil": "Editable until {{date}}",
+    "withdraw": "Withdraw quotation",
+    "lockedWithdrawn": "This quotation was withdrawn and can no longer be edited.",
+    "lockedDecided": "The buyer has decided, so this quotation can no longer be edited or withdrawn.",
+    "lockedClosed": "The RFQ is closed, so this quotation is locked.",
+    "lockedDeadline": "The quote deadline ({{date}}) has passed, so this quotation is locked.",
+    "sealedBefore": "Your quotation is fully protected by",
+    "sealedName": "sealed bidding (Blind Bidding)",
+    "sealedAfter": ". The buyer only sees your quotation once the official comparison is opened."
+  },
+  "contact": {
+    "title": "Buyer contact",
+    "message": "Send a technical message"
+  },
+  "support": {
+    "title": "Tender support",
+    "body": "Need to double-check a die-cut drawing or the format of an attachment?",
+    "link": "Contact Procura sourcing team"
+  }
+}

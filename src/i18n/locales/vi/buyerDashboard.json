@@ -1,0 +1,56 @@
+{
+  "greeting": {
+    "morning": "Chào buổi sáng, {{name}}!",
+    "afternoon": "Chào buổi chiều, {{name}}!",
+    "evening": "Chào buổi tối, {{name}}!",
+    "badge": "Bản tin ngày",
+    "summary_other": "Hôm nay bạn có <hl>{{count}} báo giá mới</hl> cần xem xét và {{rfqs}} yêu cầu sắp hết hạn nhận báo giá.",
+    "weeklyReport": "Xem báo cáo tuần"
+  },
+  "kpi": {
+    "label": "Chỉ số tổng quan",
+    "activeRfqs": "Tổng RFQ đang chạy",
+    "dueSoon_other": "{{count}} sắp hết hạn",
+    "activeRfqsHint": "Đang tiếp nhận phản hồi từ các NCC",
+    "quotesToReview": "Báo giá chờ duyệt",
+    "newToday_other": "{{count}} mới hôm nay",
+    "quotesToReviewHint": "Cần phê duyệt & so sánh sớm",
+    "savings": "Tiết kiệm chi phí",
+    "savingsHint": "So với giá trần ngân sách dự toán",
+    "responseRate": "Tỷ lệ phản hồi TB",
+    "avgResponse": {
+      "hours": "TB {{value}} giờ",
+      "days": "TB {{value}} ngày"
+    },
+    "responseRateHint": "Tỷ lệ NCC được mời đã gửi báo giá"
+  },
+  "rfqs": {
+    "title": "RFQ gần đây cần xử lý",
+    "subtitle": "Theo dõi tiến độ báo giá và đưa ra quyết định so sánh",
+    "viewAll": "Xem tất cả RFQ",
+    "columns": {
+      "rfq": "Mã RFQ & Tiêu đề",
+      "invited": "NCC mời",
+      "quotes": "Báo giá nhận"
+    },
+    "quotesOf": "/{{count}} NCC",
+    "compareNow": "So sánh ngay",
+    "footer": "Hiển thị {{shown}} trên tổng số {{total}} RFQ đang hoạt động",
+    "empty": "Không có RFQ nào cần xử lý",
+    "emptyHint": "Tạo RFQ mới để bắt đầu nhận báo giá từ nhà cung cấp."
+  },
+  "feed": {
+    "title": "Báo giá vừa gửi đến",
+    "live": "Thời gian thực",
+    "item": "Gửi báo giá cho {{code}}: <hl>{{price}}/{{unit}}</hl> (Lead time {{days}} ngày).",
+    "check": "Kiểm tra spec & giá",
+    "empty": "Chưa có báo giá mới."
+  },
+  "featured": {
+    "title": "Nhà cung cấp nổi bật",
+    "subtitle": "Khuyên dùng theo lịch sử thu mua của bạn",
+    "sendRfq": "Gửi RFQ",
+    "explore": "Khám phá thêm nhà cung cấp uy tín",
+    "empty": "Bạn đã lưu tất cả nhà cung cấp nổi bật."
+  }
+}

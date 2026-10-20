@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-background" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Procura - Tạo RFQ: Bước 2 Chọn nhà cung cấp</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#fefcff",
+            "inverse-primary": "#acc7ff",
+            "on-primary-fixed-variant": "#004492",
+            "on-tertiary-container": "#fefcff",
+            "on-tertiary-fixed": "#001849",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#414754",
+            "on-tertiary": "#ffffff",
+            "secondary-container": "#a5a9ff",
+            "background": "#f7f9ff",
+            "error": "#ba1a1a",
+            "on-error-container": "#93000a",
+            "primary-container": "#0070e9",
+            "tertiary": "#1654c9",
+            "tertiary-fixed-dim": "#b3c5ff",
+            "tertiary-fixed": "#dbe1ff",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#eef1f7",
+            "primary": "#0059ba",
+            "on-background": "#181c20",
+            "surface-container": "#ebeef4",
+            "surface-variant": "#dfe3e8",
+            "surface": "#f7f9ff",
+            "outline": "#717786",
+            "surface-tint": "#005bbf",
+            "on-secondary-fixed": "#090a61",
+            "surface-bright": "#f7f9ff",
+            "on-surface": "#181c20",
+            "on-secondary-fixed-variant": "#3a3e8c",
+            "surface-container-highest": "#dfe3e8",
+            "surface-container-low": "#f1f4fa",
+            "tertiary-container": "#3b6ee3",
+            "outline-variant": "#c1c6d7",
+            "on-primary-fixed": "#001a40",
+            "secondary-fixed-dim": "#bfc1ff",
+            "primary-fixed-dim": "#acc7ff",
+            "surface-container-high": "#e5e8ee",
+            "on-secondary-container": "#373a89",
+            "secondary-fixed": "#e1e0ff",
+            "inverse-surface": "#2d3135",
+            "surface-dim": "#d7dae0",
+            "surface-container-lowest": "#ffffff",
+            "on-primary": "#ffffff",
+            "primary-fixed": "#d7e2ff",
+            "on-tertiary-fixed-variant": "#003fa4",
+            "on-secondary": "#ffffff",
+            "secondary": "#5256a6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "1.5rem",
+            "space-lg": "1rem",
+            "space-2xl": "2rem",
+            "space-sm": "0.5rem",
+            "margin": "1.5rem",
+            "space-md": "0.75rem",
+            "space-2xs": "0.125rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Inter"],
+            "label-sm": ["Inter"],
+            "code-tabular": ["Inter"],
+            "display-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "display-lg": ["Inter"],
+            "headline-lg": ["Inter"],
+            "label-lg": ["Inter"],
+            "headline-md": ["Inter"]
+          },
+          "fontSize": {
+            "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "code-tabular": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "display-sm": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+<body class="h-full text-on-surface bg-background antialiased flex flex-col font-body-md text-body-md">
+<!-- Side Navigation Bar (Anchored from JSON) -->
+<aside class="fixed top-0 left-0 h-screen w-64 flex flex-col justify-between p-4 z-40 bg-surface-container-lowest dark:bg-inverse-surface border-r border-outline-variant dark:border-outline shadow-sm dark:shadow-none">
+<div class="flex flex-col gap-4">
+<!-- Header Brand -->
+<div class="flex items-center gap-3 px-2 py-1">
+<img alt="Procura Enterprise Logo" class="h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbsxbknzydtzu2d6ekzP3qnLgDnEq6gMblAdmcfro5tzUnhVA3x-I2c9r4SO3ffNuKaIC3TqW605qbNpD4ITXQNjvKR1JOxqcRyiFdvplYFmBQjpM8LBaKnuMt6VZbBzKSm8ZZu7JNWR08_AddQN-ryn_SfNkf-Ll_7dllvFD7aPKxZDwZDl_Fu32s49hvQWguLK-U0SRyMU6215cap9u09FKqaGIN3UyYyy9wVEpcAQG4u674h4uDQLlOiBvbJKQsGG4"/>
+<div class="flex flex-col">
+<span class="text-label-md font-label-md font-bold text-primary">Procura Sourcing</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Buyer / Thu mua</span>
+</div>
+</div>
+<!-- Action Button CTA -->
+<button class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-opacity">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Tạo RFQ mới</span>
+</button>
+<!-- Main Nav Items (Quản lý RFQ active semantic destination) -->
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-surface-bright hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">dashboard</span>
+<span class="text-label-md font-label-md">Tổng quan</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-surface-bright hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">storefront</span>
+<span class="text-label-md font-label-md">Tìm nhà cung cấp</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-surface-container-high dark:bg-surface-container text-primary dark:text-primary-fixed font-semibold" href="#">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">request_quote</span>
+<span class="text-label-md font-label-md">Quản lý RFQ</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-surface-bright hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">bookmark</span>
+<span class="text-label-md font-label-md">Nhà cung cấp đã lưu</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-surface-bright hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">compare_arrows</span>
+<span class="text-label-md font-label-md">So sánh báo giá</span>
+</a>
+</nav>
+</div>
+<!-- Footer Settings & Profile Info -->
+<div class="flex flex-col gap-2 pt-4 border-t border-outline-variant">
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">settings</span>
+<span class="text-label-md font-label-md">Cài đặt</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">help</span>
+<span class="text-label-md font-label-md">Trợ giúp</span>
+</a>
+</nav>
+<div class="mt-2 p-2.5 rounded-lg bg-surface-container-low border border-outline-variant/60 flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-label-md shrink-0">
+          TH
+        </div>
+<div class="overflow-hidden">
+<p class="text-label-sm font-label-sm text-on-surface truncate">Trần Nhật Hoàng</p>
+<p class="text-[10px] text-on-surface-variant truncate">Trưởng phòng Mua hàng</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Sticky TopNavBar -->
+<header class="sticky top-0 right-0 h-16 w-[calc(100%-16rem)] ml-64 flex items-center justify-between px-6 z-30 bg-surface-container-lowest dark:bg-inverse-surface border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none">
+<!-- Left Search -->
+<div class="relative w-80">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-3 rounded-lg bg-surface-container-low border border-outline-variant text-body-sm font-body-sm placeholder:text-on-surface-variant focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Tìm kiếm nhanh đơn hàng, RFQ, SKU..." type="text"/>
+</div>
+<!-- Right Controls -->
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1">
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low relative transition-colors" title="Thông báo">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span>
+</button>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-colors" title="Trợ giúp">
+<span class="material-symbols-outlined text-[20px]">help</span>
+</button>
+</div>
+<div class="h-6 w-px bg-outline-variant"></div>
+<!-- User Organisation Summary -->
+<div class="flex items-center gap-3">
+<div class="text-right hidden xl:block">
+<p class="text-label-md font-label-md text-on-surface">Trần Nhật Hoàng</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Công ty TNHH An Phước Logistics</p>
+</div>
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-semibold text-label-md ring-2 ring-surface-container-high" title="User avatar with role switcher">
+          AH
+        </div>
+</div>
+</div>
+</header>
+<!-- Main Content Workspace -->
+<main class="ml-64 flex-1 pb-24 overflow-y-auto">
+<div class="max-w-[1440px] mx-auto px-6 py-5">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant mb-4">
+<a class="hover:text-primary transition-colors" href="#">Quản lý RFQ</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Tạo mới</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Bản nháp #RFQ-2025-089 (5.000 hộp carton sóng E 3 lớp in logo)</span>
+</nav>
+<!-- Stepper (4 steps) -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4 mb-6 shadow-sm">
+<div class="grid grid-cols-4 gap-4 relative">
+<!-- Step 1 (Completed) -->
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-[#F0FDF4] border border-[#BBF7D0] text-[#16A34A] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div>
+<p class="text-[11px] font-semibold text-[#16A34A] uppercase tracking-wider">Bước 1</p>
+<p class="text-label-md font-label-md text-on-surface font-medium">Thông tin &amp; Quy cách</p>
+</div>
+</div>
+<!-- Step 2 (ACTIVE) -->
+<div class="flex items-center gap-3 border-l border-outline-variant/50 pl-4">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-md shadow-sm shrink-0 ring-4 ring-primary-fixed">
+              2
+            </div>
+<div>
+<p class="text-[11px] font-semibold text-primary uppercase tracking-wider">Bước 2</p>
+<p class="text-label-md font-label-md text-primary font-bold">Chọn nhà cung cấp</p>
+</div>
+</div>
+<!-- Step 3 (Pending) -->
+<div class="flex items-center gap-3 border-l border-outline-variant/50 pl-4 opacity-60">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-semibold text-label-md shrink-0">
+              3
+            </div>
+<div>
+<p class="text-[11px] font-semibold text-on-surface-variant uppercase tracking-wider">Bước 3</p>
+<p class="text-label-md font-label-md text-on-surface-variant">Điều khoản &amp; Yêu cầu</p>
+</div>
+</div>
+<!-- Step 4 (Pending) -->
+<div class="flex items-center gap-3 border-l border-outline-variant/50 pl-4 opacity-60">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-semibold text-label-md shrink-0">
+              4
+            </div>
+<div>
+<p class="text-[11px] font-semibold text-on-surface-variant uppercase tracking-wider">Bước 4</p>
+<p class="text-label-md font-label-md text-on-surface-variant">Kiểm tra &amp; Gửi</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 2 Columns Layout -->
+<div class="flex flex-col lg:flex-row gap-6 items-start">
+<!-- Left Column: Supplier Selection Matrix (flex-1) -->
+<section class="flex-1 w-full bg-surface-container-lowest border border-outline-variant rounded-xl shadow-sm p-5">
+<!-- Section Heading -->
+<div class="mb-5">
+<h1 class="text-headline-md font-headline-md text-on-surface">Bước 2: Lựa chọn danh sách nhà cung ứng nhận RFQ</h1>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Chọn tối thiểu 1 và tối đa 10 nhà cung cấp để nhận báo giá kín có tính cạnh tranh cao.</p>
+</div>
+<!-- Filter Tabs -->
+<div class="flex border-b border-outline-variant mb-4 gap-2">
+<button class="flex items-center gap-2 px-4 py-2.5 border-b-2 border-primary text-primary font-label-md text-label-md">
+<span>Gợi ý phù hợp nhất từ AI</span>
+<span class="px-1.5 py-0.5 rounded-full text-[11px] font-bold bg-primary-fixed text-on-primary-fixed">8</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+<span>Nhà cung cấp đã lưu</span>
+<span class="px-1.5 py-0.5 rounded-full text-[11px] font-bold bg-surface-container-high text-on-surface-variant">6</span>
+</button>
+<button class="px-4 py-2.5 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+              Tìm tất cả nhà cung cấp
+            </button>
+</div>
+<!-- Search & Filter Chips Bar -->
+<div class="flex flex-wrap items-center gap-3 mb-5">
+<div class="relative flex-1 min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3 top-2 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-3 rounded-lg border border-outline-variant text-body-sm font-body-sm placeholder:text-on-surface-variant focus:outline-none focus:border-primary" placeholder="Tìm kiếm tên xưởng, mã số thuế..." type="text"/>
+</div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface text-label-sm font-label-sm border border-outline-variant/60">
+<span>Ngành: Bao bì &amp; In ấn</span>
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface text-label-sm font-label-sm border border-outline-variant/60">
+<span>Khu vực: TP.HCM &amp; Bình Dương</span>
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface text-label-sm font-label-sm border border-outline-variant/60">
+<span>Chứng chỉ ISO 9001</span>
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<button class="text-body-sm font-body-sm text-primary hover:underline ml-1">Xóa bộ lọc</button>
+</div>
+</div>
+<!-- Supplier Table List -->
+<div class="border border-outline-variant rounded-lg overflow-hidden">
+<table class="w-full border-collapse text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider border-b border-outline-variant">
+<th class="py-3 px-3 w-10 text-center">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+</th>
+<th class="py-3 px-3">Nhà cung cấp &amp; Đánh giá</th>
+<th class="py-3 px-3">Chứng chỉ &amp; Vị trí</th>
+<th class="py-3 px-3">Năng lực MOQ</th>
+<th class="py-3 px-3">Thời gian giao</th>
+<th class="py-3 px-3 text-right">Trạng thái phù hợp</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/70 text-body-sm font-body-sm">
+<!-- Supplier 1 -->
+<tr class="hover:bg-[#F8FAFF] transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-3 text-center align-top">
+<input checked="" class="mt-1 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="font-semibold text-on-surface text-label-md font-label-md">Công ty CP Bao Bì &amp; In Ấn Tân Phát</div>
+<div class="flex items-center gap-1.5 mt-1 text-on-surface-variant">
+<div class="flex items-center text-amber-600 font-bold text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-amber-500 mr-0.5" style="font-variation-settings: 'FILL' 1;">star</span>
+                        4.9
+                      </div>
+<span class="text-outline-variant">•</span>
+<span class="text-[11px]">(38 hợp đồng hoàn thành)</span>
+</div>
+<div class="mt-1.5 flex items-center gap-1 text-[11px] text-primary font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Xác thực bởi Procura</span>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="flex flex-wrap gap-1 mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-semibold text-on-surface">ISO 9001</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-semibold text-on-surface">FSC</span>
+</div>
+<p class="text-[11px] text-on-surface-variant">KCN Tân Bình, TP.HCM</p>
+</td>
+<td class="py-3.5 px-3 align-top">
+<p class="font-code-tabular text-code-tabular text-on-surface font-semibold">3.000 cái</p>
+<span class="mt-1 inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#F0FDF4] text-[#16A34A] border border-[#BBF7D0]">
+                      MOQ phù hợp (3.000 ≤ 5.000)
+                    </span>
+</td>
+<td class="py-3.5 px-3 align-top font-medium text-on-surface">
+                    5 - 7 ngày
+                  </td>
+<td class="py-3.5 px-3 align-top text-right">
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-[#16A34A] font-semibold bg-[#F0FDF4] px-2.5 py-1 rounded-full border border-[#BBF7D0]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                      Đã chọn
+                    </span>
+</td>
+</tr>
+<!-- Supplier 2 -->
+<tr class="hover:bg-[#F8FAFF] transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-3 text-center align-top">
+<input checked="" class="mt-1 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="font-semibold text-on-surface text-label-md font-label-md">Bao Bì Sài Gòn Tiến Đạt</div>
+<div class="flex items-center gap-1.5 mt-1 text-on-surface-variant">
+<div class="flex items-center text-amber-600 font-bold text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-amber-500 mr-0.5" style="font-variation-settings: 'FILL' 1;">star</span>
+                        4.6
+                      </div>
+<span class="text-outline-variant">•</span>
+<span class="text-[11px]">(24 hợp đồng)</span>
+</div>
+<div class="mt-1.5 flex items-center gap-1 text-[11px] text-primary font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Xác thực bởi Procura</span>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="flex flex-wrap gap-1 mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-semibold text-on-surface">ISO 9001</span>
+</div>
+<p class="text-[11px] text-on-surface-variant">Thuận An, Bình Dương</p>
+</td>
+<td class="py-3.5 px-3 align-top">
+<p class="font-code-tabular text-code-tabular text-on-surface font-semibold">10.000 cái</p>
+<span class="mt-1 inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#FFFBEB] text-[#D97706] border border-[#FDE68A]">
+                      MOQ 10.000 &gt; 5.000 (Cần đàm phán)
+                    </span>
+</td>
+<td class="py-3.5 px-3 align-top font-medium text-on-surface">
+                    7 - 10 ngày
+                  </td>
+<td class="py-3.5 px-3 align-top text-right">
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-[#16A34A] font-semibold bg-[#F0FDF4] px-2.5 py-1 rounded-full border border-[#BBF7D0]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                      Đã chọn
+                    </span>
+</td>
+</tr>
+<!-- Supplier 3 -->
+<tr class="hover:bg-[#F8FAFF] transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-3 text-center align-top">
+<input checked="" class="mt-1 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="font-semibold text-on-surface text-label-md font-label-md">Bao Bì Nam Khang Vina</div>
+<div class="flex items-center gap-1.5 mt-1 text-on-surface-variant">
+<div class="flex items-center text-amber-600 font-bold text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-amber-500 mr-0.5" style="font-variation-settings: 'FILL' 1;">star</span>
+                        4.7
+                      </div>
+<span class="text-outline-variant">•</span>
+<span class="text-[11px]">(19 hợp đồng)</span>
+</div>
+<div class="mt-1.5 flex items-center gap-1 text-[11px] text-primary font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Xác thực bởi Procura</span>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="flex flex-wrap gap-1 mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-semibold text-on-surface">ISO 9001</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-semibold text-on-surface">RoHS</span>
+</div>
+<p class="text-[11px] text-on-surface-variant">Dĩ An, Bình Dương</p>
+</td>
+<td class="py-3.5 px-3 align-top">
+<p class="font-code-tabular text-code-tabular text-on-surface font-semibold">2.000 cái</p>
+<span class="mt-1 inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#F0FDF4] text-[#16A34A] border border-[#BBF7D0]">
+                      MOQ phù hợp (2.000 ≤ 5.000)
+                    </span>
+</td>
+<td class="py-3.5 px-3 align-top font-medium text-on-surface">
+                    3 - 5 ngày
+                  </td>
+<td class="py-3.5 px-3 align-top text-right">
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-[#16A34A] font-semibold bg-[#F0FDF4] px-2.5 py-1 rounded-full border border-[#BBF7D0]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                      Đã chọn
+                    </span>
+</td>
+</tr>
+<!-- Supplier 4 -->
+<tr class="hover:bg-[#F8FAFF] transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-3 text-center align-top">
+<input checked="" class="mt-1 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="font-semibold text-on-surface text-label-md font-label-md">Bao Bì Hưng Thịnh</div>
+<div class="flex items-center gap-1.5 mt-1 text-on-surface-variant">
+<div class="flex items-center text-amber-600 font-bold text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-amber-500 mr-0.5" style="font-variation-settings: 'FILL' 1;">star</span>
+                        4.5
+                      </div>
+<span class="text-outline-variant">•</span>
+<span class="text-[11px]">(15 hợp đồng)</span>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="flex flex-wrap gap-1 mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-semibold text-on-surface">Xưởng Long An</span>
+</div>
+<p class="text-[11px] text-on-surface-variant">Đức Hòa, Long An</p>
+</td>
+<td class="py-3.5 px-3 align-top">
+<p class="font-code-tabular text-code-tabular text-on-surface font-semibold">5.000 cái</p>
+<span class="mt-1 inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#F0FDF4] text-[#16A34A] border border-[#BBF7D0]">
+                      MOQ phù hợp (5.000 = 5.000)
+                    </span>
+</td>
+<td class="py-3.5 px-3 align-top font-medium text-on-surface">
+                    7 ngày
+                  </td>
+<td class="py-3.5 px-3 align-top text-right">
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-[#16A34A] font-semibold bg-[#F0FDF4] px-2.5 py-1 rounded-full border border-[#BBF7D0]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                      Đã chọn
+                    </span>
+</td>
+</tr>
+<!-- Supplier 5 (Unchecked) -->
+<tr class="hover:bg-[#F8FAFF] transition-colors bg-surface-container-lowest opacity-85">
+<td class="py-3.5 px-3 text-center align-top">
+<input class="mt-1 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="font-semibold text-on-surface text-label-md font-label-md">Bao Bì Sinh Thái GreenPack</div>
+<div class="flex items-center gap-1.5 mt-1 text-on-surface-variant">
+<div class="flex items-center text-amber-600 font-bold text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-amber-500 mr-0.5" style="font-variation-settings: 'FILL' 1;">star</span>
+                        4.9
+                      </div>
+<span class="text-outline-variant">•</span>
+<span class="text-[11px]">(12 hợp đồng)</span>
+</div>
+</td>
+<td class="py-3.5 px-3 align-top">
+<div class="flex flex-wrap gap-1 mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-semibold text-on-surface">Củ Chi, TP.HCM</span>
+</div>
+<p class="text-[11px] text-on-surface-variant">Giấy tái chế đạt chuẩn FSC</p>
+</td>
+<td class="py-3.5 px-3 align-top">
+<p class="font-code-tabular text-code-tabular text-on-surface font-semibold">1.000 cái</p>
+<span class="mt-1 inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#F0FDF4] text-[#16A34A] border border-[#BBF7D0]">
+                      MOQ phù hợp
+                    </span>
+</td>
+<td class="py-3.5 px-3 align-top font-medium text-on-surface">
+                    5 ngày
+                  </td>
+<td class="py-3.5 px-3 align-top text-right">
+<button class="inline-flex items-center gap-1 text-label-sm font-label-sm text-primary hover:bg-surface-container-low px-2.5 py-1 rounded border border-outline-variant transition-colors">
+<span class="material-symbols-outlined text-[14px]">add</span>
+                      + Chọn
+                    </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Right Panel (w-80) Sticky Inspector / Summary -->
+<aside class="w-full lg:w-80 shrink-0 flex flex-col gap-4">
+<!-- Summary Container -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4 shadow-sm">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant">
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Nhà cung cấp nhận RFQ</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm font-bold">
+                4 / 10 NCC tối đa
+              </span>
+</div>
+<!-- Blind Bidding Callout Note -->
+<div class="mt-3 p-3 rounded-lg bg-surface-container-low border border-outline-variant/60 flex items-start gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">visibility_off</span>
+<p class="text-[12px] leading-relaxed">
+<strong class="text-on-surface">Báo giá kín (Blind Bidding):</strong> Các nhà cung cấp không nhìn thấy danh tính và giá của nhau để đảm bảo mức giá chào tối ưu nhất.
+              </p>
+</div>
+<!-- Selected Mini-list -->
+<div class="mt-4 flex flex-col gap-2">
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Danh sách đã chọn (4)</p>
+<!-- Item 1 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low border border-outline-variant/40 group hover:border-outline-variant transition-all">
+<div class="min-w-0 pr-2">
+<p class="text-label-md font-label-md text-on-surface truncate">Tân Phát Packaging</p>
+<p class="text-[11px] text-on-surface-variant">4.9★ • MOQ: 3.000</p>
+</div>
+<button class="text-outline hover:text-error transition-colors p-1 rounded" title="Xóa">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low border border-outline-variant/40 group hover:border-outline-variant transition-all">
+<div class="min-w-0 pr-2">
+<p class="text-label-md font-label-md text-on-surface truncate">Tiến Đạt Packaging</p>
+<p class="text-[11px] text-on-surface-variant">4.6★ • MOQ: 10.000</p>
+</div>
+<button class="text-outline hover:text-error transition-colors p-1 rounded" title="Xóa">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low border border-outline-variant/40 group hover:border-outline-variant transition-all">
+<div class="min-w-0 pr-2">
+<p class="text-label-md font-label-md text-on-surface truncate">Nam Khang Vina</p>
+<p class="text-[11px] text-on-surface-variant">4.7★ • MOQ: 2.000</p>
+</div>
+<button class="text-outline hover:text-error transition-colors p-1 rounded" title="Xóa">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<!-- Item 4 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low border border-outline-variant/40 group hover:border-outline-variant transition-all">
+<div class="min-w-0 pr-2">
+<p class="text-label-md font-label-md text-on-surface truncate">Hưng Thịnh Packaging</p>
+<p class="text-[11px] text-on-surface-variant">4.5★ • MOQ: 5.000</p>
+</div>
+<button class="text-outline hover:text-error transition-colors p-1 rounded" title="Xóa">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Summary Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4 shadow-sm">
+<h3 class="text-label-md font-label-md text-on-surface font-semibold mb-3">Tóm tắt yêu cầu RFQ</h3>
+<div class="space-y-2.5 text-body-sm font-body-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Số lượng yêu cầu:</span>
+<span class="font-code-tabular font-semibold text-on-surface">5.000 cái</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Ngân sách ước tính:</span>
+<span class="font-code-tabular font-semibold text-primary">40.000.000 - 45.000.000 đ</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Loại sản phẩm:</span>
+<span class="text-on-surface font-medium">Hộp carton sóng E 3 lớp</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Dự kiến nhận hàng:</span>
+<span class="text-on-surface font-medium">15/04/2025</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<!-- Sticky Footer Navigation -->
+<footer class="fixed bottom-0 right-0 w-[calc(100%-16rem)] ml-64 h-16 bg-surface-container-lowest border-t border-outline-variant px-6 flex items-center justify-between z-30 shadow-md">
+<!-- Left Action -->
+<button class="px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Lưu bản nháp</span>
+</button>
+<!-- Right Flow Action Buttons -->
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded-lg border border-outline-variant text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-colors">
+        Quay lại
+      </button>
+<button class="px-5 py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-[#0062CA] shadow-sm flex items-center gap-2 transition-all">
+<span>Tiếp tục: Bước 3 Điều khoản &amp; Yêu cầu</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</footer>
+</body></html>

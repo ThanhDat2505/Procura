@@ -1,0 +1,73 @@
+{
+  "eyebrow": "Quy trình thẩm định thầu",
+  "quarter": "Q{{quarter}}/{{year}}",
+  "title": "So sánh Báo giá & Phân tích Đấu thầu",
+  "subtitle": "Trung tâm so sánh giá kín, ma trận kỹ thuật và đề xuất lựa chọn nhà cung cấp trúng thầu cho các gói RFQ.",
+  "categoryFilter": "Lọc theo danh mục ngành",
+  "allCategories": "Tất cả danh mục ngành",
+  "packages_one": "{{count}} gói RFQ",
+  "packages_other": "{{count}} gói RFQ",
+  "stats": {
+    "ready": "Đang mở so sánh",
+    "readyFoot": "Sẵn sàng chọn thầu",
+    "waiting": "Chờ thêm báo giá",
+    "waitingFoot": "Cần ≥ {{min}} báo giá",
+    "awarded": "Đã chốt trúng thầu",
+    "avgSavings": "Tiết kiệm TB {{value}}",
+    "avgOver": "Vượt ngân sách TB {{value}}",
+    "noSavings": "Chưa có dữ liệu ngân sách",
+    "budget": "Tổng ngân sách đàm phán",
+    "budgetFoot": "Trong tháng {{month}}/{{year}}"
+  },
+  "deadline": {
+    "overdue": "Đã hết hạn",
+    "today": "Hôm nay",
+    "inDays_one": "{{count}} ngày nữa",
+    "inDays_other": "{{count}} ngày nữa"
+  },
+  "budget": "Ngân sách dự kiến:",
+  "budgetFrom": "Từ {{value}}",
+  "budgetNone": "Chưa xác định",
+  "progress": "Tiến độ báo giá:",
+  "progressValue": "{{done}} / {{total}} nhà cung cấp đã nộp",
+  "lowestPrice": "Giá chào thấp nhất:",
+  "priceBy": "{{price}} ({{supplier}})",
+  "fastestLead": "Lead time nhanh nhất:",
+  "leadBy": "{{days}} ({{supplier}})",
+  "ready": {
+    "title": "Sẵn sàng so sánh",
+    "chip": "Đã nhận ≥ {{min}} báo giá",
+    "count_one": "Hiển thị {{count}} kết quả",
+    "count_other": "Hiển thị {{count}} kết quả",
+    "suggested": "Đề xuất thẩm định ngay",
+    "expires": "Hết hạn: {{when}}",
+    "open": "Mở bảng so sánh ma trận",
+    "emptyTitle": "Chưa có RFQ nào sẵn sàng so sánh",
+    "emptyDesc": "RFQ xuất hiện ở đây khi nhận đủ {{min}} báo giá trở lên."
+  },
+  "waiting": {
+    "title": "Đang chờ thêm báo giá",
+    "chip": "Chưa đủ điều kiện so sánh",
+    "rule": "Quy chuẩn cần tối thiểu {{min}} báo giá cạnh tranh",
+    "deadline": "Hạn chót: {{date}}",
+    "progress": "{{done}} / {{total}} nhà cung cấp đã nộp báo giá",
+    "note_one": "Hệ thống yêu cầu thêm {{count}} báo giá để mở ma trận so sánh.",
+    "note_other": "Hệ thống yêu cầu thêm {{count}} báo giá để mở ma trận so sánh.",
+    "disabled": "Cần ít nhất {{min}} báo giá để mở so sánh",
+    "emptyTitle": "Không có RFQ nào đang chờ thêm báo giá"
+  },
+  "awarded": {
+    "title": "Đã chốt nhà cung cấp trúng thầu",
+    "chip": "Đã hoàn tất thẩm định",
+    "archive": "Xem hồ sơ lưu trữ toàn bộ",
+    "selected": "Đã chọn: {{name}}",
+    "decidedOn": "Quyết định ngày: {{date}}",
+    "unitPrice": "Trúng thầu với đơn giá:",
+    "savings": "Tiết kiệm:",
+    "savingsValue": "{{value}} so với ngân sách",
+    "overValue": "Vượt ngân sách {{value}}",
+    "review": "Xem lại bảng so sánh lưu trữ",
+    "emptyTitle": "Chưa có RFQ nào được chốt",
+    "emptyDesc": "Kết quả chọn nhà cung cấp trúng thầu sẽ được lưu tại đây."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Discover B2B Suppliers",
+  "subtitle": "Search and connect with trusted manufacturers & distributors in Vietnam",
+  "partnerCount_one": "{{count}} partner",
+  "partnerCount_other": "{{count}} partners",
+  "selection": {
+    "count_one": "Selected: <hl>{{count}} supplier</hl>",
+    "count_other": "Selected: <hl>{{count}} suppliers</hl>",
+    "createRfq": "Create RFQ with selected"
+  },
+  "search": {
+    "label": "Search suppliers",
+    "placeholder": "Search by supplier name, material, location…",
+    "quickFilter": "Quick filters",
+    "export": "Export list"
+  },
+  "filters": {
+    "title": "Advanced filters",
+    "category": "Category",
+    "province": "Region / Province",
+    "moq": "Minimum order (MOQ)",
+    "moqBands": {
+      "any": "Any quantity",
+      "lt1000": "Under 1,000 units",
+      "1000to5000": "1,000 - 5,000 units",
+      "gt5000": "Over 5,000 units"
+    },
+    "certifications": "Certifications & capability",
+    "certOptions": {
+      "iso9001": "ISO 9001:2015",
+      "fsc": "FSC forest certification"
+    },
+    "exportStandard": "Export standard",
+    "ownFactory": "Own production facility",
+    "applied": "Applied:",
+    "appliedCount_one": "{{count}} filter",
+    "appliedCount_other": "{{count}} filters"
+  },
+  "results": {
+    "label": "Supplier search results",
+    "summary": "Showing <b>{{shown}}</b> of <b>{{total}}</b> suppliers",
+    "sortBy": "Sort by:",
+    "sort": {
+      "relevance": "Best match",
+      "rating": "Highest rated",
+      "leadTime": "Fastest lead time",
+      "moq": "Lowest MOQ"
+    },
+    "viewLabel": "View mode",
+    "view": {
+      "grid": "Grid view",
+      "list": "List view"
+    },
+    "emptyHint": "Try removing some filters or searching with different keywords."
+  },
+  "card": {
+    "highlightProducts": "Key product lines:",
+    "leadTime": "Lead Time",
+    "select": "Select for RFQ",
+    "selected": "Selected",
+    "selectAria": "Select for RFQ: {{name}}",
+    "deselectAria": "Selected: {{name}}",
+    "saveAria": "Save {{name}}",
+    "unsaveAria": "Unsave {{name}}"
+  },
+  "list": {
+    "supplier": "Supplier"
+  },
+  "leadTimeRange": "{{min}} - {{max}} days",
+  "leadTimeSingle_one": "{{count}} day",
+  "leadTimeSingle_other": "{{count}} days",
+  "export": {
+    "filename": "procura-suppliers.csv",
+    "name": "Supplier name",
+    "location": "Location"
+  },
+  "toast": {
+    "saved": "{{name}} saved to your list",
+    "unsaved": "{{name}} removed from saved"
+  }
+}

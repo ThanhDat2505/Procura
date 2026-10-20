@@ -1,0 +1,74 @@
+{
+  "title": "Requests for Quotation (RFQ)",
+  "subtitle": "Track every RFQ from draft through sealed quotes to awarding the winning supplier.",
+  "untitled": "(Untitled)",
+  "stats": {
+    "open": "Open",
+    "openHint": "Waiting for suppliers to quote",
+    "awaitingDecision": "Awaiting decision",
+    "awaitingDecisionHint": "Enough quotes received, ready to compare",
+    "priority": "Priority",
+    "dueSoon": "Closing soon",
+    "dueSoonHint": "Closing within the next 3 days",
+    "urgent": "Urgent",
+    "awardedThisMonth": "Awarded this month",
+    "awardedHint": "Winning supplier selected"
+  },
+  "tabsLabel": "Filter RFQs by status",
+  "tabs": {
+    "all": "All",
+    "closed": "Expired / Cancelled"
+  },
+  "filters": {
+    "searchPlaceholder": "Search RFQ code, product name...",
+    "category": "Category",
+    "categoryAll": "Category: All",
+    "deadline": "Deadline",
+    "deadlineAll": "Deadline: Any",
+    "deadlineWithin_one": "Deadline: next {{count}} day",
+    "deadlineWithin_other": "Deadline: next {{count}} days",
+    "owner": "Owner",
+    "ownerAll": "Owner: Everyone",
+    "ownerOption": "Owner: {{name}}"
+  },
+  "table": {
+    "codeTitle": "RFQ code & title",
+    "code": "RFQ code",
+    "title": "Title",
+    "category": "Category",
+    "quantity": "Quantity",
+    "unit": "Unit",
+    "invited": "Invited",
+    "invitedValue_one": "{{count}} supplier",
+    "invitedValue_other": "{{count}} suppliers",
+    "quotes": "Quotes",
+    "quotesSuffix": "quotes",
+    "deadline": "Quote deadline",
+    "status": "Status",
+    "owner": "Owner",
+    "actions": "Actions",
+    "notPublished": "Not published",
+    "closedBidding": "Bidding closed"
+  },
+  "actions": {
+    "continueDraft": "Continue editing",
+    "compareNow": "Compare now",
+    "viewResult": "View result",
+    "more": "More actions",
+    "duplicate": "Duplicate",
+    "cancel": "Cancel RFQ"
+  },
+  "empty": {
+    "title": "No matching RFQs",
+    "description": "Try other filters or create a new request for quotation."
+  },
+  "cancelDialog": {
+    "title": "Cancel {{code}}?",
+    "description": "Suppliers will no longer be able to quote on this RFQ. This cannot be undone.",
+    "confirm": "Cancel RFQ"
+  },
+  "toast": {
+    "duplicated": "Draft {{code}} created from the original RFQ",
+    "cancelled": "{{code}} cancelled"
+  }
+}

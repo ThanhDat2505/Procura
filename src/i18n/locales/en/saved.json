@@ -1,0 +1,81 @@
+{
+  "breadcrumb": {
+    "sourcing": "Sourcing"
+  },
+  "title": "Saved suppliers",
+  "countBadge_one": "({{count}} supplier)",
+  "countBadge_other": "({{count}} suppliers)",
+  "subtitle": "Manage your trusted supplier shortlist to issue RFQs faster.",
+  "createRfqSelected": "Create RFQ with selected ({{count}})",
+  "lists": {
+    "title": "Lists",
+    "all": "All suppliers",
+    "create": "Create new list",
+    "modalTitle": "Create new list",
+    "modalDescription": "Group saved suppliers by category or project.",
+    "nameLabel": "List name",
+    "namePlaceholder": "e.g. Tet 2026 packaging",
+    "submit": "Create list",
+    "created": "List \"{{name}}\" created",
+    "emptyList": "This list has no suppliers yet",
+    "emptyListHint": "Save suppliers from the search page to start building this list."
+  },
+  "stats": {
+    "title": "Quick stats",
+    "verified": "Verified:",
+    "avgLeadTime": "Avg. lead time:",
+    "days": "{{value}} days",
+    "withIso": "ISO certified:",
+    "suppliers_one": "{{count}} supplier",
+    "suppliers_other": "{{count}} suppliers"
+  },
+  "filters": {
+    "searchLabel": "Search saved suppliers",
+    "searchPlaceholder": "Search by supplier name, product, location…",
+    "province": "Region",
+    "provinceAll": "Region: All",
+    "certification": "Certification",
+    "certificationAll": "Certification: All",
+    "moq": "MOQ",
+    "moqBands": {
+      "any": "MOQ: Any quantity",
+      "lt1000": "Under 1,000",
+      "1000to5000": "1,000 - 5,000",
+      "gt5000": "Over 5,000"
+    },
+    "reset": "Reset filters"
+  },
+  "table": {
+    "selectPage": "Select all on this page",
+    "selectRow": "Select {{name}}",
+    "supplier": "Supplier",
+    "moq": "Minimum order",
+    "leadTime": "Lead time",
+    "lastInteraction": "Last interaction",
+    "note": "Internal note",
+    "noInteraction": "No interaction yet",
+    "savedOn": "Saved {{date}}",
+    "unsave": "Unsave {{name}}"
+  },
+  "selection": {
+    "label": "Selected suppliers",
+    "count_one": "{{count}} supplier selected",
+    "count_other": "{{count}} suppliers selected",
+    "clear": "Clear selection",
+    "createRfq": "Create RFQ now"
+  },
+  "unsave": {
+    "title": "Remove saved supplier?",
+    "description": "{{name}} will be removed from your saved list together with its internal note. You can save it again at any time.",
+    "confirm": "Remove",
+    "done": "{{name}} removed from saved"
+  },
+  "empty": {
+    "title": "You have not saved any suppliers yet",
+    "description": "Save promising suppliers while searching so you can send RFQs faster.",
+    "action": "Discover suppliers"
+  },
+  "export": {
+    "filename": "procura-saved-suppliers.csv"
+  }
+}

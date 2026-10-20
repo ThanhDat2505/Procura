@@ -1,0 +1,41 @@
+{
+  "buyerPortal": "Buyer / Procurement",
+  "verifiedPartner": "Verified partner",
+  "mainNav": "Main navigation",
+  "secondaryNav": "Utilities",
+  "openMenu": "Open menu",
+  "closeMenu": "Close menu",
+  "skipToContent": "Skip to main content",
+  "searchBuyer": "Search RFQ number, category, supplier…",
+  "searchSupplier": "Search RFQ code, tender name, material…",
+  "nav": {
+    "dashboard": "Overview",
+    "findSuppliers": "Find suppliers",
+    "rfqs": "RFQs",
+    "saved": "Saved suppliers",
+    "compare": "Compare quotes",
+    "settings": "Settings",
+    "help": "Help",
+    "helpSupplier": "Help & Guides",
+    "inbox": "RFQ inbox",
+    "quotations": "Sent quotations",
+    "profile": "Company profile",
+    "performance": "Win performance"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAll": "Mark all as read",
+    "all": "All",
+    "unread": "Unread ({{count}})",
+    "empty": "No notifications"
+  },
+  "userMenu": {
+    "language": "Language",
+    "logout": "Sign out"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "This link doesn't exist or you don't have access to it.",
+    "home": "Go home"
+  }
+}

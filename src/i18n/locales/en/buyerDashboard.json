@@ -1,0 +1,59 @@
+{
+  "greeting": {
+    "morning": "Good morning, {{name}}!",
+    "afternoon": "Good afternoon, {{name}}!",
+    "evening": "Good evening, {{name}}!",
+    "badge": "Daily brief",
+    "summary_one": "Today you have <hl>{{count}} new quote</hl> to review. RFQs closing soon: {{rfqs}}.",
+    "summary_other": "Today you have <hl>{{count}} new quotes</hl> to review. RFQs closing soon: {{rfqs}}.",
+    "weeklyReport": "View weekly report"
+  },
+  "kpi": {
+    "label": "Key metrics",
+    "activeRfqs": "Active RFQs",
+    "dueSoon_one": "{{count}} closing soon",
+    "dueSoon_other": "{{count}} closing soon",
+    "activeRfqsHint": "Collecting responses from suppliers",
+    "quotesToReview": "Quotes to review",
+    "newToday_one": "{{count}} new today",
+    "newToday_other": "{{count}} new today",
+    "quotesToReviewHint": "Review & compare soon",
+    "savings": "Cost savings",
+    "savingsHint": "Compared with the budget ceiling",
+    "responseRate": "Avg. response rate",
+    "avgResponse": {
+      "hours": "Avg {{value}} h",
+      "days": "Avg {{value}} days"
+    },
+    "responseRateHint": "Share of invited suppliers who quoted"
+  },
+  "rfqs": {
+    "title": "Recent RFQs needing action",
+    "subtitle": "Track quote progress and make comparison decisions",
+    "viewAll": "View all RFQs",
+    "columns": {
+      "rfq": "RFQ code & title",
+      "invited": "Invited",
+      "quotes": "Quotes received"
+    },
+    "quotesOf": "/{{count}} suppliers",
+    "compareNow": "Compare now",
+    "footer": "Showing {{shown}} of {{total}} active RFQs",
+    "empty": "No RFQs need action",
+    "emptyHint": "Create a new RFQ to start receiving supplier quotes."
+  },
+  "feed": {
+    "title": "Latest quotes",
+    "live": "Real time",
+    "item": "Quoted {{code}}: <hl>{{price}}/{{unit}}</hl> (lead time {{days}} days).",
+    "check": "Check specs & price",
+    "empty": "No new quotes yet."
+  },
+  "featured": {
+    "title": "Featured suppliers",
+    "subtitle": "Recommended from your purchasing history",
+    "sendRfq": "Send RFQ",
+    "explore": "Explore more trusted suppliers",
+    "empty": "You have saved all featured suppliers."
+  }
+}

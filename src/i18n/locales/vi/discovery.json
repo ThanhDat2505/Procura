@@ -1,0 +1,77 @@
+{
+  "title": "Khám phá Nhà cung cấp B2B",
+  "subtitle": "Tìm kiếm và kết nối với các nhà sản xuất & phân phối uy tín tại Việt Nam",
+  "partnerCount_other": "{{count}} đối tác",
+  "selection": {
+    "count_other": "Đã chọn: <hl>{{count}} nhà cung cấp</hl>",
+    "createRfq": "Tạo RFQ với NCC đã chọn"
+  },
+  "search": {
+    "label": "Tìm kiếm nhà cung cấp",
+    "placeholder": "Tìm theo tên nhà cung cấp, tên vật tư, khu vực…",
+    "quickFilter": "Bộ lọc nhanh",
+    "export": "Xuất danh sách"
+  },
+  "filters": {
+    "title": "Bộ lọc nâng cao",
+    "category": "Ngành hàng",
+    "province": "Khu vực / Tỉnh thành",
+    "moq": "Số lượng tối thiểu (MOQ)",
+    "moqBands": {
+      "any": "Mọi số lượng",
+      "lt1000": "Dưới 1.000 đơn vị",
+      "1000to5000": "1.000 - 5.000 đơn vị",
+      "gt5000": "Trên 5.000 đơn vị"
+    },
+    "certifications": "Chứng nhận & Năng lực",
+    "certOptions": {
+      "iso9001": "ISO 9001:2015",
+      "fsc": "Chứng chỉ rừng FSC"
+    },
+    "exportStandard": "Tiêu chuẩn Xuất khẩu",
+    "ownFactory": "Có xưởng sản xuất trực tiếp",
+    "applied": "Đang áp dụng:",
+    "appliedCount_other": "{{count}} bộ lọc"
+  },
+  "results": {
+    "label": "Kết quả tìm kiếm nhà cung cấp",
+    "summary": "Hiển thị <b>{{shown}}</b> trong số <b>{{total}}</b> nhà cung cấp",
+    "sortBy": "Sắp xếp:",
+    "sort": {
+      "relevance": "Phù hợp nhất",
+      "rating": "Đánh giá cao nhất",
+      "leadTime": "Lead time nhanh nhất",
+      "moq": "MOQ thấp nhất"
+    },
+    "viewLabel": "Kiểu hiển thị",
+    "view": {
+      "grid": "Xem dạng lưới",
+      "list": "Xem dạng danh sách"
+    },
+    "emptyHint": "Thử bỏ bớt bộ lọc hoặc tìm với từ khóa khác."
+  },
+  "card": {
+    "highlightProducts": "Dòng sản phẩm chủ lực:",
+    "leadTime": "Lead Time",
+    "select": "Chọn gửi RFQ",
+    "selected": "Đã chọn",
+    "selectAria": "Chọn gửi RFQ: {{name}}",
+    "deselectAria": "Đã chọn: {{name}}",
+    "saveAria": "Lưu {{name}}",
+    "unsaveAria": "Bỏ lưu {{name}}"
+  },
+  "list": {
+    "supplier": "Nhà cung cấp"
+  },
+  "leadTimeRange": "{{min}} - {{max}} ngày",
+  "leadTimeSingle_other": "{{count}} ngày",
+  "export": {
+    "filename": "procura-nha-cung-cap.csv",
+    "name": "Tên nhà cung cấp",
+    "location": "Địa điểm"
+  },
+  "toast": {
+    "saved": "Đã lưu {{name}} vào danh sách",
+    "unsaved": "Đã bỏ lưu {{name}}"
+  }
+}

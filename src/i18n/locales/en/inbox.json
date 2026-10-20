@@ -1,0 +1,99 @@
+{
+  "title": "RFQ Inbox",
+  "subtitle": "Requests for quotation sent to your factory directly by B2B buyers or recommended by Procura.",
+  "actions": {
+    "advancedFilter": "Advanced filters",
+    "export": "Export data",
+    "quoteNow": "Quote now",
+    "decline": "Decline",
+    "continue": "Continue draft",
+    "viewQuotation": "View quotation",
+    "view": "View"
+  },
+  "filters": {
+    "searchLabel": "Search RFQs",
+    "searchPlaceholder": "RFQ code, buyer name or title…",
+    "clear": "Clear filter"
+  },
+  "stats": {
+    "newThisWeek": "New RFQs this week",
+    "newUnit": "invitations",
+    "newFooter_one": "{{count}} request awaiting your reply",
+    "newFooter_other": "{{count}} requests awaiting your reply",
+    "drafting": "Quotes in progress",
+    "draftingUnit": "saved drafts",
+    "draftingFooter": "Finish and submit before the deadline",
+    "dueSoon": "Closing soon",
+    "dueSoonUnit": "urgent requests",
+    "dueSoonFooter": "Deadline within the next 72 hours",
+    "responseRate": "Factory response rate",
+    "responseFooter": "RFQs quoted in the last 30 days"
+  },
+  "tabs": {
+    "ariaLabel": "RFQ status",
+    "new": "New",
+    "drafting": "Drafting",
+    "submitted": "Quoted",
+    "closed": "Expired / Declined"
+  },
+  "sort": {
+    "label": "Sort by:",
+    "deadline": "Closest deadline",
+    "newest": "Newest"
+  },
+  "table": {
+    "buyer": "Buyer",
+    "rfq": "RFQ code & title",
+    "quantity": "Quantity",
+    "delivery": "Delivery location",
+    "deadline": "Quote deadline",
+    "status": "Status",
+    "actions": "Actions",
+    "taxCode": "Tax code: {{code}}",
+    "closedNote": "Closed",
+    "showing_one": "Showing {{count}} request",
+    "showing_other": "Showing {{count}} requests"
+  },
+  "status": {
+    "new": "New",
+    "drafting": "Drafting",
+    "declined": "Declined",
+    "expired": "Expired"
+  },
+  "empty": {
+    "searchHint": "Try another RFQ code, buyer name or title.",
+    "new": {
+      "title": "No new RFQs",
+      "description": "When a buyer invites your factory to quote, the request will appear here."
+    },
+    "drafting": {
+      "title": "No drafts in progress",
+      "description": "Quotations you save as drafts are kept here so you can finish them later."
+    },
+    "submitted": {
+      "title": "No quotations submitted yet",
+      "description": "Quotations sent for open RFQs are listed here."
+    },
+    "closed": {
+      "title": "No expired or declined RFQs",
+      "description": "Requests past their deadline, closed by the buyer or declined by you are kept here."
+    }
+  },
+  "decline": {
+    "title": "Decline this RFQ?",
+    "description": "{{code}} from {{buyer}}",
+    "body": "The buyer will see that your factory is not quoting for this RFQ. This cannot be undone.",
+    "confirm": "Decline RFQ",
+    "success": "{{code}} declined"
+  },
+  "csv": {
+    "code": "RFQ code",
+    "title": "Title",
+    "buyer": "Buyer",
+    "quantity": "Quantity",
+    "unit": "Unit",
+    "delivery": "Delivery location",
+    "deadline": "Quote deadline",
+    "status": "Status"
+  }
+}

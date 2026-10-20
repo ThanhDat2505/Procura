@@ -1,0 +1,184 @@
+{
+  "breadcrumb": {
+    "rfqs": "RFQ management",
+    "comparison": "Quote comparison"
+  },
+  "title_one": "Quote Analysis & Comparison ({{count}} supplier responded)",
+  "title_other": "Quote Analysis & Comparison ({{count}} suppliers responded)",
+  "rfqCode": "RFQ code: #{{code}}",
+  "orderQty": "Order quantity: {{qty}} {{unit}}",
+  "perUnit": "{{price}}/{{unit}}",
+  "actions": {
+    "export": "Export Excel/PDF table",
+    "save": "Save comparison",
+    "markSelected": "Mark selected supplier"
+  },
+  "awardedBanner": {
+    "title": "{{name}} selected as the winner on {{date}}",
+    "desc": "All participating suppliers have been notified. This comparison is kept for reference.",
+    "back": "Back to RFQ details"
+  },
+  "cancelledBanner": "This RFQ was cancelled – no winning supplier can be selected.",
+  "empty": {
+    "title": "No quotes to compare yet",
+    "desc": "The comparison opens once the RFQ has received at least {{min}} quotes.",
+    "back": "Back to RFQ details"
+  },
+  "fewQuotes": "Only 1 quote so far – at least {{min}} quotes are needed for a competitive comparison.",
+  "reco": {
+    "title": "Automated analysis & recommendation",
+    "scoreChip": "Best fit: {{name}} · Score {{score}}/100",
+    "lowestMoq": "<b>{{name}}</b> has the lowest unit price (<b>{{price}}</b>), but its <b>MOQ of {{moq}}</b> pushes the total cost up to {{total}}{{overBudget}}.",
+    "lowestFit": "<b>{{name}}</b> has the lowest unit price (<b>{{price}}</b>, total {{total}}) but a lower overall score.",
+    "overBudget": " (over the estimated budget)",
+    "recommended": "<hl>{{name}}</hl> is the best overall choice ({{score}}/100): unit price <b>{{price}}</b> (total {{total}}), delivery in {{days}} working days{{extra}}.",
+    "recommendedIsLowest": "<hl>{{name}}</hl> has both the lowest unit price (<b>{{price}}</b>) and the highest overall score ({{score}}/100): total {{total}}, delivery in {{days}} working days{{extra}}.",
+    "toolingFree": " with free tooling & samples",
+    "bestBudget": "Best real budget:",
+    "noneFits": "No quote meets the MOQ",
+    "fastest": "Express delivery:",
+    "flexiblePayment": "Most flexible payment terms:",
+    "weights": "Based on weights: Price {{price}}% · Lead time {{leadTime}}% · MOQ {{moq}}% · Quality {{quality}}%"
+  },
+  "matrix": {
+    "title": "Detailed comparison matrix",
+    "normalized_one": "{{count}} normalized quote",
+    "normalized_other": "{{count}} normalized quotes",
+    "mode": "View:",
+    "modes": {
+      "all": "All criteria",
+      "diff": "Differences only"
+    },
+    "restricted": "Comparing {{shown}} selected quotes.",
+    "showAll": "Show all quotes",
+    "rejectedHidden_one": "{{count}} rejected quote hidden.",
+    "rejectedHidden_other": "{{count}} rejected quotes hidden.",
+    "criteria": "Criteria",
+    "recommended": "Best recommendation",
+    "selected": "Selected",
+    "supplierLetter": "Supplier {{letter}}",
+    "noDifferences": "The quotes are identical on every criterion."
+  },
+  "rows": {
+    "reliability": {
+      "label": "Reliability & Certifications",
+      "sub": "Verified on Procura",
+      "audited": "Factory audited",
+      "verified": "Profile verified",
+      "unverified": "Profile not verified",
+      "missing": "Missing required certifications: {{certs}}",
+      "completed_one": "{{count}} completed RFQ",
+      "completed_other": "{{count}} completed RFQs"
+    },
+    "unitPrice": {
+      "label": "Unit price (VND/{{unit}})",
+      "sub": "Ex-works price, VAT excluded",
+      "lowest": "Lowest unit price",
+      "totalFor": "Total for {{qty}} {{unit}}:",
+      "totalForced": "Mandatory total for {{qty}} {{unit}}:",
+      "overBudget": "Over the estimated budget"
+    },
+    "moq": {
+      "label": "MOQ (Minimum order)",
+      "sub": "Requested: {{qty}} {{unit}}",
+      "fit": "Meets requirement ({{qty}})",
+      "over": "Exceeds requested quantity (+{{excess}} {{unit}})"
+    },
+    "leadTime": {
+      "label": "Lead time",
+      "sub": "From supplier selection",
+      "fastest": "Fastest delivery",
+      "slower_one": "({{count}} day slower)",
+      "slower_other": "({{count}} days slower)",
+      "onTime": "(Meets the needed-by date)",
+      "late": "(Misses the needed-by date)"
+    },
+    "payment": {
+      "label": "Payment terms",
+      "sub": "Credit & advance policy",
+      "best": "Best for cash flow",
+      "prepay": "Full prepayment required"
+    },
+    "validity": {
+      "label": "Quote validity",
+      "sub": "Price hold period",
+      "until": "{{days}} days (until {{date}})",
+      "untilShort": "(Until {{date}})",
+      "soon_one": "Expiring soon ({{count}} day left)",
+      "soon_other": "Expiring soon ({{count}} days left)",
+      "expired": "Expired"
+    },
+    "tooling": {
+      "label": "Tooling & Sample cost",
+      "sub": "Printing plates, dies & samples",
+      "free": "Free tooling & samples",
+      "cost": "Tooling fee: {{cost}}"
+    },
+    "score": {
+      "label": "Overall score",
+      "sub": "Using the RFQ evaluation weights",
+      "rank": "Rank #{{rank}}"
+    },
+    "actions": {
+      "label": "Decision",
+      "sub": "Select the winning supplier",
+      "select": "Select this supplier",
+      "view": "View quote details",
+      "reject": "Reject this quote",
+      "winner": "Winner"
+    }
+  },
+  "award": {
+    "title": "Select {{name}} as the winner?",
+    "confirm": "Confirm selection",
+    "unitPrice": "Unit price",
+    "total": "Total ({{qty}} {{unit}})",
+    "leadTime": "Lead time",
+    "score": "Overall score",
+    "whatHappens": "When you confirm:",
+    "effect1": "{{code}} is marked \"Awarded\" and stops accepting quotes.",
+    "effect2": "The winning supplier and all other suppliers are notified of the result.",
+    "effect3": "No order is created – both parties continue directly.",
+    "success": "{{name}} selected as the winner"
+  },
+  "reject": {
+    "title": "Reject the quote from {{name}}?",
+    "desc": "The supplier will be notified that the quote was not selected. This cannot be undone.",
+    "confirm": "Reject quote",
+    "reason": "Reason (optional)",
+    "reasonHint": "Shared with the supplier to help them improve next time.",
+    "placeholder": "e.g. MOQ does not fit the order quantity",
+    "success": "Quote from {{name}} rejected"
+  },
+  "export": {
+    "billedQty": "Billed quantity",
+    "total": "Total",
+    "certifications": "Certifications",
+    "rating": "Rating",
+    "fileName": "{{code}}-quote-comparison.csv"
+  },
+  "detail": {
+    "title": "Quote from {{name}}",
+    "submittedAt": "Sent at {{time}}",
+    "unitPrice": "Unit price",
+    "total": "Total ({{qty}} {{unit}})",
+    "moq": "MOQ",
+    "leadTime": "Lead time",
+    "validity": "Validity",
+    "validityValue": "{{days}} days (until {{date}})",
+    "vat": "VAT",
+    "vatIncluded": "VAT included",
+    "payment": "Payment terms",
+    "tooling": "Tooling & sample cost",
+    "toolingCost": "Tooling fee: {{cost}}",
+    "toolingFree": "Free",
+    "sample": "Sample policy",
+    "offerNotes": "Offer & commercial notes",
+    "technicalNotes": "Technical commitments",
+    "attachments": "Attachments"
+  },
+  "footer": {
+    "security": "Quote data is kept confidential and visible only to your company's procurement team.",
+    "sealed": "Sealed bids: suppliers cannot see each other's prices."
+  }
+}

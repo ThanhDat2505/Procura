@@ -1,0 +1,184 @@
+{
+  "breadcrumb": {
+    "rfqs": "Quản lý RFQ",
+    "comparison": "Bảng so sánh báo giá"
+  },
+  "title_one": "Bảng Phân tích & So sánh Báo giá ({{count}} Nhà cung cấp đã phản hồi)",
+  "title_other": "Bảng Phân tích & So sánh Báo giá ({{count}} Nhà cung cấp đã phản hồi)",
+  "rfqCode": "Mã RFQ: #{{code}}",
+  "orderQty": "Số lượng đặt: {{qty}} {{unit}}",
+  "perUnit": "{{price}}/{{unit}}",
+  "actions": {
+    "export": "Xuất bảng Excel/PDF",
+    "save": "Lưu bản so sánh",
+    "markSelected": "Đánh dấu NCC được chọn"
+  },
+  "awardedBanner": {
+    "title": "Đã chọn {{name}} trúng thầu ngày {{date}}",
+    "desc": "Kết quả đã được thông báo tới tất cả nhà cung cấp tham gia. Bảng so sánh được lưu lại để tra cứu.",
+    "back": "Về chi tiết RFQ"
+  },
+  "cancelledBanner": "RFQ này đã bị hủy – không thể chọn nhà cung cấp trúng thầu.",
+  "empty": {
+    "title": "Chưa có báo giá để so sánh",
+    "desc": "Bảng so sánh mở khi RFQ nhận được ít nhất {{min}} báo giá.",
+    "back": "Về chi tiết RFQ"
+  },
+  "fewQuotes": "Mới có 1 báo giá – cần ít nhất {{min}} báo giá để so sánh cạnh tranh.",
+  "reco": {
+    "title": "Phân tích & Khuyến nghị tự động",
+    "scoreChip": "Tối ưu nhất: {{name}} · Điểm {{score}}/100",
+    "lowestMoq": "<b>{{name}}</b> có đơn giá thấp nhất (<b>{{price}}</b>), nhưng ràng buộc <b>MOQ {{moq}}</b> khiến tổng chi phí đội lên {{total}}{{overBudget}}.",
+    "lowestFit": "<b>{{name}}</b> có đơn giá thấp nhất (<b>{{price}}</b>, tổng {{total}}) nhưng điểm tổng hợp thấp hơn.",
+    "overBudget": " (vượt ngân sách dự kiến)",
+    "recommended": "<hl>{{name}}</hl> là lựa chọn tối ưu toàn diện ({{score}}/100 điểm): đơn giá <b>{{price}}</b> (tổng {{total}}), giao hàng trong {{days}} ngày làm việc{{extra}}.",
+    "recommendedIsLowest": "<hl>{{name}}</hl> vừa có đơn giá thấp nhất (<b>{{price}}</b>) vừa đạt điểm tổng hợp cao nhất ({{score}}/100): tổng {{total}}, giao hàng trong {{days}} ngày làm việc{{extra}}.",
+    "toolingFree": " và miễn phí khuôn in & mẫu thử",
+    "bestBudget": "Tối ưu ngân sách thực tế:",
+    "noneFits": "Không có báo giá đáp ứng MOQ",
+    "fastest": "Giao hàng hỏa tốc:",
+    "flexiblePayment": "Điều khoản thanh toán linh hoạt nhất:",
+    "weights": "Dựa trên trọng số: Giá {{price}}% · Lead time {{leadTime}}% · MOQ {{moq}}% · Chất lượng {{quality}}%"
+  },
+  "matrix": {
+    "title": "Ma trận đối chiếu chi tiết",
+    "normalized_one": "{{count}} Báo giá đã chuẩn hóa",
+    "normalized_other": "{{count}} Báo giá đã chuẩn hóa",
+    "mode": "Chế độ hiển thị:",
+    "modes": {
+      "all": "Đầy đủ tiêu chí",
+      "diff": "Chỉ xem điểm khác biệt"
+    },
+    "restricted": "Đang so sánh {{shown}} báo giá đã chọn.",
+    "showAll": "Xem tất cả báo giá",
+    "rejectedHidden_one": "Đã ẩn {{count}} báo giá bị từ chối.",
+    "rejectedHidden_other": "Đã ẩn {{count}} báo giá bị từ chối.",
+    "criteria": "Tiêu chí đối chiếu",
+    "recommended": "Khuyến nghị tốt nhất",
+    "selected": "Đã chọn",
+    "supplierLetter": "Nhà cung cấp {{letter}}",
+    "noDifferences": "Các báo giá giống nhau ở mọi tiêu chí."
+  },
+  "rows": {
+    "reliability": {
+      "label": "Độ tin cậy & Chứng chỉ",
+      "sub": "Xác thực uy tín trên Procura",
+      "audited": "Đã thẩm định xưởng sản xuất",
+      "verified": "Hồ sơ đã xác minh",
+      "unverified": "Chưa xác minh hồ sơ",
+      "missing": "Thiếu chứng chỉ yêu cầu: {{certs}}",
+      "completed_one": "{{count}} RFQ hoàn thành",
+      "completed_other": "{{count}} RFQ hoàn thành"
+    },
+    "unitPrice": {
+      "label": "Đơn giá (VND/{{unit}})",
+      "sub": "Giá xuất xưởng, chưa gồm VAT",
+      "lowest": "Đơn giá thấp nhất",
+      "totalFor": "Tổng cho {{qty}} {{unit}}:",
+      "totalForced": "Tổng bắt buộc cho {{qty}} {{unit}}:",
+      "overBudget": "Vượt ngân sách dự kiến"
+    },
+    "moq": {
+      "label": "MOQ (Số lượng tối thiểu)",
+      "sub": "Yêu cầu: {{qty}} {{unit}}",
+      "fit": "Thỏa mãn yêu cầu ({{qty}})",
+      "over": "Vượt MOQ yêu cầu (+{{excess}} {{unit}})"
+    },
+    "leadTime": {
+      "label": "Thời gian giao hàng",
+      "sub": "Tính từ khi chốt nhà cung cấp",
+      "fastest": "Giao hàng nhanh nhất",
+      "slower_one": "(Chậm hơn {{count}} ngày)",
+      "slower_other": "(Chậm hơn {{count}} ngày)",
+      "onTime": "(Kịp hạn cần hàng)",
+      "late": "(Trễ hạn cần hàng)"
+    },
+    "payment": {
+      "label": "Điều khoản thanh toán",
+      "sub": "Chính sách công nợ & tạm ứng",
+      "best": "Tối ưu dòng tiền",
+      "prepay": "Yêu cầu trả trước toàn bộ"
+    },
+    "validity": {
+      "label": "Hiệu lực báo giá",
+      "sub": "Thời hạn giữ giá",
+      "until": "{{days}} ngày (đến {{date}})",
+      "untilShort": "(Đến ngày {{date}})",
+      "soon_one": "Sắp hết hạn (còn {{count}} ngày)",
+      "soon_other": "Sắp hết hạn (còn {{count}} ngày)",
+      "expired": "Đã hết hiệu lực"
+    },
+    "tooling": {
+      "label": "Chi phí khuôn & Mẫu thử",
+      "sub": "Khuôn in, bế & làm mẫu",
+      "free": "Miễn phí khuôn & mẫu thử",
+      "cost": "Phí khuôn: {{cost}}"
+    },
+    "score": {
+      "label": "Điểm tổng hợp",
+      "sub": "Theo trọng số đánh giá của RFQ",
+      "rank": "Hạng #{{rank}}"
+    },
+    "actions": {
+      "label": "Hành động quyết định",
+      "sub": "Chọn nhà cung cấp trúng thầu",
+      "select": "Chọn nhà cung cấp này",
+      "view": "Xem chi tiết báo giá",
+      "reject": "Từ chối báo giá này",
+      "winner": "Trúng thầu"
+    }
+  },
+  "award": {
+    "title": "Chọn {{name}} trúng thầu?",
+    "confirm": "Xác nhận chọn trúng thầu",
+    "unitPrice": "Đơn giá",
+    "total": "Tổng ({{qty}} {{unit}})",
+    "leadTime": "Thời gian giao",
+    "score": "Điểm tổng hợp",
+    "whatHappens": "Khi xác nhận:",
+    "effect1": "{{code}} được đánh dấu \"Đã chốt\" và ngừng nhận báo giá.",
+    "effect2": "Nhà cung cấp trúng thầu và các nhà cung cấp còn lại nhận thông báo kết quả.",
+    "effect3": "Hệ thống không tạo đơn hàng – hai bên tiếp tục trao đổi trực tiếp.",
+    "success": "Đã chọn {{name}} trúng thầu"
+  },
+  "reject": {
+    "title": "Từ chối báo giá của {{name}}?",
+    "desc": "Nhà cung cấp sẽ nhận thông báo báo giá không được chọn. Thao tác không thể hoàn tác.",
+    "confirm": "Từ chối báo giá",
+    "reason": "Lý do (không bắt buộc)",
+    "reasonHint": "Lý do được gửi kèm thông báo để nhà cung cấp cải thiện lần sau.",
+    "placeholder": "VD: MOQ không phù hợp số lượng đặt",
+    "success": "Đã từ chối báo giá của {{name}}"
+  },
+  "export": {
+    "billedQty": "Số lượng tính tiền",
+    "total": "Tổng tiền",
+    "certifications": "Chứng chỉ",
+    "rating": "Đánh giá",
+    "fileName": "{{code}}-so-sanh-bao-gia.csv"
+  },
+  "detail": {
+    "title": "Báo giá của {{name}}",
+    "submittedAt": "Gửi lúc {{time}}",
+    "unitPrice": "Đơn giá",
+    "total": "Tổng tiền ({{qty}} {{unit}})",
+    "moq": "MOQ",
+    "leadTime": "Thời gian giao hàng",
+    "validity": "Hiệu lực báo giá",
+    "validityValue": "{{days}} ngày (đến {{date}})",
+    "vat": "Thuế VAT",
+    "vatIncluded": "Đã gồm VAT",
+    "payment": "Điều khoản thanh toán",
+    "tooling": "Chi phí khuôn & mẫu thử",
+    "toolingCost": "Phí khuôn: {{cost}}",
+    "toolingFree": "Miễn phí",
+    "sample": "Chính sách mẫu thử",
+    "offerNotes": "Ưu đãi & ghi chú thương mại",
+    "technicalNotes": "Cam kết kỹ thuật",
+    "attachments": "Tài liệu đính kèm"
+  },
+  "footer": {
+    "security": "Dữ liệu báo giá được bảo mật và chỉ hiển thị cho đội mua hàng của doanh nghiệp bạn.",
+    "sealed": "Báo giá kín: nhà cung cấp không thấy giá của nhau."
+  }
+}

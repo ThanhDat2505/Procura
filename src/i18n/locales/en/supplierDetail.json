@@ -1,0 +1,260 @@
+{
+  "breadcrumb": {
+    "search": "Find suppliers",
+    "detail": "Partner details"
+  },
+  "backToSearch": "Back to supplier search",
+  "tabs": {
+    "overview": "Capability overview",
+    "products": "Products & MOQ",
+    "history": "Quote & RFQ history",
+    "legal": "Legal & certificates",
+    "reviews": "Buyer reviews"
+  },
+  "leadTimeRange": "{{min}}–{{max}} days",
+  "addToRfq": "Add to RFQ",
+  "header": {
+    "strategicPartner": "Q4 strategic partner",
+    "taxCode": "Tax code",
+    "founded": "Founded: {{year}}",
+    "avgResponse": "Avg. response time",
+    "underHours_one": "< {{count}} hour",
+    "underHours_other": "< {{count}} hours",
+    "createRfq": "Create RFQ with this supplier",
+    "contact": "Contact sales",
+    "noContact": "This supplier has not published a contact person yet.",
+    "savedToast": "{{name}} saved to your supplier list",
+    "unsavedToast": "{{name}} removed from saved suppliers"
+  },
+  "overview": {
+    "capability": {
+      "title": "Company capability",
+      "ownFactory": "Own factory",
+      "lines": "Production lines",
+      "linesValue_one": "{{count}} line",
+      "linesValue_other": "{{count}} lines",
+      "lineMix": "{{corrugating}} corrugators · {{printing}} printers",
+      "capacity": "Average capacity",
+      "capacityValue": "{{value}} units",
+      "capacityHint": "Monthly output",
+      "area": "Factory area",
+      "areaValue": "{{value}} m²",
+      "areaHint": "At {{location}}"
+    },
+    "products": {
+      "title": "Main products & sample MOQ",
+      "subtitle": "Indicative prices based on MOQ bands and standard specifications",
+      "viewAll": "See detailed prices",
+      "leadTime": "Lead time"
+    },
+    "photos": {
+      "title": "Factory & production line photos",
+      "subtitle": "Inspected on site by Procura (On-site Audit {{year}})",
+      "audited": "Audited {{date}}",
+      "empty": "This supplier has not uploaded factory photos yet."
+    },
+    "rep": {
+      "title": "Sales representative",
+      "online": "Online",
+      "copyEmail": "Copy email",
+      "showPhone": "Show number",
+      "hours": "Working hours: {{hours}}",
+      "email": "Send email",
+      "call": "Call now"
+    },
+    "interaction": {
+      "title": "Interaction history",
+      "yourCompany": "Your company",
+      "none": "Your company has not invited this supplier to any RFQ yet.",
+      "completed_one": "{{count}} RFQ completed",
+      "completed_other": "{{count}} RFQs completed",
+      "invited_one": "Awarded out of {{count}} invited RFQ",
+      "invited_other": "Awarded out of {{count}} invited RFQs",
+      "latest": "Latest quote: {{when}}",
+      "latestFor": "For request",
+      "internalRating": "Internal quality rating:",
+      "notRated": "Not rated"
+    },
+    "certs": {
+      "title": "Certificates",
+      "checked": "Verified",
+      "empty": "No certificates verified by Procura yet.",
+      "verified": "Verified",
+      "validTo": "Valid until {{date}}"
+    },
+    "bar": {
+      "label": "Quick actions",
+      "title": "Start a new purchase with this supplier?",
+      "subtitle": "Pick the products you need and request a quote directly",
+      "profilePdf": "Download company profile (PDF)",
+      "addToRfq": "Add to a new RFQ"
+    }
+  },
+  "products": {
+    "empty": "This supplier has not published a product catalogue yet.",
+    "searchPlaceholder": "Search products, specs, SKU...",
+    "searchLabel": "Search products",
+    "groupsLabel": "Filter by product group",
+    "allGroups": "All ({{count}})",
+    "footer": "Showing <b>{{shown}}</b> of <b>{{total}}</b> standard products",
+    "vatNote": "Indicative prices exclude VAT and may change with the actual order volume",
+    "cols": {
+      "name": "Product & specification",
+      "sku": "SKU",
+      "moq": "Minimum MOQ",
+      "price": "Indicative unit price"
+    }
+  },
+  "history": {
+    "stats": {
+      "invited": "RFQs invited",
+      "quoted": "Quotes submitted",
+      "awarded": "Awarded",
+      "avgResponse": "Avg. response time",
+      "times": "times",
+      "quoteRate": "Rate {{rate}}",
+      "winRate": "Win rate {{rate}}"
+    },
+    "table": {
+      "title": "Your company's RFQ history with {{name}}",
+      "source": "Data from your company account",
+      "rfq": "RFQ code & project",
+      "invitedAt": "Invited on",
+      "price": "Quoted price",
+      "moq": "Proposed MOQ",
+      "outcome": "Result",
+      "note": "Evaluation notes",
+      "perUnit": "{{price}}/{{unit}}",
+      "footer_one": "Showing {{count}} of {{count}} RFQ",
+      "footer_other": "Showing {{count}} of {{count}} RFQs"
+    },
+    "outcome": {
+      "awarded": "Awarded",
+      "not_selected": "Not selected",
+      "pending": "Awaiting result",
+      "no_response": "No response"
+    },
+    "empty": {
+      "title": "No RFQ history yet",
+      "description": "Your company has not invited {{name}} to any request for quotation.",
+      "action": "Invite to an RFQ"
+    },
+    "sla": {
+      "title": "Quoting commitment",
+      "body": "{{name}} commits to replying to RFQs within {{sla}} working time."
+    },
+    "rating": {
+      "title": "Internal rating",
+      "empty": "Your company has not rated this supplier internally yet.",
+      "overall": "Overall score",
+      "gradeA": "Grade A partner",
+      "breakdown": "Criteria breakdown",
+      "criteria": {
+        "quality": "Quality reliability",
+        "onTime": "On-time delivery",
+        "price": "Price competitiveness",
+        "support": "Service & returns support"
+      },
+      "note": "Buyer's note",
+      "updatedAt": "Updated: {{date}}",
+      "updatedBy": "By: {{name}}",
+      "update": "Update rating"
+    }
+  },
+  "legal": {
+    "banner": {
+      "title": "Legal documents reviewed and verified directly by the Procura Verification Team",
+      "subtitle": "Last updated: {{date}} · The independent review found no tax debt or legal violation risk.",
+      "pill": "Enterprise-level verified"
+    },
+    "pending": {
+      "title": "Legal documents pending verification",
+      "body": "The Procura Verification Team is reviewing this supplier's documents."
+    },
+    "info": {
+      "title": "Business registration & legal entity",
+      "statusNormal": "Operating normally",
+      "taxCode": "Tax code",
+      "active": "Active",
+      "license": "Business registration",
+      "licenseValue": "{{license}}, issued {{date}}",
+      "representative": "Legal representative",
+      "capital": "Registered capital",
+      "address": "Head office address",
+      "business": "Main business lines"
+    },
+    "certs": {
+      "title": "Quality & environmental certificates",
+      "count_one": "{{count}} international certificate with original documents",
+      "count_other": "{{count}} international certificates with original documents",
+      "empty": "No certificates verified by Procura yet.",
+      "valid": "Valid",
+      "expiring_one": "Expiring soon: {{count}} day left",
+      "expiring_other": "Expiring soon: {{count}} days left",
+      "expired": "Expired",
+      "issuer": "Issued by:",
+      "validity": "Validity:",
+      "viewPdf": "View PDF",
+      "download": "Download {{name}}"
+    },
+    "audit": {
+      "title": "On-site factory audit report",
+      "empty": "This supplier has no on-site audit report yet.",
+      "download": "Download full audit report (PDF)",
+      "result": {
+        "passed": "Result: export standard passed",
+        "failed": "Result: standard not met"
+      },
+      "performed": "Performed: {{date}} by {{auditor}}",
+      "score": "Audit score",
+      "area": "Area m²",
+      "lines": "Lines"
+    }
+  },
+  "reviews": {
+    "filters": {
+      "label": "Filter reviews",
+      "all": "All ({{count}})",
+      "stars": "{{stars}}★ ({{count}})",
+      "withText": "With detailed comments",
+      "sameCategory": "Same category ({{category}})"
+    },
+    "sort": {
+      "label": "Sort reviews",
+      "newest": "Sort: Newest",
+      "highest": "Sort: Highest rating",
+      "lowest": "Sort: Lowest rating"
+    },
+    "empty": "No reviews match these filters.",
+    "summary": {
+      "caption_one": "{{count}} review from companies that chose this supplier on Procura",
+      "caption_other": "{{count}} reviews from companies that chose this supplier on Procura",
+      "distribution": "Star distribution",
+      "starsLabel": "{{stars}} stars"
+    },
+    "criteria": {
+      "quality": "Quality reliability",
+      "onTime": "On time as committed",
+      "price": "Price competitiveness",
+      "support": "Support & responsiveness"
+    },
+    "card": {
+      "verifiedBuyer": "Chose this supplier via an RFQ on Procura",
+      "reply": "Reply from {{name}}:"
+    },
+    "yours": {
+      "title": "Your review",
+      "info": "You can review a supplier after awarding it an RFQ.",
+      "none": "There is no awarded RFQ with this supplier waiting for your review.",
+      "awarded": "Awarded",
+      "notReviewed": "Not reviewed",
+      "write": "Write a review",
+      "trust": "100% verified reviews from real tenders on Procura, no fake reviews."
+    },
+    "cta": {
+      "title": "Need a quote from this factory?",
+      "body": "{{name}} can bid directly and commits to replying within {{sla}} after you publish a request for quotation (RFQ).",
+      "action": "Invite to bid"
+    }
+  }
+}

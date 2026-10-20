@@ -1,0 +1,78 @@
+{
+  "breadcrumb": {
+    "sourcing": "Sourcing"
+  },
+  "title": "Nhà cung cấp đã lưu",
+  "countBadge_other": "({{count}} nhà cung cấp)",
+  "subtitle": "Quản lý danh sách đối tác cung ứng uy tín đã lưu để phát hành RFQ nhanh chóng.",
+  "createRfqSelected": "Tạo RFQ với NCC đã chọn ({{count}})",
+  "lists": {
+    "title": "Danh sách phân loại",
+    "all": "Tất cả nhà cung cấp",
+    "create": "Tạo danh sách mới",
+    "modalTitle": "Tạo danh sách mới",
+    "modalDescription": "Nhóm các nhà cung cấp đã lưu theo ngành hàng hoặc dự án.",
+    "nameLabel": "Tên danh sách",
+    "namePlaceholder": "VD: Bao bì dự án Tết 2026",
+    "submit": "Tạo danh sách",
+    "created": "Đã tạo danh sách \"{{name}}\"",
+    "emptyList": "Danh sách này chưa có nhà cung cấp",
+    "emptyListHint": "Lưu nhà cung cấp từ trang tìm kiếm để bắt đầu nhóm danh sách."
+  },
+  "stats": {
+    "title": "Thống kê nhanh",
+    "verified": "Đã xác minh (Verified):",
+    "avgLeadTime": "Lead time TB:",
+    "days": "{{value}} ngày",
+    "withIso": "Có chứng nhận ISO:",
+    "suppliers_other": "{{count}} nhà cung cấp"
+  },
+  "filters": {
+    "searchLabel": "Tìm trong danh sách đã lưu",
+    "searchPlaceholder": "Tìm kiếm theo tên nhà cung cấp, sản phẩm, khu vực…",
+    "province": "Khu vực",
+    "provinceAll": "Khu vực: Tất cả",
+    "certification": "Chứng chỉ",
+    "certificationAll": "Chứng chỉ: Tất cả",
+    "moq": "MOQ",
+    "moqBands": {
+      "any": "MOQ: Mọi số lượng",
+      "lt1000": "Dưới 1.000",
+      "1000to5000": "1.000 - 5.000",
+      "gt5000": "Trên 5.000"
+    },
+    "reset": "Đặt lại bộ lọc"
+  },
+  "table": {
+    "selectPage": "Chọn tất cả trên trang này",
+    "selectRow": "Chọn {{name}}",
+    "supplier": "Nhà cung cấp",
+    "moq": "MOQ tối thiểu",
+    "leadTime": "Lead time",
+    "lastInteraction": "Tương tác gần nhất",
+    "note": "Ghi chú nội bộ",
+    "noInteraction": "Chưa có tương tác",
+    "savedOn": "Đã lưu {{date}}",
+    "unsave": "Bỏ lưu {{name}}"
+  },
+  "selection": {
+    "label": "Nhà cung cấp đang chọn",
+    "count_other": "Đang chọn {{count}} nhà cung cấp",
+    "clear": "Bỏ chọn tất cả",
+    "createRfq": "Tạo RFQ ngay"
+  },
+  "unsave": {
+    "title": "Bỏ lưu nhà cung cấp?",
+    "description": "{{name}} sẽ bị xóa khỏi danh sách đã lưu cùng ghi chú nội bộ. Bạn có thể lưu lại bất cứ lúc nào.",
+    "confirm": "Bỏ lưu",
+    "done": "Đã bỏ lưu {{name}}"
+  },
+  "empty": {
+    "title": "Bạn chưa lưu nhà cung cấp nào",
+    "description": "Lưu các nhà cung cấp tiềm năng khi tìm kiếm để gửi RFQ nhanh hơn.",
+    "action": "Khám phá nhà cung cấp"
+  },
+  "export": {
+    "filename": "procura-nha-cung-cap-da-luu.csv"
+  }
+}

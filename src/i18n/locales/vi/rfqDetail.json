@@ -1,0 +1,146 @@
+{
+  "breadcrumb": {
+    "rfqs": "Quản lý RFQ",
+    "detail": "Chi tiết & Tiến độ"
+  },
+  "pill": {
+    "complete": "Đã nhận đủ báo giá ({{received}}/{{expected}} Nhà cung cấp đã gửi)",
+    "partial": "Đã nhận {{received}}/{{expected}} báo giá"
+  },
+  "awarded": {
+    "title": "Đã chọn {{name}} trúng thầu",
+    "on": "Quyết định ngày {{date}}. Các nhà cung cấp đã được thông báo kết quả.",
+    "viewComparison": "Xem lại bảng so sánh"
+  },
+  "header": {
+    "readyToEvaluate": "Sẵn sàng đánh giá",
+    "priority": "Ưu tiên:",
+    "priorityHigh": "Cao",
+    "priorityHighNote": "Cao ({{note}})",
+    "untitled": "RFQ chưa đặt tiêu đề",
+    "created": "Ngày tạo:",
+    "deadline": "Hạn chót gửi báo giá:",
+    "owner": "Phụ trách:",
+    "exportPdf": "Xuất PDF",
+    "compareNow_one": "So sánh báo giá ngay ({{count}} phản hồi)",
+    "compareNow_other": "So sánh báo giá ngay ({{count}} phản hồi)",
+    "compareHint": "Cần ít nhất {{min}} báo giá để mở bảng so sánh."
+  },
+  "specs": {
+    "title": "Tóm tắt quy cách kỹ thuật (Specifications)",
+    "download": "Tải file CAD & Bản in",
+    "quantity": "Tổng số lượng cần",
+    "dimensions": "Kích thước (D x R x C)",
+    "material": "Chất liệu",
+    "product": "Quy cách sản phẩm",
+    "finishing": "In ấn & hoàn thiện:",
+    "delivery": "Địa điểm giao hàng:",
+    "neededBy": "cần hàng trước {{date}}",
+    "quality": "Yêu cầu chất lượng & Test mẫu:",
+    "certifications": "Chứng chỉ bắt buộc:",
+    "sealed": "Báo giá kín: nhà cung cấp không thấy giá của nhau",
+    "budget": "Ngân sách dự kiến:",
+    "budgetMax": "Tối đa {{value}}",
+    "budgetMin": "Từ {{value}}",
+    "budgetNone": "Chưa xác định"
+  },
+  "timeline": {
+    "title": "Tiến độ quy trình RFQ",
+    "step": "Bước {{current}} / {{total}}",
+    "deadlineNote": "Hạn phản hồi chốt nhà cung cấp trước",
+    "awardedNote": "Đã chốt nhà cung cấp trúng thầu ngày",
+    "published": {
+      "done": {
+        "title": "Đã tạo & phát hành RFQ",
+        "desc": "Đã gửi yêu cầu tới {{count}} nhà cung cấp được mời trên Procura."
+      },
+      "draft": {
+        "title": "Bản nháp – chưa phát hành",
+        "desc": "Hoàn tất thông tin và gửi RFQ để nhà cung cấp bắt đầu báo giá."
+      }
+    },
+    "viewed": {
+      "done": {
+        "title": "Các NCC đã tiếp nhận yêu cầu ({{viewed}} đã xem)",
+        "desc": "{{viewed}}/{{invited}} nhà cung cấp đã mở và xem chi tiết yêu cầu."
+      },
+      "waiting": {
+        "title": "Chờ nhà cung cấp tiếp nhận yêu cầu",
+        "desc": "Chưa có nhà cung cấp nào mở yêu cầu báo giá."
+      }
+    },
+    "quotes": {
+      "none": {
+        "title": "Đang chờ báo giá (0/{{expected}})",
+        "desc": "Báo giá sẽ hiển thị ngay khi nhà cung cấp gửi."
+      },
+      "partial": {
+        "title": "Đã nhận {{received}}/{{expected}} báo giá chính thức",
+        "desc": "Báo giá gần nhất từ {{supplier}}."
+      },
+      "complete": {
+        "title": "Đã nhận đủ {{received}}/{{expected}} báo giá chính thức",
+        "desc": "Báo giá cuối cùng từ {{supplier}} đã được ghi nhận."
+      }
+    },
+    "decision": {
+      "pending": {
+        "title": "Chờ quyết định chọn nhà cung cấp trúng thầu",
+        "desc": "So sánh các báo giá và chọn nhà cung cấp phù hợp nhất."
+      },
+      "awarded": {
+        "title": "Đã chọn {{supplier}} trúng thầu",
+        "desc": "Các nhà cung cấp đã được thông báo kết quả."
+      },
+      "cancelled": {
+        "title": "RFQ đã bị hủy",
+        "desc": "Yêu cầu báo giá không còn nhận phản hồi."
+      }
+    }
+  },
+  "quotes": {
+    "title": "Danh sách báo giá đã nhận (Quotation Responses)",
+    "count_one": "{{count}} Báo giá khả thi",
+    "count_other": "{{count}} Báo giá khả thi",
+    "subtitle": "Chọn ít nhất {{min}} nhà cung cấp để đối soát ma trận chi phí, MOQ và thời gian giao hàng song song.",
+    "filter": "Bộ lọc giá & MOQ",
+    "onlyMoqFit": "Chỉ hiện báo giá có MOQ ≤ {{qty}} {{unit}}",
+    "onlyMoqFitHint": "Ẩn các báo giá buộc đặt nhiều hơn số lượng yêu cầu.",
+    "compareSelected_one": "So sánh {{count}} đối tác đã chọn",
+    "compareSelected_other": "So sánh {{count}} đối tác đã chọn",
+    "compareDetail_one": "So sánh chi tiết {{count}} báo giá",
+    "compareDetail_other": "So sánh chi tiết {{count}} báo giá",
+    "selectHint": "Chọn ít nhất {{min}} báo giá để so sánh",
+    "selectAll": "Chọn tất cả báo giá",
+    "selectOne": "Chọn báo giá của {{name}}",
+    "selectedCount_one": "Đã chọn {{count}} nhà cung cấp để đối chiếu",
+    "selectedCount_other": "Đã chọn {{count}} nhà cung cấp để đối chiếu",
+    "spread": "Chênh lệch tổng tiền thấp nhất và cao nhất:",
+    "col": {
+      "supplier": "Nhà cung cấp / Doanh nghiệp",
+      "unitPrice": "Đơn giá (VND/{{unit}})",
+      "total": "Tổng tiền ({{qty}} {{unit}})",
+      "moq": "MOQ tối thiểu",
+      "leadTime": "Thời gian giao",
+      "status": "Trạng thái & Đánh giá"
+    },
+    "lowestUnitPrice": "Đơn giá thấp nhất",
+    "totalFor": "Cho {{qty}} {{unit}}",
+    "totalForMoq": "Bắt buộc theo MOQ {{qty}} {{unit}}",
+    "moqFit": "Đáp ứng số lượng",
+    "moqOver": "Vượt số lượng yêu cầu",
+    "fastest": "Nhanh nhất (dự kiến {{date}})",
+    "eta": "Dự kiến giao {{date}}",
+    "sentAt": "Gửi lúc: {{time}}",
+    "pendingNote": "Chưa gửi báo giá",
+    "declinedNote": "Nhà cung cấp đã từ chối báo giá",
+    "viewedAt": "Đã xem lúc {{time}}",
+    "notViewed": "Chưa xem yêu cầu",
+    "pending": "Chưa phản hồi",
+    "declined": "Đã từ chối",
+    "emptyTitle": "Chưa có nhà cung cấp nào được mời",
+    "emptyDesc": "Thêm nhà cung cấp và gửi RFQ để bắt đầu nhận báo giá.",
+    "filteredEmptyTitle": "Không có báo giá phù hợp bộ lọc",
+    "filteredEmptyDesc": "Tất cả báo giá hiện có MOQ lớn hơn số lượng yêu cầu."
+  }
+}

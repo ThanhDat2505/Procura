@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "eyebrow": "Trung tâm Tri thức & Hỗ trợ Thu mua Doanh nghiệp",
+    "title": "Trung tâm Trợ giúp & Hướng dẫn Procura",
+    "subtitle": "Bạn cần hỗ trợ gì về quy trình tìm nguồn cung ứng và đấu thầu hôm nay?",
+    "searchLabel": "Tìm trong trung tâm trợ giúp",
+    "searchPlaceholder": "Tìm câu hỏi, tài liệu hướng dẫn hoặc từ khóa (ví dụ: Tạo RFQ, Báo giá kín, MOQ...)",
+    "searchButton": "Tìm kiếm",
+    "popular": "Chủ đề phổ biến:",
+    "topics": {
+      "sealedBid": { "label": "Quy chế Báo giá kín", "query": "Báo giá kín" },
+      "specs": { "label": "Thiết lập tiêu chí kỹ thuật", "query": "kỹ thuật" },
+      "iso": { "label": "Xác thực chứng chỉ ISO xưởng", "query": "ISO" }
+    }
+  },
+  "search": {
+    "summary": "Kết quả cho “{{query}}”: {{guides}} hướng dẫn, {{faqs}} câu hỏi",
+    "clear": "Xóa tìm kiếm"
+  },
+  "guides": {
+    "title": "Cẩm nang hướng dẫn sử dụng nhanh",
+    "subtitle": "Quy chuẩn thao tác tối ưu hóa thời gian và quy trình thu mua cho đội ngũ",
+    "viewAll": "Xem toàn bộ hướng dẫn",
+    "readTime_one": "{{count}} phút đọc",
+    "readTime_other": "{{count}} phút đọc",
+    "items": {
+      "firstRfq": {
+        "title": "Tạo RFQ đầu tiên",
+        "description": "Quy trình 4 bước từ quy cách, chọn xưởng đến điều khoản kỹ thuật và quy định hạn chót nộp thầu."
+      },
+      "findSuppliers": {
+        "title": "Tìm & lưu nhà cung cấp",
+        "description": "Cách lọc theo chứng chỉ ISO, FSC, vị trí địa lý xưởng, sản lượng tối thiểu (MOQ) và báo cáo kiểm toán độc lập."
+      },
+      "compare": {
+        "title": "So sánh báo giá & Chọn thầu",
+        "description": "Đọc hiểu ma trận giá kín, thiết lập trọng số đánh giá kỹ thuật và chuẩn hóa quy trình xuất phê duyệt nội bộ."
+      },
+      "supplierQuote": {
+        "title": "Dành cho Nhà cung ứng: Gửi báo giá",
+        "description": "Hướng dẫn xưởng tải hồ sơ năng lực, gửi chào giá niêm phong và cập nhật tiến độ mẫu thử nghiệm."
+      }
+    }
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp (FAQ)",
+    "subtitle": "Giải đáp nhanh các thắc mắc về bảo mật giá, pháp lý và vận hành trên nền tảng",
+    "items": {
+      "blindBidding": {
+        "question": "Cơ chế Báo giá kín (Blind Bidding) trên Procura hoạt động như thế nào?",
+        "answer": "Để đảm bảo tính cạnh tranh lành mạnh và khách quan, các nhà cung cấp hoàn toàn không thể xem danh tính, số lượng đối thủ hoặc mức giá của nhau. Chỉ bên mua mới mở được ma trận đối chiếu các báo giá. Hệ thống ghi nhận dấu thời gian điện tử (timestamp) cho từng báo giá để loại bỏ khả năng can thiệp dữ liệu."
+      },
+      "paymentsContracts": {
+        "question": "Procura có can thiệp vào thanh toán hoặc ký kết hợp đồng không?",
+        "answer": "Không. Procura không xử lý thanh toán và không ký kết hợp đồng. Procura đóng vai trò là hạ tầng kết nối, so sánh báo giá và số hóa quy trình thẩm định nguồn cung. Các thỏa thuận thương mại cuối cùng, điều khoản thanh toán và hợp đồng do hai bên trao đổi, ký kết trực tiếp theo quy định pháp luật hiện hành."
+      },
+      "verifiedSuppliers": {
+        "question": "Làm thế nào để biết nhà cung cấp đã được Procura thẩm định thực tế?",
+        "answer": "Các xưởng đã hoàn tất quy trình thẩm định trực tiếp tại hiện trường (On-site Audit) bởi đội ngũ chuyên gia của Procura sẽ mang huy hiệu xanh dương “Xác thực bởi Procura”. Bạn có thể xem thông tin pháp lý, năng lực máy móc và các chứng nhận ISO/BRC/Sedex ngay trên trang hồ sơ năng lực của xưởng."
+      },
+      "afterAward": {
+        "question": "Sau khi chốt nhà cung cấp trúng thầu, quy trình tiếp theo là gì?",
+        "answer": "RFQ được đánh dấu là đã chốt. Nhà cung cấp được chọn thấy báo giá của mình ở trạng thái “Trúng thầu”, các nhà cung cấp còn lại nhận trạng thái “Không được chọn” để duy trì mối quan hệ chuỗi cung ứng bền vững. Các bước thương mại tiếp theo do hai bên trao đổi trực tiếp bên ngoài Procura."
+      },
+      "editQuote": {
+        "question": "Nhà cung cấp có thể chỉnh sửa lại giá sau khi đã nộp báo giá không?",
+        "answer": "Nhà cung cấp chỉ được phép cập nhật hoặc thu hồi bản chào giá khi RFQ còn trong thời hạn nhận báo giá. Sau khi hạn chót (Deadline) kết thúc hoặc RFQ đã có kết quả, báo giá sẽ bị khóa và không thể điều chỉnh."
+      },
+      "exportExcel": {
+        "question": "Tôi có thể xuất dữ liệu ma trận so sánh báo giá ra file Excel không?",
+        "answer": "Có. Tại trang So sánh báo giá, bạn có thể xuất bảng đối chiếu đơn giá, MOQ, lead time và điểm đánh giá của các nhà cung cấp ra file Excel để trình duyệt nội bộ chỉ bằng 1 cú nhấp chuột."
+      }
+    }
+  },
+  "contact": {
+    "title": "Chưa tìm thấy giải đáp bạn cần?",
+    "subtitle": "Đội ngũ Chuyên viên Tư vấn Thu mua Procura luôn sẵn sàng hỗ trợ trực tiếp.",
+    "emailLabel": "Email:",
+    "hotlineLabel": "Hotline:",
+    "hotline": "1900 68xx",
+    "hours": "(8:00 – 17:30, T2 – T6)",
+    "cta": "Gửi yêu cầu hỗ trợ",
+    "mailSubject": "Yêu cầu hỗ trợ Procura"
+  }
+}

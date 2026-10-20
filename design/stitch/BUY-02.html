@@ -1,0 +1,843 @@
+<!DOCTYPE html><html class="light min-h-screen" lang="vi"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Khám phá Nhà cung cấp B2B - Procura Sourcing</title>
+<!-- Google Fonts Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "error-container": "#ffdad6",
+            "inverse-surface": "#2d3135",
+            "surface-dim": "#d7dae0",
+            "surface-container-high": "#e5e8ee",
+            "on-background": "#181c20",
+            "primary-fixed": "#d7e2ff",
+            "secondary-container": "#a5a9ff",
+            "surface-bright": "#f7f9ff",
+            "on-tertiary-fixed-variant": "#003fa4",
+            "surface-container": "#ebeef4",
+            "on-primary-container": "#fefcff",
+            "primary-container": "#0070e9",
+            "surface-tint": "#005bbf",
+            "on-secondary-fixed": "#090a61",
+            "secondary-fixed-dim": "#bfc1ff",
+            "surface-variant": "#dfe3e8",
+            "tertiary-container": "#3b6ee3",
+            "error": "#ba1a1a",
+            "surface-container-low": "#f1f4fa",
+            "on-error": "#ffffff",
+            "on-tertiary-container": "#fefcff",
+            "outline": "#717786",
+            "surface": "#f7f9ff",
+            "on-primary-fixed": "#001a40",
+            "secondary-fixed": "#e1e0ff",
+            "on-primary": "#ffffff",
+            "on-surface": "#181c20",
+            "tertiary": "#1654c9",
+            "on-primary-fixed-variant": "#004492",
+            "on-secondary-fixed-variant": "#3a3e8c",
+            "outline-variant": "#c1c6d7",
+            "tertiary-fixed": "#dbe1ff",
+            "inverse-on-surface": "#eef1f7",
+            "on-secondary": "#ffffff",
+            "on-surface-variant": "#414754",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed": "#001849",
+            "on-secondary-container": "#373a89",
+            "primary-fixed-dim": "#acc7ff",
+            "surface-container-lowest": "#ffffff",
+            "inverse-primary": "#acc7ff",
+            "primary": "#0059ba",
+            "surface-container-highest": "#dfe3e8",
+            "background": "#f7f9ff",
+            "secondary": "#5256a6",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#b3c5ff"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "headline-sm": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "label-md": ["Inter", "sans-serif"],
+            "headline-md": ["Inter", "sans-serif"],
+            "label-lg": ["Inter", "sans-serif"],
+            "headline-lg": ["Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f4fa;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c1c6d7;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #717786;
+    }
+  </style>
+</head>
+
+<!-- ========================================================================= -->
+<!-- SIDE NAVIGATION                                                           -->
+<!-- ========================================================================= -->
+<aside class="sticky top-0 h-screen w-64 flex flex-col justify-between p-4 z-30 bg-surface-container-lowest border-r border-outline-variant shadow-sm shrink-0">
+<div class="flex flex-col gap-5">
+<!-- Brand & Header with Procura Logo -->
+<div class="flex items-center gap-3 px-2 pt-1 pb-2 border-b border-outline-variant/50">
+<img alt="Procura Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZkv1fftasVbPxZMC0bt0O4s00XRPbZ1txXvzzeSH9_hhyqIeXXJfWj-cUJ8KOMZG5yYMN-vampkJRp4FF7quhHs_aTsAhavNnlzF5h3-lo5R3Dd0fgR71tHicadP_QInRL52gzEQOIIUnrFCh2Jsyy1frZmTv99ctUph5X6592380YUmfrQGy-15qRIiUcnb9TWmUW_reOn_4g_qYN_Ac2_VFQ1-ttwb-X6P5dCUs2L8nZ8IIfuzdS28Pe80UrIYeq8Y">
+<div class="flex flex-col">
+<span class="text-xs font-bold text-primary tracking-wide uppercase">Sourcing Hub</span>
+<span class="text-[11px] text-outline">B2B Procurement</span>
+</div>
+</div>
+<!-- Quick CTA -->
+<button class="w-full py-2 px-3 bg-primary text-on-primary rounded-lg text-sm font-semibold hover:bg-tertiary transition-colors duration-150 flex items-center justify-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span class="">+ Tạo RFQ mới</span>
+</button>
+<!-- Navigation Tabs -->
+<nav class="flex flex-col space-y-1">
+<!-- 1. Tổng quan -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150 text-sm font-medium" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="">Tổng quan</span>
+</a>
+<!-- 2. Tìm nhà cung cấp (ACTIVE) -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-surface-container text-primary font-semibold text-sm border-l-4 border-primary" href="#">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<span class="">Tìm nhà cung cấp</span>
+</a>
+<!-- 3. Quản lý RFQ -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150 text-sm font-medium" href="#">
+<span class="material-symbols-outlined">request_quote</span>
+<span class="">Quản lý RFQ</span>
+</a>
+<!-- 4. Nhà cung cấp đã lưu -->
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150 text-sm font-medium" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="">Đối tác đã lưu</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-surface-container text-outline">14</span>
+</a>
+<!-- 5. So sánh báo giá -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150 text-sm font-medium" href="#">
+<span class="material-symbols-outlined">compare_arrows</span>
+<span class="">So sánh báo giá</span>
+</a>
+<!-- 6. Quản lý Hợp đồng & Đơn hàng -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150 text-sm font-medium" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="">Hợp đồng &amp; Đơn hàng</span>
+</a>
+</nav>
+</div>
+<!-- Footer Profile & Support -->
+<div class="border-t border-outline-variant pt-3 flex flex-col space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors text-sm" href="#">
+<span class="material-symbols-outlined">tune</span>
+<span class="">Cài đặt hệ thống</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors text-sm" href="#">
+<span class="material-symbols-outlined">headset_mic</span>
+<span class="">Hỗ trợ kỹ thuật</span>
+</a>
+<div class="flex items-center gap-3 px-3 py-2.5 mt-2 rounded-lg bg-surface-container-low">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xs">
+          TM
+        </div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="text-xs font-semibold text-on-surface truncate">Trần Minh</span>
+<span class="text-[11px] text-outline truncate">Giám đốc Mua hàng</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- WRAPPER NỘI DUNG CHÍNH (flex-1) KHÔNG CẦN ml-64 -->
+<div class="flex-1 flex flex-col min-w-0">
+<!-- ========================================================================= -->
+<!-- TOP NAVIGATION BAR                                                        -->
+<!-- ========================================================================= -->
+<header class="sticky top-0 right-0 h-16 flex items-center justify-between px-6 z-30 bg-surface-container-lowest border-b border-outline-variant shadow-sm">
+<!-- Search Bar on left -->
+<div class="flex items-center gap-3 w-96">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-lg">search</span>
+<input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg border border-outline-variant text-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Tìm theo tên nhà cung cấp, vật tư, SKU..." type="text" value="Bao bì carton tiêu chuẩn xuất khẩu">
+</div>
+</div>
+<!-- Right Header Actions -->
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-1 bg-surface-container-low rounded-lg border border-outline-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs text-on-surface font-medium">Đã chọn: <strong class="text-primary">3 NCC</strong></span>
+</div>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg text-xs font-semibold hover:bg-tertiary transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span class="">+ Gửi RFQ hàng loạt</span>
+</button>
+<div class="h-5 w-px bg-outline-variant mx-1"></div>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-lg relative" title="Thông báo">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-lg" title="Tin nhắn">
+<span class="material-symbols-outlined">chat</span>
+</button>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- MAIN WORKSPACE                                                            -->
+<!-- ========================================================================= -->
+<main class="p-6 min-h-[calc(100vh-4rem)] flex flex-col gap-5">
+<!-- Title & Top Stat Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-2 border-b border-outline-variant">
+<div>
+<div class="flex items-center gap-2">
+<h1 class="text-2xl font-bold text-on-surface tracking-tight">Khám phá Nhà cung cấp B2B</h1>
+<span class="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-surface-container text-primary">1.240 đối tác tin cậy</span>
+</div>
+<p class="text-sm text-on-surface-variant mt-0.5">Tìm kiếm nhà sản xuất gốc, phân phối sỉ chính ngạch với hồ sơ năng lực đã xác minh</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 border border-outline-variant rounded-lg text-xs font-medium hover:bg-surface-container-low text-on-surface transition-colors bg-surface-container-lowest">
+<span class="material-symbols-outlined text-sm">tune</span>
+<span class="">Bộ lọc nâng cao</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 border border-outline-variant rounded-lg text-xs font-medium hover:bg-surface-container-low text-on-surface transition-colors bg-surface-container-lowest">
+<span class="material-symbols-outlined text-sm">download</span>
+<span class="">Xuất Excel</span>
+</button>
+</div>
+</div>
+<!-- Category Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 text-sm no-scrollbar">
+<span class="text-xs font-semibold text-outline uppercase tracking-wider shrink-0 pr-1">Ngành hàng:</span>
+<button class="px-3 py-1.5 rounded-full text-xs font-semibold bg-primary text-on-primary flex items-center gap-1.5 shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+<span class="">Bao bì &amp; Đóng gói</span>
+<span class="bg-white/20 text-white rounded-full px-1.5 py-0.2 text-[10px]">342</span>
+</button>
+<button class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-lowest text-on-surface-variant border border-outline-variant hover:border-primary hover:text-primary transition-colors flex items-center gap-1.5 shrink-0">
+<span class="material-symbols-outlined text-[16px]">precision_manufacturing</span>
+<span class="">Cơ khí &amp; Chế tạo</span>
+<span class="text-outline text-[11px]">(210)</span>
+</button>
+<button class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-lowest text-on-surface-variant border border-outline-variant hover:border-primary hover:text-primary transition-colors flex items-center gap-1.5 shrink-0">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">In ấn &amp; Tem nhãn</span>
+<span class="text-outline text-[11px]">(184)</span>
+</button>
+<button class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-lowest text-on-surface-variant border border-outline-variant hover:border-primary hover:text-primary transition-colors flex items-center gap-1.5 shrink-0">
+<span class="material-symbols-outlined text-[16px]">science</span>
+<span class="">Hóa chất &amp; Nhựa</span>
+<span class="text-outline text-[11px]">(145)</span>
+</button>
+<button class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-lowest text-on-surface-variant border border-outline-variant hover:border-primary hover:text-primary transition-colors flex items-center gap-1.5 shrink-0">
+<span class="material-symbols-outlined text-[16px]">electrical_services</span>
+<span class="">Thiết bị điện tử</span>
+<span class="text-outline text-[11px]">(98)</span>
+</button>
+<button class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-lowest text-on-surface-variant border border-outline-variant hover:border-primary hover:text-primary transition-colors flex items-center gap-1.5 shrink-0">
+<span class="material-symbols-outlined text-[16px]">checkroom</span>
+<span class="">Dệt may &amp; Đồng phục</span>
+<span class="text-outline text-[11px]">(112)</span>
+</button>
+<button class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-lowest text-on-surface-variant border border-outline-variant hover:border-primary hover:text-primary transition-colors flex items-center gap-1.5 shrink-0">
+<span class="material-symbols-outlined text-[16px]">more_horiz</span>
+<span class="">Khác</span>
+</button>
+</div>
+<!-- Main Grid Layout (Filters Sidebar + Cards Grid) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+<!-- ===================================================================== -->
+<!-- FILTER SIDEBAR                                                        -->
+<!-- ===================================================================== -->
+<aside class="lg:col-span-3 bg-surface-container-lowest p-4 rounded-xl border border-outline-variant shadow-sm flex flex-col gap-4 sticky top-20">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant">
+<span class="text-sm font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">filter_alt</span>
+            Bộ lọc đối tác
+          </span>
+<button class="text-xs text-primary font-medium hover:underline">Đặt lại</button>
+</div>
+<!-- 1. Tỉnh thành / Khu vực -->
+<div class="flex flex-col gap-2">
+<span class="text-[11px] font-bold text-outline uppercase tracking-wider">Khu vực / Tỉnh thành</span>
+<div class="space-y-1.5">
+<label class="flex items-center justify-between text-xs text-on-surface cursor-pointer hover:text-primary">
+<span class="flex items-center gap-2">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" type="checkbox">
+<span class="">TP. Hồ Chí Minh</span>
+</span>
+<span class="text-outline">189</span>
+</label>
+<label class="flex items-center justify-between text-xs text-on-surface cursor-pointer hover:text-primary">
+<span class="flex items-center gap-2">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" type="checkbox">
+<span class="">Bình Dương</span>
+</span>
+<span class="text-outline">94</span>
+</label>
+<label class="flex items-center justify-between text-xs text-on-surface cursor-pointer hover:text-primary">
+<span class="flex items-center gap-2">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" type="checkbox">
+<span class="">Hà Nội</span>
+</span>
+<span class="text-outline">82</span>
+</label>
+<label class="flex items-center justify-between text-xs text-on-surface cursor-pointer hover:text-primary">
+<span class="flex items-center gap-2">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" type="checkbox">
+<span class="">Đồng Nai</span>
+</span>
+<span class="text-outline">53</span>
+</label>
+<label class="flex items-center justify-between text-xs text-on-surface cursor-pointer hover:text-primary">
+<span class="flex items-center gap-2">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" type="checkbox">
+<span class="">Long An</span>
+</span>
+<span class="text-outline">38</span>
+</label>
+</div>
+</div>
+<div class="h-px bg-outline-variant/60"></div>
+<!-- 2. Số lượng tối thiểu (MOQ) -->
+<div class="flex flex-col gap-2">
+<span class="text-[11px] font-bold text-outline uppercase tracking-wider">Số lượng tối thiểu (MOQ)</span>
+<div class="space-y-1.5">
+<label class="flex items-center gap-2 text-xs text-on-surface cursor-pointer">
+<input class="border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" name="moq" type="radio">
+<span class="">Dưới 1.000 cái</span>
+</label>
+<label class="flex items-center gap-2 text-xs text-on-surface cursor-pointer">
+<input checked="" class="border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" name="moq" type="radio">
+<span class="font-medium text-primary">1.000 - 5.000 cái</span>
+</label>
+<label class="flex items-center gap-2 text-xs text-on-surface cursor-pointer">
+<input class="border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" name="moq" type="radio">
+<span class="">Trên 5.000 cái</span>
+</label>
+</div>
+</div>
+<div class="h-px bg-outline-variant/60"></div>
+<!-- 3. Chứng nhận chất lượng -->
+<div class="flex flex-col gap-2">
+<span class="text-[11px] font-bold text-outline uppercase tracking-wider">Chứng nhận &amp; Năng lực</span>
+<div class="space-y-1.5">
+<label class="flex items-center gap-2 text-xs text-on-surface cursor-pointer">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" type="checkbox">
+<span class="">ISO 9001:2015</span>
+</label>
+<label class="flex items-center gap-2 text-xs text-on-surface cursor-pointer">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" type="checkbox">
+<span class="">Chứng chỉ FSC rừng</span>
+</label>
+<label class="flex items-center gap-2 text-xs text-on-surface cursor-pointer">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" type="checkbox">
+<span class="">Chuẩn ISO 14001 / ESG</span>
+</label>
+<label class="flex items-center gap-2 text-xs text-on-surface cursor-pointer">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary w-3.5 h-3.5" type="checkbox">
+<span class="">Nhà xưởng chính chủ (&gt;2000m²)</span>
+</label>
+</div>
+</div>
+<!-- Active Filter Summary -->
+<div class="p-2.5 bg-surface-container-low rounded-lg text-xs text-on-surface-variant flex items-center justify-between">
+<span class="">Đang chọn: <strong class="text-on-surface">4 tiêu chí</strong></span>
+<span class="text-primary font-semibold cursor-pointer hover:underline">Xóa tất cả</span>
+</div>
+</aside>
+<!-- ===================================================================== -->
+<!-- SUPPLIER CARDS SECTION                                                -->
+<!-- ===================================================================== -->
+<section class="lg:col-span-9 flex flex-col gap-4">
+<!-- Header Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-3 bg-surface-container-lowest p-3 px-4 rounded-xl border border-outline-variant shadow-sm">
+<div class="text-xs text-on-surface-variant">
+            Tìm thấy <strong class="text-on-surface font-bold">342</strong> nhà cung cấp bao bì phù hợp
+          </div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5">
+<span class="text-xs text-outline">Sắp xếp:</span>
+<select class="py-1 px-2.5 bg-surface-container-low border border-outline-variant rounded text-xs text-on-surface focus:outline-none focus:border-primary">
+<option selected="">Khuyên dùng / Phù hợp nhất</option>
+<option>Đánh giá sao cao nhất</option>
+<option>Thời gian phản hồi nhanh nhất</option>
+<option>MOQ thấp nhất</option>
+</select>
+</div>
+<div class="h-4 w-px bg-outline-variant"></div>
+<div class="flex items-center bg-surface-container-low p-0.5 rounded border border-outline-variant">
+<button class="p-1 rounded bg-surface-container-lowest text-primary shadow-sm" title="Dạng lưới">
+<span class="material-symbols-outlined text-[16px]">grid_view</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-on-surface" title="Dạng danh sách">
+<span class="material-symbols-outlined text-[16px]">view_list</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Supplier Cards Grid (6 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- CARD 1 (Selected) -->
+<article class="bg-surface-container-lowest rounded-xl border-2 border-primary p-4 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-primary-fixed text-primary flex items-center justify-center font-bold text-base">
+                    TP
+                  </div>
+<div>
+<div class="flex items-center gap-1.5">
+<h2 class="text-sm font-bold text-on-surface hover:text-primary cursor-pointer">Bao Bì &amp; In Ấn Tân Phát</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;" title="Đã xác minh bởi Procura">verified</span>
+</div>
+<span class="text-xs text-outline flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Bình Tân, TP. Hồ Chí Minh
+                    </span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 text-xs">
+<span class="material-symbols-outlined text-amber-500 text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<strong class="text-amber-900">4.9</strong>
+<span class="text-amber-700 text-[11px]">(48)</span>
+</div>
+<span class="text-[11px] text-tertiary mt-1 font-medium">12 năm KN • Xưởng 5.000m²</span>
+</div>
+</div>
+<!-- Product tags -->
+<div>
+<span class="text-[11px] text-outline block mb-1">Dòng sản phẩm chủ lực:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Hộp carton sóng 3-5-7 lớp</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">In Offset khổ lớn</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Hộp cứng quà tặng</span>
+</div>
+</div>
+<!-- Metrics -->
+<div class="grid grid-cols-3 gap-2 p-2 bg-surface-container-low rounded-lg text-center">
+<div>
+<span class="text-[10px] text-outline uppercase block">MOQ</span>
+<span class="text-xs font-bold text-on-surface">2.000 cái</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Lead Time</span>
+<span class="text-xs font-bold text-on-surface">5 - 7 ngày</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Chứng nhận</span>
+<span class="text-xs font-bold text-primary">ISO 9001, FSC</span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="mt-4 pt-3 border-t border-outline-variant flex items-center justify-between gap-2">
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="">Đã chọn RFQ</span>
+</button>
+<div class="flex items-center gap-1.5">
+<button class="px-3 py-1.5 border border-outline-variant rounded-lg text-xs font-medium text-on-surface hover:bg-surface-container transition-colors">
+                  Xem hồ sơ
+                </button>
+<button class="p-1.5 border border-outline-variant rounded-lg text-primary bg-primary-fixed/20 hover:bg-surface-container transition-colors" title="Đã lưu">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 2 (Selected) -->
+<article class="bg-surface-container-lowest rounded-xl border-2 border-primary p-4 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container-high text-tertiary flex items-center justify-center font-bold text-base">
+                    TĐ
+                  </div>
+<div>
+<div class="flex items-center gap-1.5">
+<h2 class="text-sm font-bold text-on-surface hover:text-primary cursor-pointer">Bao Bì Giấy Tiến Đạt</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;" title="Đã xác minh bởi Procura">verified</span>
+</div>
+<span class="text-xs text-outline flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Dĩ An, Bình Dương
+                    </span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 text-xs">
+<span class="material-symbols-outlined text-amber-500 text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<strong class="text-amber-900">4.8</strong>
+<span class="text-amber-700 text-[11px]">(36)</span>
+</div>
+<span class="text-[11px] text-tertiary mt-1 font-medium">8 năm KN • Chuẩn xuất Mỹ/EU</span>
+</div>
+</div>
+<div>
+<span class="text-[11px] text-outline block mb-1">Dòng sản phẩm chủ lực:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Hộp carton xuất khẩu</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Túi giấy Kraft nâu</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Khay giấy định hình</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 p-2 bg-surface-container-low rounded-lg text-center">
+<div>
+<span class="text-[10px] text-outline uppercase block">MOQ</span>
+<span class="text-xs font-bold text-on-surface">1.000 cái</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Lead Time</span>
+<span class="text-xs font-bold text-on-surface">4 - 6 ngày</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Chứng nhận</span>
+<span class="text-xs font-bold text-primary">FSC, RoHS</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant flex items-center justify-between gap-2">
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="">Đã chọn RFQ</span>
+</button>
+<div class="flex items-center gap-1.5">
+<button class="px-3 py-1.5 border border-outline-variant rounded-lg text-xs font-medium text-on-surface hover:bg-surface-container transition-colors">
+                  Xem hồ sơ
+                </button>
+<button class="p-1.5 border border-outline-variant rounded-lg text-primary bg-primary-fixed/20 hover:bg-surface-container transition-colors" title="Đã lưu">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 3 (Selected) -->
+<article class="bg-surface-container-lowest rounded-xl border-2 border-primary p-4 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-base">
+                    HT
+                  </div>
+<div>
+<div class="flex items-center gap-1.5">
+<h2 class="text-sm font-bold text-on-surface hover:text-primary cursor-pointer">Bao Bì Công Nghiệp Hưng Thịnh</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;" title="Đã xác minh bởi Procura">verified</span>
+</div>
+<span class="text-xs text-outline flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Bến Lức, Long An
+                    </span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 text-xs">
+<span class="material-symbols-outlined text-amber-500 text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<strong class="text-amber-900">4.7</strong>
+<span class="text-amber-700 text-[11px]">(29)</span>
+</div>
+<span class="text-[11px] text-tertiary mt-1 font-medium">Quy mô lớn • Xưởng 10.000m²</span>
+</div>
+</div>
+<div>
+<span class="text-[11px] text-outline block mb-1">Dòng sản phẩm chủ lực:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Bao bì màng co PE</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Thùng carton bế tròn</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Túi bảo vệ chống ẩm</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 p-2 bg-surface-container-low rounded-lg text-center">
+<div>
+<span class="text-[10px] text-outline uppercase block">MOQ</span>
+<span class="text-xs font-bold text-on-surface">5.000 cái</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Lead Time</span>
+<span class="text-xs font-bold text-on-surface">7 - 10 ngày</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Chứng nhận</span>
+<span class="text-xs font-bold text-primary">ISO 9001, BRC</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant flex items-center justify-between gap-2">
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="">Đã chọn RFQ</span>
+</button>
+<div class="flex items-center gap-1.5">
+<button class="px-3 py-1.5 border border-outline-variant rounded-lg text-xs font-medium text-on-surface hover:bg-surface-container transition-colors">
+                  Xem hồ sơ
+                </button>
+<button class="p-1.5 border border-outline-variant rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Lưu">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 4 (Unselected) -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant p-4 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-base">
+                    ĐA
+                  </div>
+<div>
+<div class="flex items-center gap-1.5">
+<h2 class="text-sm font-bold text-on-surface hover:text-primary cursor-pointer">Sản Xuất &amp; In Ấn Đông Á</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;" title="Đã xác minh bởi Procura">verified</span>
+</div>
+<span class="text-xs text-outline flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Gia Lâm, Hà Nội
+                    </span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 text-xs">
+<span class="material-symbols-outlined text-amber-500 text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<strong class="text-amber-900">4.6</strong>
+<span class="text-amber-700 text-[11px]">(19)</span>
+</div>
+<span class="text-[11px] text-tertiary mt-1 font-medium">10 năm KN • In Flexo tự động</span>
+</div>
+</div>
+<div>
+<span class="text-[11px] text-outline block mb-1">Dòng sản phẩm chủ lực:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Carton chống thấm</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Tem decal cuộn</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Hộp carton chuyển phát</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 p-2 bg-surface-container-low rounded-lg text-center">
+<div>
+<span class="text-[10px] text-outline uppercase block">MOQ</span>
+<span class="text-xs font-bold text-on-surface">3.000 cái</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Lead Time</span>
+<span class="text-xs font-bold text-on-surface">6 - 8 ngày</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Chứng nhận</span>
+<span class="text-xs font-bold text-primary">ISO 9001</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant flex items-center justify-between gap-2">
+<button class="px-3 py-1.5 border border-primary text-primary hover:bg-surface-container-low rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span class="">+ Thêm vào RFQ</span>
+</button>
+<div class="flex items-center gap-1.5">
+<button class="px-3 py-1.5 border border-outline-variant rounded-lg text-xs font-medium text-on-surface hover:bg-surface-container transition-colors">
+                  Xem hồ sơ
+                </button>
+<button class="p-1.5 border border-outline-variant rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Lưu">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 5 (Unselected) -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant p-4 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-base">
+                    ML
+                  </div>
+<div>
+<div class="flex items-center gap-1.5">
+<h2 class="text-sm font-bold text-on-surface hover:text-primary cursor-pointer">Bao Bì Giấy Minh Long Vina</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;" title="Đã xác minh bởi Procura">verified</span>
+</div>
+<span class="text-xs text-outline flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Biên Hòa, Đồng Nai
+                    </span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 text-xs">
+<span class="material-symbols-outlined text-amber-500 text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<strong class="text-amber-900">4.8</strong>
+<span class="text-amber-700 text-[11px]">(52)</span>
+</div>
+<span class="text-[11px] text-tertiary mt-1 font-medium">15 năm KN • Dây chuyền Đức</span>
+</div>
+</div>
+<div>
+<span class="text-[11px] text-outline block mb-1">Dòng sản phẩm chủ lực:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Thùng chịu lực hạng nặng</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Bìa carton 7 lớp máy móc</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Thùng bế tổ ong</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 p-2 bg-surface-container-low rounded-lg text-center">
+<div>
+<span class="text-[10px] text-outline uppercase block">MOQ</span>
+<span class="text-xs font-bold text-on-surface">1.500 cái</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Lead Time</span>
+<span class="text-xs font-bold text-on-surface">5 - 7 ngày</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Chứng nhận</span>
+<span class="text-xs font-bold text-primary">ISO 14001, FSC</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant flex items-center justify-between gap-2">
+<button class="px-3 py-1.5 border border-primary text-primary hover:bg-surface-container-low rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span class="">+ Thêm vào RFQ</span>
+</button>
+<div class="flex items-center gap-1.5">
+<button class="px-3 py-1.5 border border-outline-variant rounded-lg text-xs font-medium text-on-surface hover:bg-surface-container transition-colors">
+                  Xem hồ sơ
+                </button>
+<button class="p-1.5 border border-outline-variant rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Lưu">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 6 (Unselected - Eco friendly) -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant p-4 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-base">
+                    GP
+                  </div>
+<div>
+<div class="flex items-center gap-1.5">
+<h2 class="text-sm font-bold text-on-surface hover:text-primary cursor-pointer">Bao Bì Sinh Thái GreenPack</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;" title="Đã xác minh bởi Procura">verified</span>
+</div>
+<span class="text-xs text-outline flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Củ Chi, TP. Hồ Chí Minh
+                    </span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 text-xs">
+<span class="material-symbols-outlined text-emerald-600 text-[14px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+<strong class="text-emerald-900">4.9</strong>
+<span class="text-emerald-700 text-[11px]">(64)</span>
+</div>
+<span class="text-[11px] text-emerald-700 mt-1 font-medium">Bao bì xanh ESG • Tự phân hủy</span>
+</div>
+</div>
+<div>
+<span class="text-[11px] text-outline block mb-1">Dòng sản phẩm chủ lực:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-100 text-[11px]">Bao bì giấy tự hủy</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Giấy bọc tổ ong FSC</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px]">Băng keo giấy Kraft nước</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 p-2 bg-surface-container-low rounded-lg text-center">
+<div>
+<span class="text-[10px] text-outline uppercase block">MOQ</span>
+<span class="text-xs font-bold text-on-surface">2.000 cái</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Lead Time</span>
+<span class="text-xs font-bold text-on-surface">3 - 5 ngày</span>
+</div>
+<div>
+<span class="text-[10px] text-outline uppercase block">Chứng nhận</span>
+<span class="text-xs font-bold text-emerald-700">FSC, BPI Bio</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant flex items-center justify-between gap-2">
+<button class="px-3 py-1.5 border border-primary text-primary hover:bg-surface-container-low rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span class="">+ Thêm vào RFQ</span>
+</button>
+<div class="flex items-center gap-1.5">
+<button class="px-3 py-1.5 border border-outline-variant rounded-lg text-xs font-medium text-on-surface hover:bg-surface-container transition-colors">
+                  Xem hồ sơ
+                </button>
+<button class="p-1.5 border border-outline-variant rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Lưu">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-3 px-4 rounded-xl border border-outline-variant shadow-sm mt-2">
+<span class="text-xs text-outline">Hiển thị 1 - 6 trong 342 nhà cung cấp</span>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded border border-outline-variant text-outline hover:bg-surface-container disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-primary text-on-primary text-xs font-bold">1</button>
+<button class="px-2.5 py-1 rounded border border-outline-variant text-on-surface text-xs hover:bg-surface-container">2</button>
+<button class="px-2.5 py-1 rounded border border-outline-variant text-on-surface text-xs hover:bg-surface-container">3</button>
+<span class="px-1 text-outline text-xs">...</span>
+<button class="px-2.5 py-1 rounded border border-outline-variant text-on-surface text-xs hover:bg-surface-container">57</button>
+<button class="p-1 rounded border border-outline-variant text-on-surface hover:bg-surface-container">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</html>

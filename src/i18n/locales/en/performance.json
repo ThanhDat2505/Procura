@@ -1,0 +1,90 @@
+{
+  "title": "Bid Win Performance & Auction Analysis",
+  "badge": "Supplier Analytics",
+  "subtitle": "How often your quotations win, and suggestions to become more competitive.",
+  "period_one": "Last {{count}} month ({{from}}–{{to}}/{{year}})",
+  "period_other": "Last {{count}} months ({{from}}–{{to}}/{{year}})",
+  "periodAria": "Time period",
+  "export": "Export report",
+  "unit": {
+    "package": "RFQs"
+  },
+  "kpi": {
+    "received": "RFQs received",
+    "receivedNote": "Quote invitations from buyers",
+    "submitted": "Quotes submitted",
+    "responseRate": "Response rate {{value}}",
+    "responseRateLabel": "Response rate",
+    "awarded": "Won bids",
+    "awardedChip": "Won",
+    "winRate": "Win rate",
+    "winRateNote": "{{awarded}} / {{submitted}} quotes submitted",
+    "avgResponse": "Avg. response time",
+    "avgResponseNote": "From invitation to submitted quote"
+  },
+  "chart": {
+    "title": "Quotes submitted vs won by month",
+    "subtitle": "Data from {{from}}/{{year}} to {{to}}/{{year}}",
+    "legend": "Chart legend",
+    "submitted": "Quotes submitted",
+    "awarded": "Won",
+    "unit": "Unit: number of RFQs",
+    "best_one": "Best win rate: month {{months}} ({{rate}})",
+    "best_other": "Best win rate: months {{months}} ({{rate}})",
+    "month": "Month",
+    "monthShort": "M{{month}}",
+    "monthLong": "{{month}}/{{year}}",
+    "aria": "Column chart of quotes submitted and bids won per month: {{items}}",
+    "ariaItem": "{{month}}: {{submitted}} submitted, {{awarded}} won"
+  },
+  "loss": {
+    "title": "Why quotes were not selected",
+    "subtitle_one": "Based on {{count}} unsuccessful bid in the last {{months}} months",
+    "subtitle_other": "Based on {{count}} unsuccessful bids in the last {{months}} months",
+    "empty": "No unsuccessful bids in this period.",
+    "count_one": "({{count}} bid)",
+    "count_other": "({{count}} bids)",
+    "reason": {
+      "price": "Price higher than competitors",
+      "leadTime": "Lead time longer than required",
+      "moq": "MOQ too high for small orders",
+      "other": "Other"
+    },
+    "tipTitle": "Improvement tip",
+    "tip": {
+      "price": "Price is the most common reason. Consider lowering unit prices by 3–5% in the segments you often lose, or offering volume price tiers.",
+      "leadTime": "Lead time is the most common reason. Consider shortening your committed production time or offering partial deliveries for urgent orders.",
+      "moq": "MOQ is the most common reason. Consider accepting smaller runs with existing dies, or stating a flexible MOQ in your quotes.",
+      "other": "Review buyer feedback on unsuccessful bids and add any missing information (certificates, factory capability) to your profile."
+    }
+  },
+  "recent": {
+    "title": "Recent results & anonymous ranking",
+    "subtitle": "Anonymous price ranking",
+    "anonymous": "100% anonymous",
+    "anonymousHint": "Other suppliers' names and prices are never shown",
+    "empty": "No quotations submitted yet.",
+    "buyer": "Buyer:",
+    "rankLabel": "Price rank:",
+    "rank": "Rank {{rank}} / {{of}} quotes",
+    "noteComparing": "Competitors anonymised",
+    "noteBestPrice": "Best price",
+    "noteAwarded": "Selected by buyer",
+    "noteClosed": "Closed",
+    "feedback": "Buyer feedback:",
+    "showing": "Showing {{shown}}/{{total}} submitted quotes",
+    "viewAll": "View full bid history",
+    "status": {
+      "awarded": "Won",
+      "comparing": "Being compared",
+      "notSelected": "Not selected",
+      "closed": "Closed"
+    }
+  },
+  "csv": {
+    "metric": "Metric",
+    "value": "Value",
+    "count": "Bids",
+    "share": "Share"
+  }
+}

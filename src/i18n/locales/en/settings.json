@@ -1,0 +1,94 @@
+{
+  "breadcrumb": "Settings",
+  "title": "Account & System Settings",
+  "subtitle": "Manage language preferences, number and date display formats and your business account configuration.",
+  "navLabel": "Settings sections",
+  "tabs": {
+    "profile": "Personal profile",
+    "notifications": "Notifications",
+    "language": "Language & Formats",
+    "security": "Security & Sign-in"
+  },
+  "status": {
+    "saved": "Saved",
+    "unsaved": "Unsaved changes"
+  },
+  "language": {
+    "title": "Language & Region",
+    "subtitle": "Choose the preferred language for RFQ forms, product categories and quotation tables.",
+    "inUse": "In use",
+    "options": {
+      "vi": {
+        "name": "Tiếng Việt (Default)",
+        "description": "Interface and terminology optimised for Vietnamese businesses, with full Vietnamese input support and standardised domestic procurement workflows."
+      },
+      "en": {
+        "name": "English",
+        "description": "International procurement terminology. Standardized for cross-border sourcing, Incoterms 2020 definitions, and foreign suppliers."
+      }
+    }
+  },
+  "formats": {
+    "title": "Date & Currency Formats",
+    "subtitle": "Number formatting used across unit-price analysis tables and RFQ deadlines.",
+    "date": {
+      "label": "Date display format",
+      "hint": "Applies to quotation deadlines and delivery dates",
+      "options": {
+        "dmy": "dd/mm/yyyy (e.g. 20/11/2025)",
+        "ymd": "yyyy-mm-dd (e.g. 2025-11-20)"
+      }
+    },
+    "number": {
+      "label": "Number & currency format",
+      "hint": "Shown in the quotation comparison table",
+      "options": {
+        "vi": "1.000.000 đ (dot thousands separator, with đ symbol)",
+        "en": "1,000,000 VND (comma thousands separator)"
+      }
+    },
+    "timezone": {
+      "label": "System time zone",
+      "hint": "Used for automatic deadline countdowns",
+      "options": {
+        "hcm": "GMT+7 (Hanoi, Bangkok, Jakarta)"
+      }
+    }
+  },
+  "notifications": {
+    "title": "Notification preferences",
+    "previewTitle": "Notification Preview",
+    "subtitle": "Configure real-time alerts about RFQ progress and incoming supplier quotations.",
+    "items": {
+      "newQuoteEmail": {
+        "title": "Email me as soon as a supplier submits a sealed quotation",
+        "description": "Sends a short summary of unit price, lead time and attached documents to your inbox."
+      },
+      "deadlineReminder": {
+        "title": "Remind me 24h before an RFQ closes",
+        "description": "Get an alert in time to extend the deadline or invite additional potential suppliers."
+      },
+      "weeklyDigest": {
+        "title": "Weekly sourcing opportunities digest",
+        "description": "New manufacturers joining the platform and price movements of key industrial materials."
+      }
+    }
+  },
+  "footer": {
+    "note": "These changes apply immediately to all members of your organisation.",
+    "discard": "Discard"
+  },
+  "profile": {
+    "title": "Personal profile",
+    "subtitle": "Details of the signed-in account.",
+    "name": "Full name",
+    "jobTitle": "Job title",
+    "email": "Email",
+    "phone": "Phone",
+    "role": "Role",
+    "roles": {
+      "buyer": "Buyer",
+      "supplier": "Supplier"
+    }
+  }
+}

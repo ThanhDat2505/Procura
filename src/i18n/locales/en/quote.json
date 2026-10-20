@@ -1,0 +1,131 @@
+{
+  "backToInbox": "Back to RFQ inbox",
+  "breadcrumb": {
+    "inbox": "RFQ inbox"
+  },
+  "banner": {
+    "pill": {
+      "new": "New request",
+      "drafting": "Drafting",
+      "editingSubmitted": "Submitted – editing",
+      "readOnly_closed": "RFQ closed",
+      "readOnly_expired": "Deadline passed",
+      "readOnly_declined": "Declined",
+      "readOnly_locked": "View only"
+    },
+    "deadline": "Deadline: {{date}}",
+    "titleNew": "You received 1 new request for quotation: <code>{{code}}</code> from <buyer>{{buyer}}</buyer>",
+    "titleOther": "Request for quotation <code>{{code}}</code> from <buyer>{{buyer}}</buyer>",
+    "textNew": "The buyer invited {{supplier}} to quote. Please complete the detailed quotation before the deadline.",
+    "textEditing": "You can update your quotation until the deadline. The re-submitted quotation replaces the previous one.",
+    "textReadOnly": "This request no longer accepts quotations. The details below are for reference only.",
+    "yourFactory": "your factory",
+    "daysLeft_one": "{{count}} day left to submit",
+    "daysLeft_other": "{{count}} days left to submit",
+    "deadlineToday": "Submission closes today",
+    "deadlineOver": "Submission closed"
+  },
+  "summary": {
+    "title": "Buyer request summary",
+    "code": "Code: {{code}}",
+    "product": "Product & specifications",
+    "dimensions": "Size: {{value}}",
+    "material": "Material: {{value}}",
+    "finishing": "Finishing: {{value}}",
+    "quantity": "Requested quantity",
+    "deadline": "Quote deadline",
+    "delivery": "Delivery location",
+    "neededBy": "Needed by {{date}}",
+    "attachments": "Technical files from the buyer",
+    "noAttachments": "The buyer did not attach technical files.",
+    "buyerNotes": "Important notes from the buyer:",
+    "certifications": "Required certifications",
+    "noCertifications": "No specific certification required",
+    "paymentTerms": "Preferred payment terms",
+    "minValidity": "Minimum quotation validity",
+    "vatIncluded": "Prices including VAT",
+    "vatExcluded": "Prices excluding VAT"
+  },
+  "trust": {
+    "title": "Procura Trust process commitment",
+    "sla": "Response SLA",
+    "slaValue": "< 4 hours",
+    "security": "Price confidentiality",
+    "securityValue": "Sealed bid"
+  },
+  "form": {
+    "title": "Official quotation form",
+    "subtitle": "Enter costs, timing and commercial terms",
+    "statusChip": "Status: {{status}}",
+    "statusDraft": "Draft",
+    "editingTitle": "You are editing a submitted quotation",
+    "editingBody": "Changes only take effect when you re-submit. Editing is allowed until {{date}}; the buyer will be notified of the update.",
+    "section1": "1. Pricing & supply quantity",
+    "unitPrice": "Unit price (VND / {{unit}})",
+    "perUnit": "/ {{unit}}",
+    "priceHint": "Competitive market range: {{min}} – {{max}}",
+    "moq": "Minimum order quantity (MOQ)",
+    "moqHint": "Requested quantity: {{qty}} {{unit}}",
+    "moqFits": "Covers the requested {{qty}} {{unit}}",
+    "moqExceeds": "MOQ exceeds the requested quantity ({{qty}} {{unit}}) – the total is calculated on the MOQ",
+    "totalLabel": "Estimated order value ({{qty}} {{unit}}):",
+    "totalNote": "Excluding VAT (8%) and handling fees, if any",
+    "inWords": "(In words: {{words}})",
+    "section2": "2. Production plan & commercial terms",
+    "leadTime": "Production & delivery time (lead time)",
+    "leadTimeHint": "Counted from the day the buyer selects the supplier",
+    "expectedDelivery": "Expected delivery: {{date}}",
+    "validity": "Quotation validity",
+    "validityOption": "{{days}} days (until {{date}})",
+    "validityHint": "Material prices are held • Buyer requires at least {{min}} days",
+    "paymentTerms": "Proposed payment terms",
+    "paymentHint": "A proposal only; both parties agree on the details after the buyer selects a supplier.",
+    "buyerTerm": "{{term}} (requested by buyer)",
+    "toolingCost": "Tooling / die-cut cost (if any)",
+    "toolingHint": "Leave 0 if tooling is free",
+    "offerNotes": "Special offers & commitments",
+    "offerHint": "Up to 1,000 characters",
+    "offerPlaceholder": "e.g. free printing plates and samples, 1-for-1 replacement within 7 days for print defects…",
+    "attachments": "Attach detailed specifications / stamped quotation (optional)",
+    "dropTitle": "Upload a PDF or Excel quotation",
+    "dropHint": "Up to 15MB (.pdf, .xlsx, .docx)",
+    "submit": "Submit official quotation to the buyer",
+    "resubmit": "Re-submit updated quotation",
+    "cancelEdit": "Cancel editing"
+  },
+  "readOnly": {
+    "viewQuotation": "View submitted quotation",
+    "closed": {
+      "title": "This RFQ is closed",
+      "body": "The buyer has finished or cancelled this request, so the form is view-only."
+    },
+    "expired": {
+      "title": "The quote deadline has passed",
+      "body": "Submissions are closed. Quotations can no longer be created or edited."
+    },
+    "declined": {
+      "title": "You declined this request",
+      "body": "Your factory declined to quote for this RFQ."
+    },
+    "locked": {
+      "title": "This quotation can no longer be edited",
+      "body": "The quotation has a result or is no longer valid, so it is locked."
+    }
+  },
+  "confirm": {
+    "title": "Submit the official quotation?",
+    "titleResubmit": "Re-submit the updated quotation?",
+    "description": "{{code}} • {{buyer}}",
+    "unitPrice": "Unit price",
+    "total": "Estimated total",
+    "moq": "MOQ",
+    "leadTime": "Lead time",
+    "validity": "Validity",
+    "sealed": "Your quotation is protected as a sealed bid. You can still edit or withdraw it before the deadline.",
+    "confirm": "Confirm & submit"
+  },
+  "toast": {
+    "submitted": "Quotation submitted for {{code}}",
+    "resubmitted": "Quotation updated for {{code}}"
+  }
+}

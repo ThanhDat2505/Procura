@@ -1,0 +1,131 @@
+{
+  "backToInbox": "Quay lại Hộp thư RFQ",
+  "breadcrumb": {
+    "inbox": "Hộp thư RFQ"
+  },
+  "banner": {
+    "pill": {
+      "new": "Yêu cầu mới tiếp nhận",
+      "drafting": "Đang soạn",
+      "editingSubmitted": "Đã gửi – đang chỉnh sửa",
+      "readOnly_closed": "RFQ đã đóng",
+      "readOnly_expired": "Hết hạn nộp",
+      "readOnly_declined": "Đã từ chối",
+      "readOnly_locked": "Chỉ xem"
+    },
+    "deadline": "Hạn chót: {{date}}",
+    "titleNew": "Bạn nhận được 1 Yêu cầu báo giá mới: <code>{{code}}</code> từ <buyer>{{buyer}}</buyer>",
+    "titleOther": "Yêu cầu báo giá <code>{{code}}</code> từ <buyer>{{buyer}}</buyer>",
+    "textNew": "Người mua đã mời {{supplier}} tham gia báo giá. Vui lòng hoàn thành bảng báo giá chi tiết trước thời hạn quy định.",
+    "textEditing": "Bạn có thể cập nhật báo giá cho đến hạn chót. Báo giá gửi lại sẽ thay thế báo giá trước đó.",
+    "textReadOnly": "Yêu cầu này không còn nhận báo giá. Thông tin bên dưới chỉ để tham khảo.",
+    "yourFactory": "xưởng của bạn",
+    "daysLeft_one": "Còn {{count}} ngày nộp hồ sơ",
+    "daysLeft_other": "Còn {{count}} ngày nộp hồ sơ",
+    "deadlineToday": "Hạn chót nộp hồ sơ hôm nay",
+    "deadlineOver": "Đã hết hạn nộp hồ sơ"
+  },
+  "summary": {
+    "title": "Tóm tắt yêu cầu từ Buyer",
+    "code": "Mã: {{code}}",
+    "product": "Tên hàng hóa & Quy cách",
+    "dimensions": "Kích thước: {{value}}",
+    "material": "Chất liệu: {{value}}",
+    "finishing": "Gia công: {{value}}",
+    "quantity": "Số lượng yêu cầu",
+    "deadline": "Hạn chót gửi báo giá",
+    "delivery": "Địa điểm nhận hàng",
+    "neededBy": "Cần hàng trước ngày {{date}}",
+    "attachments": "Tệp đính kèm kỹ thuật từ Buyer",
+    "noAttachments": "Người mua không đính kèm tệp kỹ thuật.",
+    "buyerNotes": "Lưu ý quan trọng từ người mua:",
+    "certifications": "Chứng chỉ yêu cầu",
+    "noCertifications": "Không yêu cầu chứng chỉ cụ thể",
+    "paymentTerms": "Điều khoản thanh toán mong muốn",
+    "minValidity": "Hiệu lực báo giá tối thiểu",
+    "vatIncluded": "Giá đã gồm VAT",
+    "vatExcluded": "Giá chưa gồm VAT"
+  },
+  "trust": {
+    "title": "Cam kết quy trình Procura Trust",
+    "sla": "Thời gian phản hồi SLA",
+    "slaValue": "< 4 giờ",
+    "security": "Bảo mật bảng giá",
+    "securityValue": "Mã hóa thầu"
+  },
+  "form": {
+    "title": "Biểu mẫu gửi báo giá chính thức",
+    "subtitle": "Điền chi tiết các hạng mục chi phí, thời gian và điều khoản thương mại",
+    "statusChip": "Trạng thái: {{status}}",
+    "statusDraft": "Soạn thảo",
+    "editingTitle": "Bạn đang chỉnh sửa báo giá đã gửi",
+    "editingBody": "Các thay đổi chỉ có hiệu lực khi bạn bấm gửi lại. Có thể chỉnh sửa đến {{date}}; người mua sẽ nhận thông báo báo giá được cập nhật.",
+    "section1": "1. Định giá & Số lượng cung ứng",
+    "unitPrice": "Đơn giá chào thầu (VND / {{unit}})",
+    "perUnit": "/ {{unit}}",
+    "priceHint": "Đề xuất cạnh tranh dựa trên thị trường: {{min}} – {{max}}",
+    "moq": "MOQ tối thiểu áp dụng",
+    "moqHint": "Số lượng yêu cầu: {{qty}} {{unit}}",
+    "moqFits": "Thỏa mãn yêu cầu đơn hàng {{qty}} {{unit}}",
+    "moqExceeds": "MOQ vượt số lượng yêu cầu ({{qty}} {{unit}}) – tổng giá trị sẽ tính theo MOQ",
+    "totalLabel": "Tổng giá trị đơn hàng ước tính ({{qty}} {{unit}}):",
+    "totalNote": "Chưa bao gồm thuế VAT (8%) và phí bốc dỡ nếu có",
+    "inWords": "(Bằng chữ: {{words}})",
+    "section2": "2. Kế hoạch sản xuất & Điều khoản thương mại",
+    "leadTime": "Thời gian sản xuất & giao hàng (Lead time)",
+    "leadTimeHint": "Tính từ ngày người mua xác nhận chọn nhà cung cấp",
+    "expectedDelivery": "Dự kiến giao hàng vào: {{date}}",
+    "validity": "Hiệu lực báo giá",
+    "validityOption": "{{days}} ngày (đến {{date}})",
+    "validityHint": "Cam kết giữ nguyên đơn giá vật tư • Người mua yêu cầu tối thiểu {{min}} ngày",
+    "paymentTerms": "Điều khoản thanh toán đề xuất",
+    "paymentHint": "Chỉ là điều khoản đề xuất; hai bên tự thỏa thuận chi tiết sau khi người mua chọn nhà cung cấp.",
+    "buyerTerm": "{{term}} (theo yêu cầu người mua)",
+    "toolingCost": "Chi phí khuôn in / dao cắt (nếu có)",
+    "toolingHint": "Để 0 nếu miễn phí khuôn",
+    "offerNotes": "Ưu đãi & Cam kết đặc biệt kèm theo",
+    "offerHint": "Tối đa 1.000 ký tự",
+    "offerPlaceholder": "Ví dụ: miễn phí khuôn in và mẫu thử, đổi trả 1-1 trong 7 ngày nếu lỗi in…",
+    "attachments": "Đính kèm bảng thông số kỹ thuật chi tiết / Báo giá có mộc (Tùy chọn)",
+    "dropTitle": "Tải lên tài liệu PDF hoặc Excel báo giá",
+    "dropHint": "Tối đa 15MB (.pdf, .xlsx, .docx)",
+    "submit": "Gửi báo giá chính thức cho Người mua",
+    "resubmit": "Gửi lại báo giá đã cập nhật",
+    "cancelEdit": "Hủy chỉnh sửa"
+  },
+  "readOnly": {
+    "viewQuotation": "Xem chi tiết báo giá đã gửi",
+    "closed": {
+      "title": "RFQ đã đóng nhận báo giá",
+      "body": "Người mua đã kết thúc hoặc hủy yêu cầu này nên biểu mẫu chỉ hiển thị ở chế độ xem."
+    },
+    "expired": {
+      "title": "Đã quá hạn chót nộp báo giá",
+      "body": "Hạn nộp hồ sơ đã kết thúc. Báo giá không thể tạo mới hoặc chỉnh sửa."
+    },
+    "declined": {
+      "title": "Bạn đã từ chối yêu cầu này",
+      "body": "Xưởng của bạn đã từ chối tham gia báo giá cho RFQ này."
+    },
+    "locked": {
+      "title": "Báo giá không thể chỉnh sửa",
+      "body": "Báo giá đã có kết quả hoặc không còn hiệu lực nên được giữ cố định."
+    }
+  },
+  "confirm": {
+    "title": "Gửi báo giá chính thức?",
+    "titleResubmit": "Gửi lại báo giá đã cập nhật?",
+    "description": "{{code}} • {{buyer}}",
+    "unitPrice": "Đơn giá chào thầu",
+    "total": "Tổng giá trị ước tính",
+    "moq": "MOQ",
+    "leadTime": "Lead time",
+    "validity": "Hiệu lực báo giá",
+    "sealed": "Báo giá được bảo mật theo cơ chế báo giá kín. Bạn vẫn có thể chỉnh sửa hoặc rút báo giá trước hạn chót.",
+    "confirm": "Xác nhận gửi"
+  },
+  "toast": {
+    "submitted": "Đã gửi báo giá cho {{code}}",
+    "resubmitted": "Đã cập nhật báo giá cho {{code}}"
+  }
+}

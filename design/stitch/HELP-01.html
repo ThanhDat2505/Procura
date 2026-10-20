@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trợ giúp - Procura Sourcing</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#fefcff",
+            "inverse-primary": "#acc7ff",
+            "on-primary-fixed-variant": "#004492",
+            "on-tertiary-container": "#fefcff",
+            "on-tertiary-fixed": "#001849",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#414754",
+            "on-tertiary": "#ffffff",
+            "secondary-container": "#a5a9ff",
+            "background": "#f7f9ff",
+            "error": "#ba1a1a",
+            "on-error-container": "#93000a",
+            "primary-container": "#0070e9",
+            "tertiary": "#1654c9",
+            "tertiary-fixed-dim": "#b3c5ff",
+            "tertiary-fixed": "#dbe1ff",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#eef1f7",
+            "primary": "#0059ba",
+            "on-background": "#181c20",
+            "surface-container": "#ebeef4",
+            "surface-variant": "#dfe3e8",
+            "surface": "#f7f9ff",
+            "outline": "#717786",
+            "surface-tint": "#005bbf",
+            "on-secondary-fixed": "#090a61",
+            "surface-bright": "#f7f9ff",
+            "on-surface": "#181c20",
+            "on-secondary-fixed-variant": "#3a3e8c",
+            "surface-container-highest": "#dfe3e8",
+            "surface-container-low": "#f1f4fa",
+            "tertiary-container": "#3b6ee3",
+            "outline-variant": "#c1c6d7",
+            "on-primary-fixed": "#001a40",
+            "secondary-fixed-dim": "#bfc1ff",
+            "primary-fixed-dim": "#acc7ff",
+            "surface-container-high": "#e5e8ee",
+            "on-secondary-container": "#373a89",
+            "secondary-fixed": "#e1e0ff",
+            "inverse-surface": "#2d3135",
+            "surface-dim": "#d7dae0",
+            "surface-container-lowest": "#ffffff",
+            "on-primary": "#ffffff",
+            "primary-fixed": "#d7e2ff",
+            "on-tertiary-fixed-variant": "#003fa4",
+            "on-secondary": "#ffffff",
+            "secondary": "#5256a6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "1.5rem",
+            "space-lg": "1rem",
+            "space-2xl": "2rem",
+            "space-sm": "0.5rem",
+            "margin": "1.5rem",
+            "space-md": "0.75rem",
+            "space-2xs": "0.125rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Inter"],
+            "label-sm": ["Inter"],
+            "code-tabular": ["Inter"],
+            "display-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "display-lg": ["Inter"],
+            "headline-lg": ["Inter"],
+            "label-lg": ["Inter"],
+            "headline-md": ["Inter"]
+          },
+          "fontSize": {
+            "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "code-tabular": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "display-sm": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex font-body-md text-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- SIDEBAR (Fixed 256px / w-64) -->
+<aside class="fixed top-0 left-0 h-screen w-64 flex flex-col justify-between p-4 z-40 bg-surface-container-lowest border-r border-outline-variant shadow-sm">
+<!-- Top Area -->
+<div class="flex flex-col gap-4">
+<!-- Brand & Header -->
+<div class="flex items-center gap-3 px-2 py-1.5">
+<img alt="Procura Enterprise Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbsxbknzydtzu2d6ekzP3qnLgDnEq6gMblAdmcfro5tzUnhVA3x-I2c9r4SO3ffNuKaIC3TqW605qbNpD4ITXQNjvKR1JOxqcRyiFdvplYFmBQjpM8LBaKnuMt6VZbBzKSm8ZZu7JNWR08_AddQN-ryn_SfNkf-Ll_7dllvFD7aPKxZDwZDl_Fu32s49hvQWguLK-U0SRyMU6215cap9u09FKqaGIN3UyYyy9wVEpcAQG4u674h4uDQLlOiBvbJKQsGG4"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">Procura Sourcing</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Buyer / Thu mua</span>
+</div>
+</div>
+<!-- CTA Button -->
+<button class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-primary hover:bg-tertiary text-on-primary font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Tạo RFQ mới</span>
+</button>
+<!-- Main Navigation Tabs -->
+<nav class="flex flex-col gap-1 mt-1">
+<!-- 1. Tổng quan -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+<span class="font-label-md text-label-md">Tổng quan</span>
+</a>
+<!-- 2. Tìm nhà cung cấp -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+<span class="font-label-md text-label-md">Tìm nhà cung cấp</span>
+</a>
+<!-- 3. Quản lý RFQ -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">request_quote</span>
+<span class="font-label-md text-label-md">Quản lý RFQ</span>
+</a>
+<!-- 4. Nhà cung cấp đã lưu -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+<span class="font-label-md text-label-md">Nhà cung cấp đã lưu</span>
+</a>
+<!-- 5. So sánh báo giá -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">compare_arrows</span>
+<span class="font-label-md text-label-md">So sánh báo giá</span>
+</a>
+</nav>
+</div>
+<!-- Bottom Navigation & User Footer -->
+<div class="flex flex-col gap-3 pt-3 border-t border-surface-container-high">
+<nav class="flex flex-col gap-1">
+<!-- Cài đặt -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span class="font-label-md text-label-md">Cài đặt</span>
+</a>
+<!-- Trợ giúp (ACTIVE PAGE) -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-surface-container-high text-primary font-semibold" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">help</span>
+<span class="font-label-md text-label-md">Trợ giúp</span>
+</a>
+</nav>
+<!-- User Profile Card -->
+<div class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-low border border-surface-variant">
+<div class="h-9 w-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold flex-shrink-0">
+          H
+        </div>
+<div class="flex flex-col min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate font-semibold">Trần Nhật Hoàng</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">An Phước Logistics</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- MAIN WRAPPER (Offset ml-64 for fixed sidebar) -->
+<div class="flex-1 ml-64 flex flex-col min-w-0">
+<!-- TOPBAR -->
+<header class="sticky top-0 right-0 h-16 w-full flex items-center justify-between px-6 z-30 bg-surface-container-lowest border-b border-outline-variant shadow-sm">
+<!-- Search Input Left -->
+<div class="flex items-center gap-2 w-96 relative">
+<span class="material-symbols-outlined text-outline absolute left-3 pointer-events-none text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-3 rounded-lg border border-outline-variant bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container-lowest transition-all" placeholder="Tìm RFQ, danh mục hàng, nhà cung cấp..." type="text"/>
+</div>
+<!-- Right Control Cluster -->
+<div class="flex items-center gap-3">
+<!-- New RFQ CTA -->
+<button class="flex items-center gap-1.5 h-9 px-3.5 rounded-lg bg-primary hover:bg-tertiary text-on-primary font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>+ Tạo RFQ mới</span>
+</button>
+<div class="h-6 w-px bg-surface-variant mx-1"></div>
+<!-- Notification Trigger -->
+<button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" title="Thông báo" type="button">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+</button>
+<!-- Help Quick Icon -->
+<button class="p-2 rounded-lg bg-surface-container-high text-primary hover:bg-surface-container transition-colors" title="Trợ giúp" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">help</span>
+</button>
+<!-- User Role Switcher Header -->
+<div class="flex items-center gap-3 pl-2">
+<div class="text-right hidden xl:block">
+<p class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Trần Nhật Hoàng</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Trưởng phòng Mua hàng</p>
+</div>
+<div class="h-9 w-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-lg text-label-lg font-bold border border-outline-variant" title="User avatar with role switcher">
+            JH
+          </div>
+</div>
+</div>
+</header>
+<!-- MAIN CONTENT CANVAS -->
+<main class="flex-1 p-6 md:p-8 max-w-[1400px] w-full mx-auto">
+<!-- HERO BANNER -->
+<section class="bg-gradient-to-r from-primary to-[#080860] text-on-primary rounded-xl p-8 md:p-10 text-center mb-8 shadow-sm relative overflow-hidden">
+<!-- Subtle ambient pattern circle -->
+<div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-white/5 pointer-events-none blur-2xl"></div>
+<div class="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-white/5 pointer-events-none blur-2xl"></div>
+<div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-white font-label-sm text-label-sm mb-3">
+<span class="material-symbols-outlined text-[15px]">support_agent</span>
+            Trung tâm Tri thức &amp; Hỗ trợ Thu mua Doanh nghiệp
+          </span>
+<h1 class="font-display-sm text-display-sm font-bold text-white mb-2 tracking-tight">
+            Trung tâm Trợ giúp &amp; Hướng dẫn Procura
+          </h1>
+<p class="font-body-lg text-body-lg text-white/80 mb-6 font-normal">
+            Bạn cần hỗ trợ gì về quy trình tìm nguồn cung ứng và đấu thầu hôm nay?
+          </p>
+<!-- Large Search Hero Box -->
+<div class="w-full max-w-2xl relative shadow-md">
+<span class="material-symbols-outlined text-outline absolute left-4 top-1/2 -translate-y-1/2 text-[22px]">search</span>
+<input class="w-full h-12 pl-12 pr-28 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline border border-transparent focus:outline-none focus:ring-2 focus:ring-tertiary-fixed shadow-sm transition-all" placeholder="Tìm câu hỏi, tài liệu hướng dẫn hoặc từ khóa (ví dụ: Tạo RFQ, Báo giá kín, MOQ...)" type="text"/>
+<button class="absolute right-1.5 top-1.5 bottom-1.5 px-4 rounded-md bg-primary hover:bg-tertiary text-on-primary font-label-md text-label-md transition-colors flex items-center justify-center" type="button">
+              Tìm kiếm
+            </button>
+</div>
+<!-- Quick tags -->
+<div class="flex flex-wrap items-center justify-center gap-2 mt-4 text-white/70 font-label-sm text-label-sm">
+<span>Chủ đề phổ biến:</span>
+<a class="px-2 py-0.5 rounded bg-white/15 hover:bg-white/25 transition-colors text-white" href="#">Quy chế Báo giá kín</a>
+<a class="px-2 py-0.5 rounded bg-white/15 hover:bg-white/25 transition-colors text-white" href="#">Thiết lập tiêu chí kỹ thuật</a>
+<a class="px-2 py-0.5 rounded bg-white/15 hover:bg-white/25 transition-colors text-white" href="#">Xác thực chứng chỉ ISO xưởng</a>
+</div>
+</div>
+</section>
+<!-- SECTION 1: CẨM NANG HƯỚNG DẪN SỬ DỤNG NHANH -->
+<section class="mb-10">
+<div class="flex items-center justify-between mb-4">
+<div>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">Cẩm nang hướng dẫn sử dụng nhanh</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Quy chuẩn thao tác tối ưu hóa thời gian và quy trình thu mua cho đội ngũ</p>
+</div>
+<a class="flex items-center gap-1 text-primary hover:text-tertiary font-label-md text-label-md transition-colors" href="#">
+<span>Xem toàn bộ 14 hướng dẫn</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant hover:border-primary rounded-xl p-5 shadow-sm hover:shadow-md transition-all group flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-3.5 group-hover:bg-primary-fixed group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">post_add</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors">
+                Tạo RFQ đầu tiên
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Quy trình 4 bước từ quy cách, chọn xưởng đến điều khoản kỹ thuật và quy định hạn chót nộp thầu.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-container-high flex items-center justify-between text-primary font-label-sm text-label-sm">
+<span class="font-semibold">3 phút đọc</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant hover:border-primary rounded-xl p-5 shadow-sm hover:shadow-md transition-all group flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-3.5 group-hover:bg-primary-fixed group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors">
+                Tìm &amp; lưu nhà cung cấp
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Cách lọc theo chứng chỉ ISO, FSC, vị trí địa lý xưởng, sản lượng tối thiểu (MOQ) và báo cáo kiểm toán độc lập.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-container-high flex items-center justify-between text-primary font-label-sm text-label-sm">
+<span class="font-semibold">4 phút đọc</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant hover:border-primary rounded-xl p-5 shadow-sm hover:shadow-md transition-all group flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-3.5 group-hover:bg-primary-fixed group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">analytics</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors">
+                So sánh báo giá &amp; Chọn thầu
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Đọc hiểu ma trận giá kín, thiết lập trọng số đánh giá kỹ thuật và chuẩn hóa quy trình xuất phê duyệt nội bộ.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-container-high flex items-center justify-between text-primary font-label-sm text-label-sm">
+<span class="font-semibold">5 phút đọc</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant hover:border-primary rounded-xl p-5 shadow-sm hover:shadow-md transition-all group flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-3.5 group-hover:bg-primary-fixed group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">factory</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors">
+                Dành cho Nhà cung ứng: Gửi báo giá
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Hướng dẫn xưởng tải hồ sơ năng lực, gửi chào giá niêm phong và cập nhật tiến độ mẫu thử nghiệm.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-container-high flex items-center justify-between text-primary font-label-sm text-label-sm">
+<span class="font-semibold">3 phút đọc</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: CÂU HỎI THƯỜNG GẶP (FAQ) -->
+<section class="mb-10">
+<div class="mb-4">
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">Câu hỏi thường gặp (FAQ)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Giải đáp nhanh các thắc mắc về bảo mật giá, pháp lý và vận hành trên nền tảng</p>
+</div>
+<div class="space-y-3">
+<!-- Accordion Item 1 (OPEN) -->
+<details class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden transition-all shadow-sm" open="">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none bg-surface-container-lowest group-open:bg-surface-container-low transition-colors list-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">help</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+                  Cơ chế Báo giá kín (Blind Bidding) trên Procura hoạt động như thế nào?
+                </span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform duration-200 group-open:rotate-180">
+                keyboard_arrow_down
+              </span>
+</summary>
+<div class="px-5 pb-5 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-surface-container-high bg-surface-container-lowest">
+<p class="leading-relaxed">
+                Để đảm bảo tính cạnh tranh lành mạnh và khách quan, các nhà cung cấp hoàn toàn không thể xem danh tính, số lượng đối thủ hoặc mức giá của nhau. Chỉ bên mua mới mở được ma trận đối chiếu sau khi kết thúc thời hạn nộp thầu. Hệ thống sẽ ghi nhận dấu thời gian điện tử (timestamp) bất biến cho từng gói thầu để loại bỏ hoàn toàn khả năng can thiệp dữ liệu.
+              </p>
+</div>
+</details>
+<!-- Accordion Item 2 -->
+<details class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden transition-all shadow-sm">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none bg-surface-container-lowest hover:bg-surface-container-low transition-colors list-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">help</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+                  Procura có can thiệp vào thanh toán hoặc ký kết hợp đồng không?
+                </span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform duration-200 group-open:rotate-180">
+                keyboard_arrow_down
+              </span>
+</summary>
+<div class="px-5 pb-5 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-surface-container-high bg-surface-container-lowest">
+<p class="leading-relaxed">
+                Không. Procura đóng vai trò là hạ tầng kết nối kỹ thuật, so sánh báo giá và số hóa quy trình thẩm định sourcing. Các thỏa thuận thương mại cuối cùng, điều khoản thanh toán LC/TT và hợp đồng nguyên tắc sẽ được hai bên ký kết trực tiếp theo quy định pháp luật hiện hành.
+              </p>
+</div>
+</details>
+<!-- Accordion Item 3 -->
+<details class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden transition-all shadow-sm">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none bg-surface-container-lowest hover:bg-surface-container-low transition-colors list-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">help</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+                  Làm thế nào để biết nhà cung cấp đã được Procura thẩm định thực tế?
+                </span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform duration-200 group-open:rotate-180">
+                keyboard_arrow_down
+              </span>
+</summary>
+<div class="px-5 pb-5 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-surface-container-high bg-surface-container-lowest">
+<p class="leading-relaxed">
+                Các xưởng đã hoàn tất quy trình thẩm định trực tiếp tại hiện trường (On-site Audit) bởi đội ngũ chuyên gia kiểm toán của Procura sẽ mang huy hiệu xanh dương <strong>"Verified Procura"</strong>. Bạn có thể tải trực tiếp biên bản kiểm tra cơ sở vật chất, năng lực máy móc và các chứng nhận ISO/BRC/Sedex từ trang hồ sơ năng lực của xưởng.
+              </p>
+</div>
+</details>
+<!-- Accordion Item 4 -->
+<details class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden transition-all shadow-sm">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none bg-surface-container-lowest hover:bg-surface-container-low transition-colors list-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">help</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+                  Sau khi chốt nhà cung cấp trúng thầu, quy trình tiếp theo là gì?
+                </span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform duration-200 group-open:rotate-180">
+                keyboard_arrow_down
+              </span>
+</summary>
+<div class="px-5 pb-5 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-surface-container-high bg-surface-container-lowest">
+<p class="leading-relaxed">
+                Hệ thống sẽ tự động phát hành <em>Thư thông báo trúng thầu điện tử (Letter of Award)</em> tới nhà cung cấp được lựa chọn, kèm bản tóm tắt các điều khoản kỹ thuật và đơn giá đã cam kết. Đồng thời, các nhà cung cấp không được chọn sẽ nhận thư cảm ơn chuyên nghiệp nhằm duy trì mối quan hệ chuỗi cung ứng bền vững.
+              </p>
+</div>
+</details>
+<!-- Accordion Item 5 -->
+<details class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden transition-all shadow-sm">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none bg-surface-container-lowest hover:bg-surface-container-low transition-colors list-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">help</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+                  Nhà cung cấp có thể chỉnh sửa lại giá sau khi đã nộp báo giá không?
+                </span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform duration-200 group-open:rotate-180">
+                keyboard_arrow_down
+              </span>
+</summary>
+<div class="px-5 pb-5 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-surface-container-high bg-surface-container-lowest">
+<p class="leading-relaxed">
+                Nhà cung cấp chỉ được phép cập nhật hoặc thu hồi bản chào giá khi RFQ còn trong trạng thái <strong>"Đang mở nhận thầu"</strong>. Sau khi hạn chót (Deadline) kết thúc, toàn bộ hồ sơ giá sẽ bị khóa cứng và niêm phong mật mã, không ai có thể điều chỉnh bất kỳ số liệu nào.
+              </p>
+</div>
+</details>
+<!-- Accordion Item 6 -->
+<details class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden transition-all shadow-sm">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none bg-surface-container-lowest hover:bg-surface-container-low transition-colors list-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">help</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+                  Tôi có thể xuất dữ liệu ma trận so sánh báo giá ra file Excel không?
+                </span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform duration-200 group-open:rotate-180">
+                keyboard_arrow_down
+              </span>
+</summary>
+<div class="px-5 pb-5 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-surface-container-high bg-surface-container-lowest">
+<p class="leading-relaxed">
+                Có. Bạn có thể xuất toàn bộ bảng đối chiếu SKU theo đơn giá, lead time, chi phí logistics và điều khoản bảo hành thành định dạng `.xlsx` hoặc `.pdf` có đính kèm chữ ký số để trình duyệt Ban Giám đốc chỉ bằng 1 cú nhấp chuột tại trang So sánh báo giá.
+              </p>
+</div>
+</details>
+</div>
+</section>
+<!-- SUPPORT CONTACT BOX -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">headset_mic</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Chưa tìm thấy giải đáp bạn cần?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Đội ngũ Chuyên viên Tư vấn Thu mua Procura luôn sẵn sàng hỗ trợ trực tiếp.</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-6 justify-end w-full lg:w-auto border-t lg:border-t-0 pt-4 lg:pt-0 border-surface-container-high">
+<!-- Support Hotline / Email -->
+<div class="flex flex-col text-left lg:text-right font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-outline text-[16px]">mail</span>
+<span>Email: <a class="text-primary font-medium hover:underline" href="mailto:support@procura.vn">support@procura.vn</a></span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-outline text-[16px]">call</span>
+<span>Hotline: <strong class="text-on-surface font-semibold">1900 68xx</strong> (8:00 – 17:30, T2 – T6)</span>
+</div>
+</div>
+<!-- Primary Contact CTA -->
+<button class="h-10 px-5 rounded-lg bg-primary hover:bg-tertiary text-on-primary font-label-md text-label-md transition-colors shadow-sm flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Gửi yêu cầu hỗ trợ</span>
+</button>
+</div>
+</section>
+</main>
+</div>
+</body></html>

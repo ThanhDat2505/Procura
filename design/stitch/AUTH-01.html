@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Đăng nhập Procura | Nền tảng Đấu thầu &amp; Sourcing B2B</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Inter Font Family -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#fefcff",
+            "inverse-primary": "#acc7ff",
+            "on-primary-fixed-variant": "#004492",
+            "on-tertiary-container": "#fefcff",
+            "on-tertiary-fixed": "#001849",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#414754",
+            "on-tertiary": "#ffffff",
+            "secondary-container": "#a5a9ff",
+            "background": "#f7f9ff",
+            "error": "#ba1a1a",
+            "on-error-container": "#93000a",
+            "primary-container": "#0070e9",
+            "tertiary": "#1654c9",
+            "tertiary-fixed-dim": "#b3c5ff",
+            "tertiary-fixed": "#dbe1ff",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#eef1f7",
+            "primary": "#0059ba",
+            "on-background": "#181c20",
+            "surface-container": "#ebeef4",
+            "surface-variant": "#dfe3e8",
+            "surface": "#f7f9ff",
+            "outline": "#717786",
+            "surface-tint": "#005bbf",
+            "on-secondary-fixed": "#090a61",
+            "surface-bright": "#f7f9ff",
+            "on-surface": "#181c20",
+            "on-secondary-fixed-variant": "#3a3e8c",
+            "surface-container-highest": "#dfe3e8",
+            "surface-container-low": "#f1f4fa",
+            "tertiary-container": "#3b6ee3",
+            "outline-variant": "#c1c6d7",
+            "on-primary-fixed": "#001a40",
+            "secondary-fixed-dim": "#bfc1ff",
+            "primary-fixed-dim": "#acc7ff",
+            "surface-container-high": "#e5e8ee",
+            "on-secondary-container": "#373a89",
+            "secondary-fixed": "#e1e0ff",
+            "inverse-surface": "#2d3135",
+            "surface-dim": "#d7dae0",
+            "surface-container-lowest": "#ffffff",
+            "on-primary": "#ffffff",
+            "primary-fixed": "#d7e2ff",
+            "on-tertiary-fixed-variant": "#003fa4",
+            "on-secondary": "#ffffff",
+            "secondary": "#5256a6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "1.5rem",
+            "space-lg": "1rem",
+            "space-2xl": "2rem",
+            "space-sm": "0.5rem",
+            "margin": "1.5rem",
+            "space-md": "0.75rem",
+            "space-2xs": "0.125rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Inter"],
+            "label-sm": ["Inter"],
+            "code-tabular": ["Inter"],
+            "display-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "display-lg": ["Inter"],
+            "headline-lg": ["Inter"],
+            "label-lg": ["Inter"],
+            "headline-md": ["Inter"]
+          },
+          "fontSize": {
+            "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "code-tabular": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "display-sm": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .material-symbols-outlined.fill-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 20;
+    }
+    /* Subtle geometric grid background overlay on dark navy */
+    .navy-grid-bg {
+      background-color: #080860;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+  </style>
+</head>
+<body class="h-full bg-background font-body-md text-on-surface antialiased flex flex-col justify-center">
+<main class="w-full min-h-screen flex flex-col lg:flex-row">
+<!-- LEFT PANEL: Brand & Value Proposition (Navy #080860) -->
+<section class="lg:w-1/2 xl:w-[48%] navy-grid-bg text-on-primary p-8 md:p-12 lg:p-14 flex flex-col justify-between relative overflow-hidden shrink-0">
+<!-- Ambient Lighting Orbs -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-tertiary-container/25 blur-3xl pointer-events-none"></div>
+<!-- Top: Brand Logo Card -->
+<header class="relative z-10 flex items-center justify-between">
+<div class="bg-surface-container-lowest px-4 py-2.5 rounded-xl border border-outline-variant/30 shadow-sm flex items-center gap-3">
+<img alt="Procura Enterprise Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbsxbknzydtzu2d6ekzP3qnLgDnEq6gMblAdmcfro5tzUnhVA3x-I2c9r4SO3ffNuKaIC3TqW605qbNpD4ITXQNjvKR1JOxqcRyiFdvplYFmBQjpM8LBaKnuMt6VZbBzKSm8ZZu7JNWR08_AddQN-ryn_SfNkf-Ll_7dllvFD7aPKxZDwZDl_Fu32s49hvQWguLK-U0SRyMU6215cap9u09FKqaGIN3UyYyy9wVEpcAQG4u674h4uDQLlOiBvbJKQsGG4"/>
+<span class="inline-block h-4 w-px bg-outline-variant"></span>
+<span class="text-primary font-headline-sm text-headline-sm tracking-tight">Sourcing Portal</span>
+</div>
+<div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/10 border border-surface-container-lowest/20 text-on-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span>Bảo mật chuẩn ISO 27001</span>
+</div>
+</header>
+<!-- Center Content: Value Propositions -->
+<div class="relative z-10 my-10 max-w-xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/15 border border-surface-container-lowest/25 font-label-md text-label-md text-primary-fixed mb-5 backdrop-blur-xs">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Giải pháp Thu mua Toàn diện</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:font-display-sm md:text-display-sm text-on-primary leading-tight tracking-tight mb-4">
+          Nền tảng Tìm kiếm Nhà cung cấp &amp; Đấu thầu B2B hàng đầu cho Doanh nghiệp Việt Nam
+        </h1>
+<p class="font-body-lg text-body-lg text-primary-fixed/85 mb-8 leading-relaxed">
+          Kết nối minh bạch giữa Người mua doanh nghiệp (Buyer) và các Xưởng sản xuất uy tín (Supplier) trên toàn quốc.
+        </p>
+<!-- 3 Key Benefits with Checkmarks -->
+<div class="space-y-4">
+<!-- Item 1 -->
+<div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-surface-container-lowest/5 border border-surface-container-lowest/10 backdrop-blur-sm transition-all hover:bg-surface-container-lowest/10">
+<div class="shrink-0 w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined fill-icon text-[18px]">verified</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-primary mb-0.5">Báo giá kín (Blind Bidding)</p>
+<p class="font-body-md text-body-md text-surface-container-high/90">Bảo mật thông tin, cạnh tranh lành mạnh, tối ưu chi phí thu mua từ 12–25%.</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-surface-container-lowest/5 border border-surface-container-lowest/10 backdrop-blur-sm transition-all hover:bg-surface-container-lowest/10">
+<div class="shrink-0 w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined fill-icon text-[18px]">domain_verification</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-primary mb-0.5">Mạng lưới nhà xưởng xác thực</p>
+<p class="font-body-md text-body-md text-surface-container-high/90">100% đối tác được kiểm tra mã số thuế, chứng chỉ ISO/FSC và audit thực tế.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-surface-container-lowest/5 border border-surface-container-lowest/10 backdrop-blur-sm transition-all hover:bg-surface-container-lowest/10">
+<div class="shrink-0 w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined fill-icon text-[18px]">query_stats</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-primary mb-0.5">Ma trận so sánh tự động</p>
+<p class="font-body-md text-body-md text-surface-container-high/90">Phân tích báo giá, MOQ, lead time chỉ trong 1 cú nhấp chuột.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom: Enterprise Trust & Copyright -->
+<footer class="relative z-10 pt-6 border-t border-surface-container-lowest/15 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-surface-variant font-body-sm text-body-sm">
+<span>© 2025 Procura B2B Sourcing Platform.</span>
+<span class="flex items-center gap-1.5 text-primary-fixed/80">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+          Bảo mật thông tin doanh nghiệp theo tiêu chuẩn ISO 27001.
+        </span>
+</footer>
+</section>
+<!-- RIGHT PANEL: Clean Light Canvas (#F6F9FF) with Auth Card -->
+<section class="lg:w-1/2 xl:w-[52%] bg-surface flex flex-col items-center justify-center p-6 md:p-12 relative">
+<!-- Top Right Utility: Language Switcher -->
+<div class="w-full max-w-md flex justify-end mb-4">
+<div class="inline-flex items-center gap-2 bg-surface-container-lowest px-3 py-1.5 rounded-lg border border-outline-variant/60 shadow-sm text-on-surface-variant font-label-md text-label-md">
+<span class="font-medium text-on-surface flex items-center gap-1">
+<span>🇻🇳</span> Tiếng Việt
+          </span>
+<span class="text-outline-variant">|</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="#lang-en">
+<span>🇬🇧</span> English
+          </a>
+</div>
+</div>
+<!-- Sign-in Card Component -->
+<div class="w-full max-w-md bg-surface-container-lowest p-7 sm:p-9 rounded-2xl border border-outline-variant/60 shadow-sm">
+<!-- Header text -->
+<div class="mb-6">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-1">Đăng nhập Procura</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Truy cập hệ thống quản lý thu mua và đấu thầu</p>
+</div>
+<!-- Role Segmented Control (Tabs) -->
+<div class="bg-surface-container-low p-1 rounded-xl border border-outline-variant/40 flex items-center mb-6" role="tablist">
+<button class="flex-1 py-2 px-3 rounded-lg text-center font-label-md text-label-md transition-all duration-150 bg-surface-container-lowest text-primary shadow-xs border border-outline-variant/30 flex items-center justify-center gap-1.5" id="tab-buyer" onclick="switchRole('buyer')" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Người mua (Buyer)</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-lg text-center font-label-md text-label-md transition-all duration-150 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" id="tab-supplier" onclick="switchRole('supplier')" type="button">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+<span>Nhà cung cấp (Supplier)</span>
+</button>
+</div>
+<!-- Login Form -->
+<form class="space-y-4" onsubmit="event.preventDefault();">
+<!-- Email Input -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="work-email">Email doanh nghiệp</label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[18px]">alternate_email</span>
+</span>
+<input class="w-full pl-10 pr-3 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all" id="work-email" placeholder="ten.ban@congty.vn" required="" type="email" value="hoang.tn@anphuoc.vn"/>
+</div>
+</div>
+<!-- Password Input -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="password">Mật khẩu</label>
+<a class="font-label-sm text-label-sm text-primary hover:text-tertiary transition-colors" href="#forgot">Quên mật khẩu?</a>
+</div>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</span>
+<input class="w-full pl-10 pr-10 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all" id="password" placeholder="••••••••" required="" type="password" value="123456"/>
+<button aria-label="Hiện hoặc ẩn mật khẩu" class="absolute inset-y-0 right-0 pr-3 flex items-center text-outline hover:text-on-surface transition-colors" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[18px]" id="password-toggle-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Options: Remember me -->
+<div class="flex items-center pt-1">
+<input checked="" class="h-4 w-4 rounded border-outline-variant text-primary focus:ring-primary-container/20 cursor-pointer" id="remember-me" type="checkbox"/>
+<label class="ml-2 font-body-sm text-body-sm text-on-surface-variant cursor-pointer select-none" for="remember-me">
+              Ghi nhớ đăng nhập 30 ngày
+            </label>
+</div>
+<!-- Primary CTA Button -->
+<button class="w-full mt-2 py-3 px-4 bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg rounded-xl shadow-xs transition-all duration-150 flex items-center justify-center gap-2 group active:scale-[0.99]" type="submit">
+<span>Đăng nhập vào hệ thống</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-0.5">arrow_forward</span>
+</button>
+</form>
+<!-- Register Link -->
+<div class="mt-6 text-center pt-4 border-t border-outline-variant/40">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Doanh nghiệp chưa có tài khoản?
+          </p>
+<a class="mt-1 inline-block font-label-md text-label-md text-primary hover:text-tertiary transition-colors" href="#register">
+            Đăng ký mở cổng Buyer / Supplier →
+          </a>
+</div>
+<!-- Demo Accounts Box -->
+<div class="mt-6 p-3.5 bg-surface-container-low/70 border border-outline-variant/60 rounded-xl text-on-surface-variant font-code-tabular text-body-sm">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface mb-2 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">badge</span>
+<span>Tài khoản trải nghiệm mẫu (Demo):</span>
+</div>
+<div class="space-y-1.5">
+<!-- Buyer Demo Clickable -->
+<button class="w-full text-left p-1.5 rounded-lg bg-surface-container-lowest/80 hover:bg-surface-container-lowest border border-outline-variant/30 transition-colors flex items-center justify-between group" onclick="fillCredentials('buyer')" type="button">
+<div>
+<span class="font-semibold text-primary">Buyer:</span>
+<span class="text-on-surface">hoang.tn@anphuoc.vn</span>
+<span class="text-outline">/ 123456</span>
+</div>
+<span class="font-label-sm text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">Áp dụng</span>
+</button>
+<!-- Supplier Demo Clickable -->
+<button class="w-full text-left p-1.5 rounded-lg bg-surface-container-lowest/80 hover:bg-surface-container-lowest border border-outline-variant/30 transition-colors flex items-center justify-between group" onclick="fillCredentials('supplier')" type="button">
+<div>
+<span class="font-semibold text-secondary">Supplier:</span>
+<span class="text-on-surface">quan.td@tanphatpack.vn</span>
+<span class="text-outline">/ 123456</span>
+</div>
+<span class="font-label-sm text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">Áp dụng</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Trust Indicators -->
+<div class="w-full max-w-md mt-6 flex items-center justify-around text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">encrypted</span>
+<span>Mã hóa TLS 1.3</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">verified</span>
+<span>Xác thực MST Tổng cục Thuế</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Interactive State Handling Script -->
+<script>
+    let currentRole = 'buyer';
+
+    function switchRole(role) {
+      currentRole = role;
+      const tabBuyer = document.getElementById('tab-buyer');
+      const tabSupplier = document.getElementById('tab-supplier');
+
+      if (role === 'buyer') {
+        tabBuyer.className = "flex-1 py-2 px-3 rounded-lg text-center font-label-md text-label-md transition-all duration-150 bg-surface-container-lowest text-primary shadow-xs border border-outline-variant/30 flex items-center justify-center gap-1.5";
+        tabSupplier.className = "flex-1 py-2 px-3 rounded-lg text-center font-label-md text-label-md transition-all duration-150 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5";
+      } else {
+        tabSupplier.className = "flex-1 py-2 px-3 rounded-lg text-center font-label-md text-label-md transition-all duration-150 bg-surface-container-lowest text-primary shadow-xs border border-outline-variant/30 flex items-center justify-center gap-1.5";
+        tabBuyer.className = "flex-1 py-2 px-3 rounded-lg text-center font-label-md text-label-md transition-all duration-150 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5";
+      }
+    }
+
+    function fillCredentials(role) {
+      switchRole(role);
+      const emailInput = document.getElementById('work-email');
+      const passwordInput = document.getElementById('password');
+
+      if (role === 'buyer') {
+        emailInput.value = 'hoang.tn@anphuoc.vn';
+        passwordInput.value = '123456';
+      } else {
+        emailInput.value = 'quan.td@tanphatpack.vn';
+        passwordInput.value = '123456';
+      }
+      emailInput.focus();
+    }
+
+    function togglePasswordVisibility() {
+      const passwordInput = document.getElementById('password');
+      const icon = document.getElementById('password-toggle-icon');
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        icon.textContent = 'visibility_off';
+      } else {
+        passwordInput.type = 'password';
+        icon.textContent = 'visibility';
+      }
+    }
+  </script>
+</body></html>

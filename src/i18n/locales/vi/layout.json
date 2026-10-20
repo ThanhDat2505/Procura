@@ -1,0 +1,41 @@
+{
+  "buyerPortal": "Buyer / Thu mua",
+  "verifiedPartner": "Đối tác xác thực",
+  "mainNav": "Điều hướng chính",
+  "secondaryNav": "Tiện ích",
+  "openMenu": "Mở menu",
+  "closeMenu": "Đóng menu",
+  "skipToContent": "Bỏ qua tới nội dung chính",
+  "searchBuyer": "Tìm theo số RFQ, danh mục, nhà cung cấp…",
+  "searchSupplier": "Tìm mã RFQ, tên gói thầu, vật tư…",
+  "nav": {
+    "dashboard": "Tổng quan",
+    "findSuppliers": "Tìm nhà cung cấp",
+    "rfqs": "Quản lý RFQ",
+    "saved": "Nhà cung cấp đã lưu",
+    "compare": "So sánh báo giá",
+    "settings": "Cài đặt",
+    "help": "Trợ giúp",
+    "helpSupplier": "Trợ giúp & Hướng dẫn",
+    "inbox": "Hộp thư RFQ",
+    "quotations": "Báo giá đã gửi",
+    "profile": "Hồ sơ năng lực",
+    "performance": "Hiệu suất trúng thầu"
+  },
+  "notifications": {
+    "title": "Thông báo",
+    "markAll": "Đánh dấu đã đọc",
+    "all": "Tất cả",
+    "unread": "Chưa đọc ({{count}})",
+    "empty": "Không có thông báo"
+  },
+  "userMenu": {
+    "language": "Ngôn ngữ",
+    "logout": "Đăng xuất"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "description": "Đường dẫn không tồn tại hoặc bạn không có quyền truy cập.",
+    "home": "Về trang chủ"
+  }
+}

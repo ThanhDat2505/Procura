@@ -1,0 +1,201 @@
+{
+  "title": "Quản lý Báo giá đã gửi",
+  "subtitle": "Theo dõi trạng thái các hồ sơ báo giá đã nộp, thời hạn hiệu lực và kết quả mở thầu từ người mua.",
+  "actions": {
+    "export": "Xuất Excel (.csv)",
+    "advancedFilter": "Bộ lọc nâng cao",
+    "view": "Xem",
+    "edit": "Chỉnh sửa",
+    "withdraw": "Rút báo giá",
+    "continueDraft": "Tiếp tục soạn"
+  },
+  "stats": {
+    "submitted": "Tổng báo giá đã gửi",
+    "files": "hồ sơ",
+    "last30Days": "trong 30 ngày qua",
+    "pending": "Chờ kết quả mở thầu",
+    "packages": "gói thầu",
+    "pendingFooter": "Có thể chỉnh sửa trước hạn chót",
+    "awarded": "Trúng thầu (Awarded)",
+    "winRate": "Tỷ lệ thắng thầu: {{rate}}",
+    "notSelected": "Không được chọn",
+    "notSelectedFooter": "Xem phản hồi của người mua trong chi tiết"
+  },
+  "tabs": {
+    "ariaLabel": "Lọc theo kết quả",
+    "all": "Tất cả",
+    "pending": "Chờ kết quả",
+    "awarded": "Trúng thầu",
+    "not_selected": "Không được chọn",
+    "closed": "Đã rút / Hết hạn"
+  },
+  "filters": {
+    "time": "Thời gian",
+    "timeOptions": {
+      "all": "Thời gian: Tất cả",
+      "30d": "30 ngày gần đây",
+      "quarter": "Quý này",
+      "prevQuarter": "Quý trước"
+    },
+    "buyer": "Khách hàng",
+    "buyerAll": "Khách hàng: Tất cả"
+  },
+  "empty": {
+    "filtered": "Không có báo giá nào trên trang này khớp bộ lọc. Hãy đổi bộ lọc hoặc chuyển trang.",
+    "toInbox": "Mở Hộp thư RFQ",
+    "all": {
+      "title": "Chưa có báo giá nào được gửi",
+      "description": "Báo giá bạn gửi từ Hộp thư RFQ sẽ được theo dõi tại đây."
+    },
+    "pending": {
+      "title": "Không có báo giá đang chờ kết quả",
+      "description": "Báo giá đã gửi và chưa có quyết định của người mua sẽ hiển thị tại đây."
+    },
+    "awarded": {
+      "title": "Chưa có báo giá trúng thầu",
+      "description": "Khi người mua chọn xưởng của bạn, báo giá sẽ xuất hiện tại đây."
+    },
+    "not_selected": {
+      "title": "Không có báo giá bị loại",
+      "description": "Báo giá không được chọn cùng phản hồi của người mua sẽ được lưu tại đây."
+    },
+    "closed": {
+      "title": "Không có báo giá đã rút hoặc hết hạn",
+      "description": "Báo giá bạn đã rút hoặc đã hết hiệu lực sẽ được lưu tại đây."
+    }
+  },
+  "table": {
+    "code": "Mã báo giá & ngày nộp",
+    "rfq": "RFQ & doanh nghiệp mua",
+    "unitPrice": "Đơn giá chào thầu",
+    "total": "Tổng giá trị dự thầu",
+    "leadTime": "Lead time",
+    "validity": "Thời hạn hiệu lực",
+    "status": "Trạng thái",
+    "actions": "Thao tác",
+    "copyCode": "Sao chép mã {{code}}",
+    "withdrawnBySupplier": "Đã rút bởi NCC",
+    "withdrawnOn": "Ngày rút: {{date}}",
+    "validUntil": "Đến {{date}}",
+    "expired": "Hết hiệu lực",
+    "daysLeft_one": "Còn {{count}} ngày",
+    "daysLeft_other": "Còn {{count}} ngày"
+  },
+  "rules": {
+    "title": "Quy chuẩn mở thầu Procura:",
+    "body": "Báo giá đã nộp có thể được cập nhật lại đơn giá hoặc thời gian giao hàng cam kết trước khi bên mua chính thức kích hoạt phiên mở thầu (hạn chót nhận báo giá). Sau thời điểm đó hoặc khi đã có kết quả, giá trị và các điều khoản cam kết được giữ cố định."
+  },
+  "withdraw": {
+    "title": "Rút báo giá thầu?",
+    "description": "{{code}} cho {{rfq}}",
+    "body": "Người mua sẽ không còn thấy báo giá này khi so sánh. Sau khi rút, bạn có thể gửi báo giá mới cho RFQ nếu vẫn còn trong hạn.",
+    "confirm": "Rút báo giá",
+    "success": "Đã rút báo giá {{code}}"
+  },
+  "csv": {
+    "code": "Mã báo giá",
+    "submittedAt": "Ngày nộp",
+    "rfq": "Mã RFQ",
+    "title": "Tiêu đề RFQ",
+    "buyer": "Doanh nghiệp mua",
+    "unitPrice": "Đơn giá (VND)",
+    "total": "Tổng giá trị (VND, chưa gồm VAT)",
+    "leadTime": "Lead time (ngày)",
+    "validUntil": "Hiệu lực đến",
+    "status": "Trạng thái"
+  },
+  "detail": {
+    "backToList": "Quay lại Báo giá đã gửi",
+    "crumbList": "Báo giá đã gửi",
+    "crumb": "Chi tiết báo giá #{{code}} ({{rfq}})",
+    "rfqTitle": "Thông tin gói thầu RFQ từ Bên mua",
+    "buyer": "Doanh nghiệp mời thầu",
+    "taxCode": "Mã số thuế: {{code}}",
+    "product": "Quy cách hàng hóa & Khối lượng",
+    "quantity": "Số lượng mời thầu: {{qty}} {{unit}}",
+    "delivery": "Địa điểm giao hàng theo RFQ",
+    "neededBy": "Người mua cần hàng trước ngày {{date}}",
+    "quoteTitle": "Chi tiết báo giá chính thức của {{supplier}}",
+    "readOnly": "Chế độ chỉ đọc",
+    "unitPrice": "Đơn giá chào thầu",
+    "perUnit": "₫ / {{unit}}",
+    "vatNote": "(Chưa bao gồm thuế VAT 8%)",
+    "total": "Tổng giá trị chào thầu",
+    "currency": "VND",
+    "committedQty": "Khối lượng cam kết trọn gói: {{qty}} {{unit}}",
+    "moq": "Số lượng tối thiểu (MOQ)",
+    "leadTime": "Lead time sản xuất & giao hàng",
+    "leadTimeValue": "{{days}} ngày làm việc",
+    "validity": "Thời hạn hiệu lực báo giá",
+    "validityValue": "{{days}} ngày (Hiệu lực đến hết 23:59 ngày {{date}})",
+    "samplePolicy": "Chính sách hàng mẫu",
+    "paymentTerms": "Điều khoản thanh toán đề xuất",
+    "tooling": "Chi phí khuôn in",
+    "offerNotes": "Ưu đãi & cam kết đặc biệt",
+    "certifications": "Chứng chỉ tiêu chuẩn kỹ thuật",
+    "attachments_one": "Đã đính kèm {{count}} tệp",
+    "attachments_other": "Đã đính kèm {{count}} tệp",
+    "notSpecified": "Không nêu",
+    "technicalNotes": "Ghi chú cam kết kỹ thuật"
+  },
+  "banner": {
+    "sent": "Đã gửi báo giá cho {{rfq}} thành công lúc {{time}} ngày {{date}}",
+    "sentBody": "Báo giá đã được mã hóa an toàn và ghi nhận trong phiên đấu thầu kín của bên mua.",
+    "editWindow": "Thời hạn chỉnh sửa",
+    "editDeadline": "Hạn chót: {{date}}",
+    "editClosed": "Đã hết hạn chỉnh sửa",
+    "awarded": "Báo giá đã trúng thầu",
+    "awardedBody": "{{buyer}} đã chọn xưởng của bạn là nhà cung cấp trúng thầu cho {{rfq}} ngày {{date}}. Người mua sẽ liên hệ trực tiếp để trao đổi các bước tiếp theo.",
+    "notSelected": "Báo giá không được chọn cho {{rfq}}",
+    "notSelectedBody": "Người mua đã chọn nhà cung cấp khác cho gói thầu này.",
+    "feedback": "Phản hồi từ người mua: {{text}}",
+    "withdrawn": "Bạn đã rút báo giá này",
+    "withdrawnBody": "Đã rút ngày {{date}}. Người mua không còn thấy báo giá này trong phiên so sánh.",
+    "expired": "Báo giá đã hết hiệu lực",
+    "expiredBody": "Thời hạn hiệu lực của báo giá đã kết thúc.",
+    "draft": "Báo giá đang ở trạng thái bản nháp",
+    "draftBody": "Báo giá chưa được gửi cho người mua. Hãy hoàn tất và gửi trước hạn chót."
+  },
+  "progress": {
+    "title": "Tiến trình xét duyệt thầu",
+    "step1": "1. Đã gửi báo giá",
+    "step2": "2. Người mua đã xem",
+    "step3": "3. Chờ kết quả mở thầu",
+    "step4": "4. Kết quả lựa chọn NCC",
+    "doneOn": "Hoàn tất {{date}}",
+    "at": "Lúc {{time}}",
+    "drafting": "Đang soạn",
+    "waitingView": "Chờ người mua xem",
+    "notifyOnView": "Bạn sẽ được thông báo khi người mua mở hồ sơ",
+    "verified": "Đã xác thực hồ sơ",
+    "notStarted": "Chưa bắt đầu",
+    "inProgress": "Đang diễn ra",
+    "done": "Hoàn tất",
+    "openingAt": "Mở thầu lúc {{time}} {{date}}",
+    "expectedAfter": "Dự kiến sau {{date}}",
+    "announcedOn": "Công bố ngày {{date}}",
+    "notifyChannel": "Thông báo qua Email/SMS"
+  },
+  "actionsCard": {
+    "title": "Tùy chọn thao tác",
+    "edit": "Chỉnh sửa báo giá",
+    "editUntil": "Cho phép sửa đến {{date}}",
+    "withdraw": "Rút báo giá thầu",
+    "lockedWithdrawn": "Báo giá đã được rút nên không thể chỉnh sửa.",
+    "lockedDecided": "Báo giá đã có kết quả lựa chọn nên không thể chỉnh sửa hoặc rút.",
+    "lockedClosed": "RFQ đã đóng nên báo giá được giữ cố định.",
+    "lockedDeadline": "Đã quá hạn chót nộp báo giá ({{date}}) nên báo giá được giữ cố định.",
+    "sealedBefore": "Báo giá của bạn được bảo mật tuyệt đối theo cơ chế",
+    "sealedName": "Báo giá kín (Blind Bidding)",
+    "sealedAfter": ". Người mua chỉ thấy báo giá của bạn sau khi mở phiên so sánh chính thức."
+  },
+  "contact": {
+    "title": "Đầu mối phụ trách gói thầu",
+    "message": "Gửi tin nhắn trao đổi kỹ thuật"
+  },
+  "support": {
+    "title": "Hỗ trợ kỹ thuật thầu",
+    "body": "Cần xác nhận lại bản vẽ dao bế hoặc kiểm tra định dạng file đính kèm?",
+    "link": "Liên hệ bộ phận Sourcing Procura"
+  }
+}

@@ -1,0 +1,592 @@
+<!DOCTYPE html><html class="light min-h-screen" lang="vi" data-stitch-anim-opacity="true" style="opacity: 0;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SUP-02 &amp; SUP-04: Hộp thư RFQ &amp; Biểu mẫu gửi báo giá - Procura Supplier Portal</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-background": "#181c20",
+            "on-primary-container": "#fefcff",
+            "on-primary": "#ffffff",
+            "error": "#ba1a1a",
+            "surface": "#f7f9ff",
+            "surface-variant": "#dfe3e8",
+            "tertiary-fixed-dim": "#b3c5ff",
+            "surface-tint": "#005bbf",
+            "on-tertiary-container": "#fefcff",
+            "tertiary-fixed": "#dbe1ff",
+            "secondary-fixed": "#e1e0ff",
+            "on-surface-variant": "#414754",
+            "on-tertiary-fixed": "#001849",
+            "on-primary-fixed": "#001a40",
+            "surface-container-lowest": "#ffffff",
+            "on-surface": "#181c20",
+            "surface-bright": "#f7f9ff",
+            "surface-container": "#ebeef4",
+            "on-error-container": "#93000a",
+            "inverse-surface": "#2d3135",
+            "on-primary-fixed-variant": "#004492",
+            "surface-container-high": "#e5e8ee",
+            "surface-dim": "#d7dae0",
+            "primary-fixed-dim": "#acc7ff",
+            "secondary-container": "#a5a9ff",
+            "primary": "#0059ba",
+            "surface-container-low": "#f1f4fa",
+            "on-secondary-fixed-variant": "#3a3e8c",
+            "surface-container-highest": "#dfe3e8",
+            "inverse-primary": "#acc7ff",
+            "background": "#f7f9ff",
+            "tertiary-container": "#3b6ee3",
+            "primary-container": "#0070e9",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#090a61",
+            "outline": "#717786",
+            "tertiary": "#1654c9",
+            "on-tertiary-fixed-variant": "#003fa4",
+            "outline-variant": "#c1c6d7",
+            "on-error": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#373a89",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#d7e2ff",
+            "secondary-fixed-dim": "#bfc1ff",
+            "secondary": "#5256a6",
+            "inverse-on-surface": "#eef1f7"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "1rem",
+            "space-md": "0.75rem",
+            "space-xl": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-2xs": "0.125rem",
+            "margin": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-2xl": "2rem",
+            "gutter": "1rem"
+          },
+          "fontFamily": {
+            "label-md": ["Inter"],
+            "label-sm": ["Inter"],
+            "headline-lg": ["Inter"],
+            "headline-sm": ["Inter"],
+            "code-tabular": ["Inter"],
+            "body-sm": ["Inter"],
+            "headline-md": ["Inter"],
+            "display-sm": ["Inter"],
+            "label-lg": ["Inter"],
+            "body-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "display-lg": ["Inter"]
+          },
+          "fontSize": {
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "code-tabular": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-sm": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+      font-size: 20px;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col font-body-md">
+<!-- SideNavBar Anchor Framework -->
+<aside class="fixed top-0 left-0 h-screen w-64 flex flex-col justify-between p-4 z-40 bg-surface-container-lowest border-r border-outline-variant shadow-sm bottom-0 min-h-screen">
+<!-- Brand & Portal Info -->
+<div>
+<div class="flex items-center gap-2.5 px-2 py-3 border-b border-outline-variant/60 mb-5">
+<img alt="Procura Enterprise Logo" class="h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCZ_hZg4I5OQXCf6Qtn_WEz1Ks2tFqUOZnH4B1RiG_pyQXomo-fcNelrnjU-DNPdMMVmadqUojllDTrCEWO0t6-7kjXbvbv_nmnSeE9ylnwSVCfh3qZElxJQ9FzozTmNEGb8OafPkpdFGRjdqar4lJwp8Cfvo_9ZSDmb3wpa-NOdkt6QWnYj85SvQboNdhbLlHIs8NcL0wdBAP1HJJEjC9GlH4qvf8zTbMO9vUBuklQVDXKSTGlBIh2h8LHjafH7B4KNY">
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm font-bold text-primary tracking-tight leading-none">Procura</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-medium mt-1">Supplier Portal</span>
+</div>
+</div>
+<!-- Partner Badge -->
+<div class="bg-surface-container-low rounded-lg p-2.5 mb-5 border border-outline-variant/40 flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-primary-fixed flex items-center justify-center text-primary font-bold text-label-md">
+          TP
+        </div>
+<div class="truncate">
+<div class="text-label-md font-label-md text-on-surface truncate">Tân Phát Packaging</div>
+<div class="text-[10px] text-primary flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined !text-[12px]" style="font-variation-settings: 'FILL' 1;">verified</span> Đối tác xác thực
+          </div>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-surface-container-high text-primary font-semibold transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">inbox</span>
+<span class="text-label-md font-label-md">Hộp thư RFQ (Inbox)</span>
+<span class="ml-auto bg-primary text-on-primary text-[10px] px-1.5 py-0.5 rounded-full font-bold">1 Mới</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined">send</span>
+<span class="text-label-md font-label-md">Báo giá đã gửi</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined">badge</span>
+<span class="text-label-md font-label-md">Hồ sơ năng lực</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="text-label-md font-label-md">Hiệu suất trúng thầu</span>
+</a>
+</nav>
+</div>
+<!-- Sidebar Footer -->
+<div class="pt-4 border-t border-outline-variant/60 space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-label-md font-label-md">Cài đặt</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="text-label-md font-label-md">Trợ giúp &amp; Hướng dẫn</span>
+</a>
+</div>
+</aside>
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 right-0 h-16 w-full flex items-center justify-between px-6 z-30 ml-64 bg-surface-container-lowest border-b border-outline-variant shadow-sm max-w-[calc(100%-16rem)]">
+<!-- Breadcrumb Context & Search -->
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 text-label-md font-label-md text-on-surface-variant">
+<span class="">Hộp thư RFQ</span>
+<span class="material-symbols-outlined !text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">RFQ-2025-089 (VinFast Logistics)</span>
+</div>
+<div class="relative hidden xl:block w-72">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline !text-[18px]">search</span>
+<input class="w-full h-8 pl-8 pr-3 text-body-sm font-body-sm rounded-lg bg-surface-container-low border border-outline-variant focus:outline-none focus:border-primary" placeholder="Tìm theo mã RFQ, tên người mua..." type="text">
+</div>
+</div>
+<!-- User Profile & Action Tools -->
+<div class="flex items-center gap-4">
+<!-- Portal Tag -->
+<span class="hidden md:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed/60 text-on-primary-fixed border border-primary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+        Supplier Portal - Tân Phát Packaging
+      </span>
+<div class="h-4 w-px bg-outline-variant"></div>
+<!-- Quick Action Icons -->
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors relative" title="Thông báo">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Trợ giúp">
+<span class="material-symbols-outlined">help</span>
+</button>
+</div>
+<!-- Avatar & User switcher -->
+<div class="flex items-center gap-2.5 pl-2 border-l border-outline-variant">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-md shadow-inner">
+          TQ
+        </div>
+<div class="text-left hidden lg:block">
+<div class="text-label-md font-label-md text-on-surface leading-tight">Trần Đình Quân</div>
+<div class="text-[11px] text-on-surface-variant leading-tight">Quản lý dự án B2B</div>
+</div>
+<span class="material-symbols-outlined !text-[16px] text-outline">expand_more</span>
+</div>
+</div>
+</header>
+<!-- Main Content Space -->
+<main class="ml-64 p-6 bg-surface min-h-[calc(100vh-4rem)]">
+<div class="max-w-[1440px] mx-auto space-y-5">
+<!-- 1. Urgent Banner: Yêu Cầu Báo Giá Mới -->
+<div class="bg-gradient-to-r from-[#EFF6FF] via-[#F0F5FF] to-[#E9F0FE] border border-primary-fixed-dim rounded-xl p-4 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mark_email_unread</span>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="bg-primary text-on-primary text-label-sm font-label-sm px-2 py-0.5 rounded-full">Yêu cầu mới tiếp nhận</span>
+<span class="text-label-md font-label-md text-on-surface-variant font-mono">#RFQ-2025-089</span>
+<span class="text-[12px] text-outline">• Hạn chót: 20/11/2025</span>
+</div>
+<h1 class="text-headline-sm font-headline-sm text-on-surface mt-1">
+              Bạn nhận được 1 Yêu cầu báo giá mới: <span class="text-primary font-bold">RFQ-2025-089</span> từ <span class="font-bold">Công ty TNHH VinFast Logistics</span>
+</h1>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+              Người mua đã chỉ định Tân Phát Packaging làm nhà cung cấp ưu tiên. Vui lòng hoàn thành bảng báo giá chi tiết trước thời hạn quy định.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 self-end md:self-center flex-shrink-0">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#FFFBEB] text-[#D97706] border border-[#FDE68A] text-label-sm font-label-sm">
+<span class="material-symbols-outlined !text-[16px]">schedule</span> Còn 3 ngày nộp hồ sơ
+          </span>
+</div>
+</div>
+<!-- Main Dual-Column Bento Canvas -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- Left Pane: Buyer Requirements (5 Cols) -->
+<div class="lg:col-span-5 space-y-5">
+<!-- Requirement Detail Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-5 shadow-sm space-y-4">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/60">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">contract</span>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Tóm tắt yêu cầu từ Buyer</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-label-sm font-label-sm">Mã: RFQ-089</span>
+</div>
+<!-- Buyer Organization Profile -->
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg border border-outline-variant/40">
+<div class="w-10 h-10 rounded-md bg-[#080860] text-white flex items-center justify-center font-bold text-label-lg">
+                VF
+              </div>
+<div class="truncate">
+<div class="text-label-md font-label-md text-on-surface font-semibold truncate">Công ty TNHH VinFast Logistics</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant truncate">Bộ phận Thu mua Phụ trợ &amp; Đóng gói công nghiệp</div>
+</div>
+</div>
+<!-- Specification List -->
+<div class="space-y-3 pt-1">
+<div>
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block">Tên hàng hóa &amp; Quy cách</span>
+<p class="text-body-md font-body-md font-semibold text-on-surface mt-0.5">
+                  Hộp carton sóng E 3 lớp nắp gài, in 2 màu thương hiệu
+                </p>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+                  Kích thước: 320 x 220 x 120 mm. Giấy Kraft nâu 175gsm, định lượng chịu lực chuẩn xuất khẩu.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-2 border-t border-outline-variant/40">
+<div>
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block">Số lượng yêu cầu</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="text-headline-sm font-headline-sm font-bold text-primary">5.000</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">hộp</span>
+</div>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block">Hạn chót gửi báo giá</span>
+<div class="text-body-md font-body-md font-semibold text-error mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined !text-[16px]">alarm</span> 20/11/2025
+                  </div>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/40">
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block">Địa điểm nhận hàng</span>
+<div class="flex items-start gap-2 mt-1 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-outline flex-shrink-0 !text-[18px]">location_on</span>
+<span class="">Kho An Phước, Khu chế xuất Cát Lái, P. Cát Lái, TP. Thủ Đức, TP. Hồ Chí Minh</span>
+</div>
+</div>
+</div>
+<!-- Attachments Box -->
+<div class="pt-3 border-t border-outline-variant/60">
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block mb-2">Tệp đính kèm kỹ thuật từ Buyer</span>
+<div class="flex items-center justify-between p-2.5 rounded-lg border border-outline-variant bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5 overflow-hidden">
+<span class="material-symbols-outlined text-error !text-[24px]">picture_as_pdf</span>
+<div class="truncate">
+<div class="text-label-md font-label-md text-on-surface truncate">Ban_ve_ky_thuat_HopCarton_v2.pdf</div>
+<div class="text-label-sm font-label-sm text-outline">1.8 MB • Bản vẽ thiết kế dao cắt &amp; khuôn in</div>
+</div>
+</div>
+<button class="text-primary hover:text-tertiary flex items-center gap-1 text-label-md font-label-md p-1.5 flex-shrink-0">
+<span class="material-symbols-outlined !text-[18px]">download</span> Tải về
+                </button>
+</div>
+</div>
+<!-- Buyer Instructions / Notes -->
+<div class="p-3 bg-amber-50/70 border border-amber-200/80 rounded-lg text-body-sm font-body-sm text-amber-900 space-y-1">
+<div class="font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined !text-[16px] text-amber-700">info</span> Lưu ý quan trọng từ người mua:
+              </div>
+<p class="text-[12px] leading-relaxed text-amber-800">
+                Ưu tiên nhà cung ứng có năng lực sản xuất mẫu thử trong vòng 48h sau duyệt giá. Sản phẩm bắt buộc đạt chuẩn độ bục nén màng sóng E.
+              </p>
+</div>
+</div>
+<!-- Sourcing SLA & Guarantee Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4 shadow-sm">
+<h3 class="text-label-lg font-label-lg text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary !text-[18px]">verified_user</span> Cam kết quy trình Procura Trust
+            </h3>
+<div class="grid grid-cols-2 gap-3 text-body-sm font-body-sm">
+<div class="p-2.5 bg-surface-container-low rounded-lg">
+<div class="text-label-sm font-label-sm text-outline">Thời gian phản hồi SLA</div>
+<div class="text-headline-sm font-headline-sm font-bold text-on-surface mt-0.5">&lt; 4 giờ</div>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-lg">
+<div class="text-label-sm font-label-sm text-outline">Bảo mật bảng giá</div>
+<div class="text-label-md font-label-md font-bold text-[#16A34A] mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined !text-[16px]">lock</span> Mã hóa thầu
+                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Pane: Submit Quotation Form (7 Cols) -->
+<div class="lg:col-span-7 space-y-5">
+<form class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 shadow-sm space-y-6" id="quotationForm" onsubmit="handleQuotationSubmit(event)">
+<!-- Header of Form -->
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/60">
+<div>
+<h2 class="text-headline-md font-headline-md text-on-surface font-bold">Biểu mẫu gửi báo giá chính thức</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Điền chi tiết các hạng mục chi phí, thời gian và điều khoản hợp đồng</p>
+</div>
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-[#EFF6FF] text-[#0078F8] border border-[#BFDBFE]">
+                Trạng thái: Soạn thảo
+              </span>
+</div>
+<!-- Pricing Grid Calculation -->
+<div class="space-y-4">
+<div class="text-label-md font-label-md text-primary uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined !text-[16px]">calculate</span> 1. Định giá &amp; Số lượng cung ứng
+              </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Unit Price Input -->
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-on-surface" for="unitPrice">
+                    Đơn giá chào thầu (VND / hộp) <span class="text-error">*</span>
+</label>
+<div class="relative rounded-lg shadow-sm">
+<span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-outline font-medium text-body-md">₫</span>
+<input class="w-full h-10 pl-8 pr-12 text-body-md font-code-tabular rounded-lg border border-outline focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-semibold" id="unitPrice" min="100" oninput="recalculateTotal()" required="" step="50" type="number" value="8500">
+<span class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-outline text-label-sm">/ hộp</span>
+</div>
+<span class="text-[11px] text-outline">Đề xuất cạnh tranh dựa trên thị trường: 8.200 - 9.100 đ</span>
+</div>
+<!-- MOQ Minimum Order Quantity -->
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-on-surface" for="moqInput">
+                    MOQ tối thiểu áp dụng <span class="text-error">*</span>
+</label>
+<div class="relative rounded-lg shadow-sm">
+<input class="w-full h-10 pl-3 pr-14 text-body-md font-code-tabular rounded-lg border border-outline focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface" id="moqInput" required="" type="number" value="3000">
+<span class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-outline text-label-sm">hộp</span>
+</div>
+<span class="text-[11px] text-[#16A34A] flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined !text-[14px]">check_circle</span> Thỏa mãn yêu cầu đơn hàng 5.000 hộp
+                  </span>
+</div>
+</div>
+<!-- Estimated Order Total Summary Box -->
+<div class="p-4 bg-surface-container-low rounded-xl border border-outline-variant flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div>
+<div class="text-label-md font-label-md text-on-surface-variant">Tổng giá trị đơn hàng ước tính (5.000 hộp):</div>
+<div class="text-[12px] text-outline">Chưa bao gồm thuế VAT (8%) và phí hạ bốc dỡ nếu có</div>
+</div>
+<div class="text-right">
+<div class="text-headline-lg font-headline-lg font-bold text-primary font-code-tabular" id="totalDisplay">
+                    42.500.000 VND
+                  </div>
+<div class="text-[11px] text-on-surface-variant">(Bằng chữ: Bốn mươi hai triệu năm trăm ngàn đồng)</div>
+</div>
+</div>
+</div>
+<!-- Delivery & Commercial Terms -->
+<div class="space-y-4 pt-2 border-t border-outline-variant/60">
+<div class="text-label-md font-label-md text-primary uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined !text-[16px]">local_shipping</span> 2. Kế hoạch sản xuất &amp; Điều khoản thương mại
+              </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Lead time -->
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-on-surface" for="leadTime">
+                    Thời gian sản xuất &amp; giao hàng (Lead time) <span class="text-error">*</span>
+</label>
+<div class="relative rounded-lg shadow-sm">
+<input class="w-full h-10 pl-3 pr-28 text-body-md font-code-tabular rounded-lg border border-outline focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface" id="leadTime" max="60" min="1" required="" type="number" value="5">
+<span class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-outline text-label-sm">ngày làm việc</span>
+</div>
+<span class="text-[11px] text-outline">Dự kiến giao hàng vào: 26/11/2025</span>
+</div>
+<!-- Validity of Quotation -->
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-on-surface" for="validityDays">
+                    Hiệu lực báo giá <span class="text-error">*</span>
+</label>
+<div class="relative rounded-lg shadow-sm">
+<select class="w-full h-10 pl-3 pr-8 text-body-md rounded-lg border border-outline focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface bg-surface-container-lowest" id="validityDays">
+<option selected="" value="30">30 ngày (đến 20/12/2025)</option>
+<option value="15">15 ngày (đến 05/12/2025)</option>
+<option value="45">45 ngày (đến 05/01/2026)</option>
+</select>
+</div>
+<span class="text-[11px] text-outline">Cam kết giữ nguyên đơn giá vật tư</span>
+</div>
+</div>
+<!-- Payment Terms -->
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-on-surface" for="paymentTerms">
+                  Điều khoản thanh toán đề xuất <span class="text-error">*</span>
+</label>
+<select class="w-full h-10 pl-3 pr-8 text-body-md rounded-lg border border-outline focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface bg-surface-container-lowest font-medium" id="paymentTerms">
+<option selected="" value="50-50">Tạm ứng 50%, thanh toán 50% khi giao hàng</option>
+<option value="100-cod">Thanh toán 100% khi nhận hàng (COD)</option>
+<option value="net30">Công nợ Net 30 ngày sau khi nhận hóa đơn VAT</option>
+<option value="custom">Thỏa thuận riêng theo hợp đồng khung</option>
+</select>
+</div>
+<!-- Special Incentives & Guarantees -->
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-on-surface" for="incentives">
+                  Ưu đãi &amp; Cam kết đặc biệt kèm theo
+                </label>
+<div class="relative">
+<textarea class="w-full p-3 text-body-md rounded-lg border border-outline focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface resize-none" id="incentives" rows="2">Miễn phí khuôn in và mẫu thử cho đơn 5.000 cái. Đổi trả 1-1 trong vòng 7 ngày nếu lỗi dán keo hoặc sai màu thương hiệu.</textarea>
+</div>
+</div>
+</div>
+<!-- Attached Supplier Documents -->
+<div class="space-y-2 pt-2 border-t border-outline-variant/60">
+<label class="block text-label-md font-label-md text-on-surface">
+                Đính kèm bảng thông số kỹ thuật chi tiết / Báo giá có mộc (Tùy chọn)
+              </label>
+<div class="border-2 border-dashed border-outline-variant hover:border-primary rounded-xl p-4 text-center cursor-pointer bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-outline !text-[28px] mx-auto block mb-1">cloud_upload</span>
+<span class="text-label-md font-label-md text-primary font-semibold">Tải lên tài liệu PDF hoặc Excel báo giá</span>
+<span class="text-[12px] text-outline block mt-0.5">Tối đa 15MB (.pdf, .xlsx, .docx)</span>
+</div>
+</div>
+<!-- Form Action Footer CTA -->
+<div class="pt-4 border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-3">
+<button class="w-full sm:w-auto px-5 py-2.5 rounded-lg border border-outline text-on-surface font-label-md hover:bg-surface-container transition-colors flex items-center justify-center gap-2" onclick="saveDraftNotification()" type="button">
+<span class="material-symbols-outlined !text-[18px]">save</span> Lưu bản nháp
+              </button>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<button class="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-primary hover:bg-[#004ca3] text-on-primary font-label-lg font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined !text-[20px]" style="font-variation-settings: 'FILL' 1;">send</span> Gửi báo giá chính thức cho Người mua
+                </button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Interactive Submission Success Modal -->
+<div class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity" id="successModal">
+<div class="bg-surface-container-lowest max-w-md w-full rounded-2xl p-6 shadow-2xl border border-outline-variant space-y-4 text-center animate-in fade-in zoom-in-95 duration-200">
+<div class="w-16 h-16 rounded-full bg-[#F0FDF4] text-[#16A34A] border-4 border-[#DCFCE7] flex items-center justify-center mx-auto shadow-sm">
+<span class="material-symbols-outlined !text-[36px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="space-y-1">
+<h3 class="text-headline-md font-headline-md text-on-surface font-bold">Gửi báo giá thành công!</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          Báo giá cho yêu cầu <strong class="text-primary font-mono">RFQ-2025-089</strong> đã được chuyển giao an toàn tới Bộ phận Thu mua của <strong>Công ty TNHH VinFast Logistics</strong>.
+        </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3.5 text-left text-body-sm font-body-sm space-y-2 border border-outline-variant/60">
+<div class="flex justify-between">
+<span class="text-outline">Mã báo giá phát hành:</span>
+<span class="font-mono font-bold text-on-surface">QUO-TP-2025-114</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Tổng giá trị chào thầu:</span>
+<span class="font-bold text-primary font-code-tabular" id="modalTotalVal">42.500.000 VND</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Lead time cam kết:</span>
+<span class="font-medium text-on-surface">5 ngày làm việc</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Trạng thái hồ sơ:</span>
+<span class="px-2 py-0.5 rounded-full bg-[#F0FDF4] text-[#16A34A] text-[11px] font-bold">Đã nộp thầu</span>
+</div>
+</div>
+<div class="pt-2 flex flex-col gap-2">
+<button class="w-full py-2.5 rounded-lg bg-primary text-on-primary font-label-md font-bold hover:bg-[#004ca3] transition-colors" onclick="closeSuccessModal()">
+          Quay lại Hộp thư RFQ
+        </button>
+<button class="w-full py-2 text-label-md font-label-md text-on-surface-variant hover:text-on-surface" onclick="closeSuccessModal()">
+          Xem lại bản sao báo giá PDF
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Container for Draft -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-lg shadow-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed !text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span class="text-label-md font-label-md" id="toastMessage">Đã lưu bản nháp thành công cho RFQ-2025-089</span>
+</div>
+</div>
+<!-- Client-side Calculation & Micro-Interactions Script -->
+<script>
+    function recalculateTotal() {
+      const unitPrice = parseFloat(document.getElementById('unitPrice').value) || 0;
+      const quantity = 5000;
+      const total = unitPrice * quantity;
+      
+      const formatted = new Intl.NumberFormat('vi-VN').format(total) + " VND";
+      document.getElementById('totalDisplay').textContent = formatted;
+      document.getElementById('modalTotalVal').textContent = formatted;
+    }
+
+    function handleQuotationSubmit(event) {
+      event.preventDefault();
+      const modal = document.getElementById('successModal');
+      modal.classList.remove('hidden');
+    }
+
+    function closeSuccessModal() {
+      const modal = document.getElementById('successModal');
+      modal.classList.add('hidden');
+      showToast("Báo giá RFQ-2025-089 đã được lưu vào mục 'Báo giá đã gửi'");
+    }
+
+    function saveDraftNotification() {
+      showToast("Đã lưu bản nháp báo giá RFQ-2025-089 vào hệ thống.");
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      const messageElem = document.getElementById('toastMessage');
+      messageElem.textContent = msg;
+      
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+  </script>
+
+
+</body></html>

@@ -1,0 +1,99 @@
+{
+  "title": "Hộp thư Yêu cầu Báo giá (RFQ Inbox)",
+  "subtitle": "Danh sách các yêu cầu báo giá từ các doanh nghiệp mua hàng B2B gửi trực tiếp hoặc gợi ý cho xưởng của bạn.",
+  "actions": {
+    "advancedFilter": "Bộ lọc nâng cao",
+    "export": "Xuất dữ liệu",
+    "quoteNow": "Báo giá ngay",
+    "decline": "Từ chối",
+    "continue": "Tiếp tục soạn",
+    "viewQuotation": "Xem báo giá",
+    "view": "Xem"
+  },
+  "filters": {
+    "searchLabel": "Tìm kiếm RFQ",
+    "searchPlaceholder": "Nhập mã RFQ, tên doanh nghiệp mua hoặc tiêu đề…",
+    "clear": "Xóa bộ lọc"
+  },
+  "stats": {
+    "newThisWeek": "RFQ mới tuần này",
+    "newUnit": "yêu cầu mời chào",
+    "newFooter_one": "{{count}} yêu cầu đang chờ bạn phản hồi",
+    "newFooter_other": "{{count}} yêu cầu đang chờ bạn phản hồi",
+    "drafting": "Đang soạn báo giá",
+    "draftingUnit": "bản thảo lưu dở",
+    "draftingFooter": "Hoàn tất và gửi trước hạn chót",
+    "dueSoon": "Sắp hết hạn nộp thầu",
+    "dueSoonUnit": "yêu cầu cần gửi gấp",
+    "dueSoonFooter": "Hạn chót trong < 72 giờ tới",
+    "responseRate": "Tỷ lệ phản hồi xưởng",
+    "responseFooter": "RFQ đã gửi báo giá trong 30 ngày qua"
+  },
+  "tabs": {
+    "ariaLabel": "Trạng thái yêu cầu báo giá",
+    "new": "Mới nhận",
+    "drafting": "Đang soạn",
+    "submitted": "Đã gửi báo giá",
+    "closed": "Hết hạn / Đã từ chối"
+  },
+  "sort": {
+    "label": "Sắp xếp:",
+    "deadline": "Hạn nộp thầu gần nhất",
+    "newest": "Mới nhất"
+  },
+  "table": {
+    "buyer": "Doanh nghiệp mua hàng",
+    "rfq": "Mã & tiêu đề RFQ",
+    "quantity": "Số lượng",
+    "delivery": "Địa điểm giao hàng",
+    "deadline": "Thời hạn nộp thầu",
+    "status": "Trạng thái",
+    "actions": "Thao tác",
+    "taxCode": "MST: {{code}}",
+    "closedNote": "Đã đóng hồ sơ",
+    "showing_one": "Hiển thị {{count}} yêu cầu",
+    "showing_other": "Hiển thị {{count}} yêu cầu"
+  },
+  "status": {
+    "new": "Mới nhận",
+    "drafting": "Đang soạn",
+    "declined": "Đã từ chối",
+    "expired": "Hết hạn"
+  },
+  "empty": {
+    "searchHint": "Thử tìm theo mã RFQ, tên doanh nghiệp hoặc tiêu đề khác.",
+    "new": {
+      "title": "Chưa có yêu cầu báo giá mới",
+      "description": "Khi người mua mời xưởng của bạn tham gia báo giá, yêu cầu sẽ xuất hiện tại đây."
+    },
+    "drafting": {
+      "title": "Không có báo giá đang soạn",
+      "description": "Các báo giá bạn lưu nháp sẽ được giữ tại đây để tiếp tục hoàn thiện."
+    },
+    "submitted": {
+      "title": "Chưa gửi báo giá nào",
+      "description": "Báo giá đã gửi cho các RFQ còn mở sẽ hiển thị tại đây."
+    },
+    "closed": {
+      "title": "Không có RFQ hết hạn hoặc đã từ chối",
+      "description": "Các yêu cầu đã quá hạn nộp, đã đóng hoặc bạn đã từ chối sẽ được lưu tại đây."
+    }
+  },
+  "decline": {
+    "title": "Từ chối yêu cầu báo giá?",
+    "description": "{{code}} từ {{buyer}}",
+    "body": "Người mua sẽ được ghi nhận là xưởng của bạn không tham gia báo giá cho RFQ này. Thao tác này không thể hoàn tác.",
+    "confirm": "Từ chối RFQ",
+    "success": "Đã từ chối {{code}}"
+  },
+  "csv": {
+    "code": "Mã RFQ",
+    "title": "Tiêu đề",
+    "buyer": "Doanh nghiệp mua hàng",
+    "quantity": "Số lượng",
+    "unit": "Đơn vị",
+    "delivery": "Địa điểm giao hàng",
+    "deadline": "Hạn nộp thầu",
+    "status": "Trạng thái"
+  }
+}

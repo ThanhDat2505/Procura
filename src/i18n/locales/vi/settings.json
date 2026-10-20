@@ -1,0 +1,94 @@
+{
+  "breadcrumb": "Cài đặt",
+  "title": "Cài đặt Tài khoản & Hệ thống",
+  "subtitle": "Quản lý tùy chọn ngôn ngữ, hiển thị định dạng số liệu và cấu hình tài khoản doanh nghiệp.",
+  "navLabel": "Mục cài đặt",
+  "tabs": {
+    "profile": "Hồ sơ cá nhân",
+    "notifications": "Thông báo",
+    "language": "Ngôn ngữ & Định dạng",
+    "security": "Bảo mật & Đăng nhập"
+  },
+  "status": {
+    "saved": "Đã lưu",
+    "unsaved": "Có thay đổi chưa lưu"
+  },
+  "language": {
+    "title": "Ngôn ngữ & Khu vực (Language & Region)",
+    "subtitle": "Lựa chọn ngôn ngữ ưu tiên hiển thị các biểu mẫu RFQ, danh mục hàng hóa và bảng báo giá.",
+    "inUse": "Đang dùng",
+    "options": {
+      "vi": {
+        "name": "Tiếng Việt (Mặc định)",
+        "description": "Giao diện và thuật ngữ tối ưu cho doanh nghiệp Việt Nam. Hỗ trợ đầy đủ bộ gõ, dấu tiếng Việt và chuẩn hóa quy trình thu mua nội địa."
+      },
+      "en": {
+        "name": "English",
+        "description": "International procurement terminology. Standardized for cross-border sourcing, Incoterms 2020 definitions, and foreign suppliers."
+      }
+    }
+  },
+  "formats": {
+    "title": "Định dạng Ngày & Tiền tệ (Date & Currency Formats)",
+    "subtitle": "Quy chuẩn cấu trúc số học trên toàn bộ bảng phân tích đơn giá và thời hạn đóng gói thầu.",
+    "date": {
+      "label": "Định dạng ngày hiển thị",
+      "hint": "Áp dụng cho hạn chào thầu và ngày giao hàng",
+      "options": {
+        "dmy": "dd/mm/yyyy (Ví dụ: 20/11/2025)",
+        "ymd": "yyyy-mm-dd (Ví dụ: 2025-11-20)"
+      }
+    },
+    "number": {
+      "label": "Định dạng số & đơn vị tiền tệ",
+      "hint": "Hiển thị trong bảng so sánh báo giá",
+      "options": {
+        "vi": "1.000.000 đ (Phân cách hàng nghìn bằng dấu chấm, kèm ký hiệu đ)",
+        "en": "1,000,000 VND (Phân cách bằng dấu phẩy)"
+      }
+    },
+    "timezone": {
+      "label": "Múi giờ hệ thống",
+      "hint": "Căn cứ đếm ngược đóng thầu tự động",
+      "options": {
+        "hcm": "GMT+7 (Giờ Hà Nội, Băng Cốc, Jakarta)"
+      }
+    }
+  },
+  "notifications": {
+    "title": "Tùy chọn Thông báo",
+    "previewTitle": "Xem trước Tùy chọn Thông báo (Notification Preview)",
+    "subtitle": "Cấu hình các cảnh báo thời gian thực về tiến độ gói RFQ và luồng báo giá từ các nhà cung cấp.",
+    "items": {
+      "newQuoteEmail": {
+        "title": "Thông báo ngay qua Email khi có nhà cung cấp mới gửi báo giá kín",
+        "description": "Gửi bản tóm tắt sơ bộ về đơn giá, thời gian lead time và chứng từ đính kèm vào hộp thư quản lý."
+      },
+      "deadlineReminder": {
+        "title": "Nhắc nhở trước 24h khi gói RFQ sắp hết hạn nộp thầu",
+        "description": "Nhận cảnh báo để kịp thời gia hạn thời gian mở thầu hoặc liên hệ bổ sung nhà cung cấp tiềm năng."
+      },
+      "weeklyDigest": {
+        "title": "Bản tin tổng hợp cơ hội nguồn hàng tuần",
+        "description": "Tập hợp danh bạ nhà sản xuất mới gia nhập sàn và biến động giá vật tư công nghiệp chính."
+      }
+    }
+  },
+  "footer": {
+    "note": "Những thay đổi này sẽ áp dụng ngay cho tất cả thành viên trong tổ chức của bạn.",
+    "discard": "Hủy bỏ"
+  },
+  "profile": {
+    "title": "Hồ sơ cá nhân",
+    "subtitle": "Thông tin tài khoản đang đăng nhập.",
+    "name": "Họ và tên",
+    "jobTitle": "Chức danh",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "role": "Vai trò",
+    "roles": {
+      "buyer": "Người mua (Buyer)",
+      "supplier": "Nhà cung cấp (Supplier)"
+    }
+  }
+}

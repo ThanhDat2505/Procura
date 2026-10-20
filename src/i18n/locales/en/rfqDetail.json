@@ -1,0 +1,146 @@
+{
+  "breadcrumb": {
+    "rfqs": "RFQ management",
+    "detail": "Details & Progress"
+  },
+  "pill": {
+    "complete": "All quotes received ({{received}}/{{expected}} suppliers responded)",
+    "partial": "{{received}}/{{expected}} quotes received"
+  },
+  "awarded": {
+    "title": "{{name}} was selected as the winning supplier",
+    "on": "Decided on {{date}}. Suppliers have been notified of the result.",
+    "viewComparison": "Review the comparison"
+  },
+  "header": {
+    "readyToEvaluate": "Ready to evaluate",
+    "priority": "Priority:",
+    "priorityHigh": "High",
+    "priorityHighNote": "High ({{note}})",
+    "untitled": "Untitled RFQ",
+    "created": "Created:",
+    "deadline": "Quote deadline:",
+    "owner": "Owner:",
+    "exportPdf": "Export PDF",
+    "compareNow_one": "Compare quotes now ({{count}} response)",
+    "compareNow_other": "Compare quotes now ({{count}} responses)",
+    "compareHint": "At least {{min}} quotes are needed to open the comparison."
+  },
+  "specs": {
+    "title": "Technical specifications",
+    "download": "Download CAD & artwork files",
+    "quantity": "Total quantity",
+    "dimensions": "Dimensions (L x W x H)",
+    "material": "Material",
+    "product": "Product specification",
+    "finishing": "Printing & finishing:",
+    "delivery": "Delivery location:",
+    "neededBy": "needed by {{date}}",
+    "quality": "Quality requirements & sample test:",
+    "certifications": "Required certifications:",
+    "sealed": "Sealed bids: suppliers cannot see each other's prices",
+    "budget": "Estimated budget:",
+    "budgetMax": "Up to {{value}}",
+    "budgetMin": "From {{value}}",
+    "budgetNone": "Not specified"
+  },
+  "timeline": {
+    "title": "RFQ progress",
+    "step": "Step {{current}} / {{total}}",
+    "deadlineNote": "Suppliers must respond before",
+    "awardedNote": "Winning supplier selected on",
+    "published": {
+      "done": {
+        "title": "RFQ created & published",
+        "desc": "Sent to {{count}} invited suppliers on Procura."
+      },
+      "draft": {
+        "title": "Draft – not published yet",
+        "desc": "Complete the details and send the RFQ so suppliers can start quoting."
+      }
+    },
+    "viewed": {
+      "done": {
+        "title": "Suppliers received the request ({{viewed}} viewed)",
+        "desc": "{{viewed}}/{{invited}} suppliers have opened the request."
+      },
+      "waiting": {
+        "title": "Waiting for suppliers to open the request",
+        "desc": "No supplier has opened the request yet."
+      }
+    },
+    "quotes": {
+      "none": {
+        "title": "Waiting for quotes (0/{{expected}})",
+        "desc": "Quotes appear here as soon as suppliers submit them."
+      },
+      "partial": {
+        "title": "{{received}}/{{expected}} formal quotes received",
+        "desc": "Latest quote from {{supplier}}."
+      },
+      "complete": {
+        "title": "All {{received}}/{{expected}} formal quotes received",
+        "desc": "The last quote, from {{supplier}}, has been recorded."
+      }
+    },
+    "decision": {
+      "pending": {
+        "title": "Awaiting the decision on the winning supplier",
+        "desc": "Compare the quotes and select the best-fitting supplier."
+      },
+      "awarded": {
+        "title": "{{supplier}} selected as the winner",
+        "desc": "All suppliers have been notified of the result."
+      },
+      "cancelled": {
+        "title": "RFQ cancelled",
+        "desc": "This request no longer accepts responses."
+      }
+    }
+  },
+  "quotes": {
+    "title": "Quotation responses",
+    "count_one": "{{count}} viable quote",
+    "count_other": "{{count}} viable quotes",
+    "subtitle": "Select at least {{min}} suppliers to compare cost, MOQ and lead time side by side.",
+    "filter": "Price & MOQ filter",
+    "onlyMoqFit": "Only show quotes with MOQ ≤ {{qty}} {{unit}}",
+    "onlyMoqFitHint": "Hide quotes that force you to order more than requested.",
+    "compareSelected_one": "Compare {{count}} selected supplier",
+    "compareSelected_other": "Compare {{count}} selected suppliers",
+    "compareDetail_one": "Compare {{count}} quote in detail",
+    "compareDetail_other": "Compare {{count}} quotes in detail",
+    "selectHint": "Select at least {{min}} quotes to compare",
+    "selectAll": "Select all quotes",
+    "selectOne": "Select the quote from {{name}}",
+    "selectedCount_one": "{{count}} supplier selected for comparison",
+    "selectedCount_other": "{{count}} suppliers selected for comparison",
+    "spread": "Gap between the lowest and highest total:",
+    "col": {
+      "supplier": "Supplier / Company",
+      "unitPrice": "Unit price (VND/{{unit}})",
+      "total": "Total ({{qty}} {{unit}})",
+      "moq": "Minimum MOQ",
+      "leadTime": "Lead time",
+      "status": "Status & Rating"
+    },
+    "lowestUnitPrice": "Lowest unit price",
+    "totalFor": "For {{qty}} {{unit}}",
+    "totalForMoq": "Forced by MOQ {{qty}} {{unit}}",
+    "moqFit": "Fits quantity",
+    "moqOver": "Exceeds requested quantity",
+    "fastest": "Fastest (est. {{date}})",
+    "eta": "Est. delivery {{date}}",
+    "sentAt": "Sent: {{time}}",
+    "pendingNote": "No quote submitted yet",
+    "declinedNote": "The supplier declined to quote",
+    "viewedAt": "Viewed at {{time}}",
+    "notViewed": "Request not opened yet",
+    "pending": "No response",
+    "declined": "Declined",
+    "emptyTitle": "No suppliers invited yet",
+    "emptyDesc": "Add suppliers and send the RFQ to start receiving quotes.",
+    "filteredEmptyTitle": "No quotes match the filter",
+    "filteredEmptyDesc": "Every current quote has an MOQ above the requested quantity."
+  }
+}
