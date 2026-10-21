@@ -98,6 +98,47 @@ export const rfqStep1Schema = z.object({
 });
 export type RfqStep1Values = z.infer<typeof rfqStep1Schema>;
 
+/** Length, width and height in cm, as typed (strings so a blank field stays blank). */
+export interface Dimensions {
+  length: string;
+  width: string;
+  height: string;
+}
+
+const DIMENSIONS_RE = /(\d+(?:[.,]\d+)?)\s*[x×*]\s*(\d+(?:[.,]\d+)?)\s*[x×*]\s*(\d+(?:[.,]\d+)?)\s*(?:cm)?/i;
+
+/**
+ * Splits free text such as "25×18×10 cm, Kraft 140gsm" into L/W/H and the remaining text.
+ * `dimensions` is null when the text has no "L x W x H" group.
+ */
+export function splitDimensions(text: string): { dimensions: Dimensions | null; rest: string } {
+  const m = text.match(DIMENSIONS_RE);
+  if (!m) return { dimensions: null, rest: text.trim() };
+  const rest = (text.slice(0, m.index) + text.slice(m.index! + m[0].length)).replace(/^[\s,;·-]+|[\s,;·-]+$/g, '');
+  return { dimensions: { length: m[1], width: m[2], height: m[3] }, rest };
+}
+
+/** "25 × 18 × 10 cm" – the format stored on the RFQ; '' when nothing was entered. */
+export function formatDimensions({ length, width, height }: Dimensions): string {
+  const parts = [length, width, height].map((p) => p.trim());
+  return parts.every((p) => p === '') ? '' : `${parts.join(' × ')} cm`;
+}
+
+/**
+ * The three size fields are optional together: all blank, or all positive numbers.
+ * Returns the first offending side and its validation key.
+ */
+export function dimensionsError(dims: Dimensions): { side: keyof Dimensions; message: string } | undefined {
+  const sides = ['length', 'width', 'height'] as const;
+  const value = (s: keyof Dimensions) => dims[s].trim();
+  if (sides.every((s) => value(s) === '')) return undefined;
+  const blank = sides.find((s) => value(s) === '');
+  if (blank) return { side: blank, message: 'validation.dimensionsIncomplete' };
+  const invalid = sides.find((s) => !(Number(value(s).replace(',', '.')) > 0));
+  if (invalid) return { side: invalid, message: 'validation.positive' };
+  return undefined;
+}
+
 export function validateDates(values: { deadline: string; neededBy: string }, now: Date): { deadline?: string; neededBy?: string } {
   const errors: { deadline?: string; neededBy?: string } = {};
   if (values.deadline && new Date(values.deadline).getTime() <= now.getTime()) errors.deadline = 'validation.deadlineFuture';

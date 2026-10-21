@@ -1,7 +1,7 @@
 import { compareQuotations, paymentFlexibility } from './comparison';
 import { formatVnd } from './format';
 import { vndToWords } from './quotation';
-import { deadlineInfo, readinessChecks, rfqDisplayStatus } from './rfq';
+import { deadlineInfo, dimensionsError, formatDimensions, readinessChecks, rfqDisplayStatus, splitDimensions } from './rfq';
 import { EMPTY_SUPPLIER_FILTERS, filterSuppliers, matchesMoqBand } from './supplierSearch';
 import { quotations, rfqs } from '@/services/mock/seed/rfqs';
 import { suppliers } from '@/services/mock/seed/suppliers';
@@ -52,6 +52,29 @@ describe('RFQ rules', () => {
 
   it('marks a sent RFQ as ready on every check', () => {
     expect(readinessChecks(rfq089, now).every((c) => c.ok)).toBe(true);
+  });
+});
+
+describe('RFQ dimensions (L × W × H)', () => {
+  const dims = (length: string, width: string, height: string) => ({ length, width, height });
+
+  it('splits size from the rest of a product spec', () => {
+    expect(splitDimensions('25×18×10 cm, Kraft Nhật 140gsm')).toEqual({ dimensions: dims('25', '18', '10'), rest: 'Kraft Nhật 140gsm' });
+    expect(splitDimensions('25x25x25').dimensions).toEqual(dims('25', '25', '25'));
+    expect(splitDimensions('Theo thiết kế thương hiệu')).toEqual({ dimensions: null, rest: 'Theo thiết kế thương hiệu' });
+  });
+
+  it('formats to the stored "L × W × H cm" string, empty when blank', () => {
+    expect(formatDimensions(dims('25', '18', '10'))).toBe('25 × 18 × 10 cm');
+    expect(formatDimensions(dims('', ' ', ''))).toBe('');
+    expect(splitDimensions(formatDimensions(dims('12.5', '8', '4'))).dimensions).toEqual(dims('12.5', '8', '4'));
+  });
+
+  it('requires all three sides or none, each greater than 0', () => {
+    expect(dimensionsError(dims('', '', ''))).toBeUndefined();
+    expect(dimensionsError(dims('25', '18', '10'))).toBeUndefined();
+    expect(dimensionsError(dims('25', '', '10'))).toEqual({ side: 'width', message: 'validation.dimensionsIncomplete' });
+    expect(dimensionsError(dims('25', '18', '0'))).toEqual({ side: 'height', message: 'validation.positive' });
   });
 });
 

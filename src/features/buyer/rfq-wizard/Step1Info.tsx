@@ -1,12 +1,12 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import clsx from 'clsx';
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { useForm, type FieldErrors, type Resolver } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 import { AttachmentRow, Avatar, Badge, Card, Field, FileDropzone, Icon, IconButton, Input, Select, Textarea, useToast } from '@/components/ui';
 import { CATEGORIES, UNITS } from '@/domain/catalog';
 import { clock, daysBetween } from '@/domain/clock';
-import { deadlineInfo, MAX_SUPPLIERS_PER_RFQ, rfqStep1Schema, validateDates } from '@/domain/rfq';
+import { deadlineInfo, dimensionsError, formatDimensions, MAX_SUPPLIERS_PER_RFQ, rfqStep1Schema, splitDimensions, validateDates, type Dimensions } from '@/domain/rfq';
 import type { Attachment, CategoryId } from '@/domain/types';
 import { useUpdateRfqDraft } from '@/hooks/buyer';
 import { useFormat } from '@/hooks/useFormat';
@@ -19,7 +19,10 @@ interface Step1Form {
   categoryId: string;
   subcategory: string;
   productName: string;
-  dimensions: string;
+  /** Size in cm, one field per side; stored on the RFQ as "L × W × H cm". */
+  dimLength: string;
+  dimWidth: string;
+  dimHeight: string;
   material: string;
   finishing: string;
   quantity: string;
@@ -33,6 +36,10 @@ interface Step1Form {
 
 const zod = zodResolver(rfqStep1Schema);
 
+const DIM_FIELDS = { length: 'dimLength', width: 'dimWidth', height: 'dimHeight' } as const;
+
+const dimensionsOf = (v: Pick<Step1Form, 'dimLength' | 'dimWidth' | 'dimHeight'>): Dimensions => ({ length: v.dimLength, width: v.dimWidth, height: v.dimHeight });
+
 /** Schema validation plus the date rules that depend on "now". */
 const step1Resolver: Resolver<Step1Form> = async (values, context, options) => {
   const result = await zod(values as never, context, options as never);
@@ -42,6 +49,8 @@ const step1Resolver: Resolver<Step1Form> = async (values, context, options) => {
     const message = dateErrors[key];
     if (message && !errors[key]) errors[key] = { type: 'validate', message };
   }
+  const dimError = dimensionsError(dimensionsOf(values));
+  if (dimError) errors[DIM_FIELDS[dimError.side]] = { type: 'validate', message: dimError.message };
   return Object.keys(errors).length > 0 ? { values: {}, errors } : { values, errors: {} };
 };
 
@@ -54,6 +63,7 @@ export default function Step1Info({ detail, goTo, registerSaver }: StepProps) {
   const update = useUpdateRfqDraft(rfq.id);
   const [attachments, setAttachments] = useState<Attachment[]>(rfq.attachments);
   const [busy, setBusy] = useState<'draft' | 'next' | null>(null);
+  const initialDims = splitDimensions(rfq.dimensions).dimensions;
 
   const {
     register,
@@ -70,7 +80,9 @@ export default function Step1Info({ detail, goTo, registerSaver }: StepProps) {
       categoryId: rfq.categoryId,
       subcategory: rfq.subcategory,
       productName: rfq.productName,
-      dimensions: rfq.dimensions,
+      dimLength: initialDims?.length ?? '',
+      dimWidth: initialDims?.width ?? '',
+      dimHeight: initialDims?.height ?? '',
       material: rfq.material,
       finishing: rfq.finishing,
       quantity: rfq.quantity > 0 ? String(rfq.quantity) : '',
@@ -90,7 +102,7 @@ export default function Step1Info({ detail, goTo, registerSaver }: StepProps) {
       categoryId: v.categoryId as CategoryId,
       subcategory: v.subcategory,
       productName: v.productName.trim(),
-      dimensions: v.dimensions.trim(),
+      dimensions: formatDimensions(dimensionsOf(v)),
       material: v.material.trim(),
       finishing: v.finishing.trim(),
       quantity: Number.isFinite(quantity) && quantity > 0 ? Math.round(quantity) : 0,
@@ -210,8 +222,43 @@ export default function Step1Info({ detail, goTo, registerSaver }: StepProps) {
             <Input id="rfq-product" {...register('productName')} invalid={Boolean(errors.productName)} placeholder={t('step1.productNamePlaceholder')} />
           </Field>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-            <Field label={t('step1.dimensions')} htmlFor="rfq-dimensions" labelAside={<span className="text-body-sm text-outline">cm</span>}>
-              <Input id="rfq-dimensions" {...register('dimensions')} placeholder="25 x 18 x 10 cm" inputClassName="font-mono" />
+            <Field
+              label={t('step1.dimensions')}
+              htmlFor="rfq-dim-length"
+              error={err('dimLength') ?? err('dimWidth') ?? err('dimHeight')}
+              labelAside={<span className="text-body-sm text-outline">cm</span>}
+            >
+              <div className="flex items-center gap-1.5">
+                {(
+                  [
+                    ['dimLength', 'rfq-dim-length', 'step1.dimLength'],
+                    ['dimWidth', 'rfq-dim-width', 'step1.dimWidth'],
+                    ['dimHeight', 'rfq-dim-height', 'step1.dimHeight'],
+                  ] as const
+                ).map(([name, id, label], i) => (
+                  <Fragment key={name}>
+                    {i > 0 && (
+                      <span aria-hidden className="text-body-md text-outline">
+                        ×
+                      </span>
+                    )}
+                    <Input
+                      id={id}
+                      type="number"
+                      min={0}
+                      step="any"
+                      inputMode="decimal"
+                      aria-label={t(label)}
+                      title={t(label)}
+                      placeholder={t(label)}
+                      {...register(name)}
+                      invalid={Boolean(errors[name])}
+                      className="min-w-0 flex-1"
+                      inputClassName="font-mono"
+                    />
+                  </Fragment>
+                ))}
+              </div>
             </Field>
             <Field label={t('step1.material')} htmlFor="rfq-material">
               <Input id="rfq-material" {...register('material')} placeholder={t('step1.materialPlaceholder')} />

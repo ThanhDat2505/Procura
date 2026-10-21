@@ -1,5 +1,5 @@
 import { addDays, clock, daysBetween } from '@/domain/clock';
-import { canAward, canSend, DEFAULT_WEIGHTS, deadlineInfo, isActiveQuote, MAX_SUPPLIERS_PER_RFQ, quotesForRfq } from '@/domain/rfq';
+import { canAward, canSend, DEFAULT_WEIGHTS, deadlineInfo, formatDimensions, isActiveQuote, MAX_SUPPLIERS_PER_RFQ, quotesForRfq, splitDimensions } from '@/domain/rfq';
 import type { Rfq, RfqDisplayStatus } from '@/domain/types';
 import type { BuyerRfqApi, CompareOverviewCard, RfqListItem, RfqStatusTab } from '../contracts';
 import { ApiError } from '../contracts';
@@ -206,7 +206,10 @@ export const rfqApi: BuyerRfqApi = {
         if (p) {
           rfq.productName = p.name;
           rfq.subcategory = p.group;
-          rfq.dimensions = p.spec;
+          // Product specs mix size and material ("25×18×10 cm, Kraft 140gsm"); keep each in its own field.
+          const { dimensions, rest } = splitDimensions(p.spec);
+          rfq.dimensions = dimensions ? formatDimensions(dimensions) : '';
+          rfq.material = rest;
           rfq.title = `Yêu cầu báo giá ${p.name}`;
           rfq.invitations = [{ supplierId: p.supplierId, sentAt: rfq.createdAt }];
         }

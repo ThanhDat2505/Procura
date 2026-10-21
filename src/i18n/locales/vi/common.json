@@ -128,6 +128,7 @@
     "number": "Vui lòng nhập số",
     "integer": "Vui lòng nhập số nguyên",
     "positive": "Giá trị phải lớn hơn 0",
+    "dimensionsIncomplete": "Nhập đủ cả Dài, Rộng và Cao",
     "titleMin": "Tiêu đề cần ít nhất 10 ký tự",
     "titleMax": "Tiêu đề tối đa 160 ký tự",
     "deadlineFuture": "Hạn nhận báo giá phải ở tương lai",
