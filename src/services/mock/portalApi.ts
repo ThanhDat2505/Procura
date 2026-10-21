@@ -166,6 +166,7 @@ export const portalApi: SupplierPortalApi = {
     write(() => {
       const rfq = invitedRfq(rfqId);
       if (rfq.lifecycle !== 'open' || isPastDeadline(rfq, clock.now())) throw new ApiError('errors.rfqClosed', 'RFQ is closed', 409);
+      if (values.validityDays < rfq.terms.minValidityDays) throw new ApiError('errors.validityTooShort', 'Quotation validity is below the RFQ minimum', 422);
       return upsertQuote(rfq, values, 'submitted');
     }),
 

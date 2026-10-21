@@ -58,7 +58,12 @@ describe('form defaults', () => {
   it('picks the smallest validity option meeting the buyer minimum', () => {
     expect(defaultValidityDays(10)).toBe(15);
     expect(defaultValidityDays(31)).toBe(45);
-    expect(defaultValidityDays(90)).toBe(60);
+    expect(defaultValidityDays(90)).toBe(90);
+  });
+
+  it('bumps a saved quotation below the buyer minimum to the first allowed option', () => {
+    const strict = { ...rfq089, terms: { ...rfq089.terms, minValidityDays: 45 } };
+    expect(defaultFormValues(strict, qt0412).validityDays).toBe(45);
   });
 
   it('lists payment terms without duplicates, buyer terms first', () => {

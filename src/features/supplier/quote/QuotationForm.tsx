@@ -1,6 +1,6 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useMemo, useState, type ReactNode } from 'react';
-import { useForm, useWatch } from 'react-hook-form';
+import { Controller, useForm, useWatch } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router';
 import {
@@ -15,12 +15,13 @@ import {
   FileDropzone,
   Icon,
   Input,
+  MoneyInput,
   Select,
   Textarea,
   useToast,
 } from '@/components/ui';
 import { addDays, clock } from '@/domain/clock';
-import { quotationFormSchema, quotationTotal, VALIDITY_OPTIONS, vndToWords, type QuotationFormValues } from '@/domain/quotation';
+import { quotationFormSchemaFor, quotationTotal, validityOptionsFor, vndToWords, type QuotationFormValues } from '@/domain/quotation';
 import type { Attachment } from '@/domain/types';
 import { useSaveQuotationDraft, useSubmitQuotation } from '@/hooks/supplierPortal';
 import { useFormat } from '@/hooks/useFormat';
@@ -62,7 +63,7 @@ export function QuotationForm({ view, modeInfo }: { view: SupplierRfqView; modeI
     getValues,
     formState: { errors },
   } = useForm<QuotationFormInput, unknown, QuotationFormValues>({
-    resolver: zodResolver(quotationFormSchema),
+    resolver: zodResolver(quotationFormSchemaFor(rfq.terms.minValidityDays)),
     defaultValues: defaultFormValues(rfq, quotation),
     mode: 'onTouched',
   });
@@ -151,17 +152,23 @@ export function QuotationForm({ view, modeInfo }: { view: SupplierRfqView; modeI
                 error={numberError('unitPrice')}
                 hint={priceHint && t('form.priceHint', { min: f.number(priceHint.min), max: f.money(priceHint.max) })}
               >
-                <Input
-                  id="q-unitPrice"
-                  type="number"
-                  inputMode="numeric"
-                  min={0}
-                  step="any"
-                  prefix="₫"
-                  suffix={t('form.perUnit', { unit: rfq.unit })}
-                  inputClassName="font-semibold tabular-nums"
-                  invalid={Boolean(errors.unitPrice)}
-                  {...register('unitPrice', { setValueAs: toNumber })}
+                <Controller
+                  control={control}
+                  name="unitPrice"
+                  render={({ field }) => (
+                    <MoneyInput
+                      id="q-unitPrice"
+                      ref={field.ref}
+                      name={field.name}
+                      value={field.value as number | undefined}
+                      onChange={field.onChange}
+                      onBlur={field.onBlur}
+                      prefix="₫"
+                      suffix={t('form.perUnit', { unit: rfq.unit })}
+                      inputClassName="font-semibold tabular-nums"
+                      invalid={Boolean(errors.unitPrice)}
+                    />
+                  )}
                 />
               </Field>
               <Field
@@ -236,7 +243,7 @@ export function QuotationForm({ view, modeInfo }: { view: SupplierRfqView; modeI
               </Field>
               <Field label={t('form.validity')} required htmlFor="q-validity" hint={t('form.validityHint', { min: rfq.terms.minValidityDays })}>
                 <Select id="q-validity" {...register('validityDays', { valueAsNumber: true })}>
-                  {VALIDITY_OPTIONS.map((days) => (
+                  {validityOptionsFor(rfq.terms.minValidityDays).map((days) => (
                     <option key={days} value={days}>
                       {t('form.validityOption', { days, date: f.date(addDays(now, days)) })}
                     </option>
@@ -257,15 +264,21 @@ export function QuotationForm({ view, modeInfo }: { view: SupplierRfqView; modeI
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               <Field label={t('form.toolingCost')} htmlFor="q-tooling" hint={t('form.toolingHint')} error={errors.toolingCost ? 'validation.number' : undefined}>
-                <Input
-                  id="q-tooling"
-                  type="number"
-                  inputMode="numeric"
-                  min={0}
-                  step="any"
-                  prefix="₫"
-                  inputClassName="tabular-nums"
-                  {...register('toolingCost', { setValueAs: (v) => toNumber(v) ?? 0 })}
+                <Controller
+                  control={control}
+                  name="toolingCost"
+                  render={({ field }) => (
+                    <MoneyInput
+                      id="q-tooling"
+                      ref={field.ref}
+                      name={field.name}
+                      value={field.value as number | undefined}
+                      onChange={field.onChange}
+                      onBlur={field.onBlur}
+                      prefix="₫"
+                      inputClassName="tabular-nums"
+                    />
+                  )}
                 />
               </Field>
             </div>

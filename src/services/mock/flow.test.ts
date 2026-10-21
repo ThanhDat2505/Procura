@@ -52,6 +52,13 @@ describe('mock backend RFQ flow', () => {
     expect(notifications[0].title).toContain('Tân Phát');
   });
 
+  it('rejects a quotation held for less time than the RFQ minimum validity', async () => {
+    await loginSupplier();
+    const values = { unitPrice: 7800, moq: 3000, leadTimeDays: 5, paymentTerms: 'Công nợ 30 ngày', offerNotes: '', toolingCost: 0 };
+    await expect(api.portal.submitQuotation('rfq-2025-093', { ...values, validityDays: 15 })).rejects.toMatchObject({ code: 'errors.validityTooShort' });
+    await expect(api.portal.submitQuotation('rfq-2025-093', { ...values, validityDays: 30 })).resolves.toMatchObject({ status: 'submitted' });
+  });
+
   it('awards one quotation and marks the others as not selected, without creating any order', async () => {
     await loginBuyer();
     const rfq = await api.rfqs.award('rfq-2025-089', 'qt-0412');

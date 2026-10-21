@@ -15,6 +15,7 @@ import {
   FileDropzone,
   Input,
   LoadingState,
+  MoneyInput,
   Select,
   Switch,
   Table,
@@ -346,12 +347,34 @@ function ProductDrawer({ product, products, groups, onClose }: { product: Produc
             {t('products.f.price')} <span className="text-danger">*</span> <span className="font-normal text-on-surface-variant">{t('products.f.priceNote')}</span>
           </legend>
           <div className="grid grid-cols-2 gap-2">
-            <Field error={e.priceMin?.message}>
-              <Input type="number" min={0} prefix={t('products.f.from')} inputClassName="!pl-11" suffix="đ" aria-label={t('products.f.priceFrom')} invalid={!!e.priceMin} {...register('priceMin', { valueAsNumber: true })} />
-            </Field>
-            <Field error={e.priceMax?.message}>
-              <Input type="number" min={0} prefix={t('products.f.to')} inputClassName="!pl-12" suffix="đ" aria-label={t('products.f.priceTo')} invalid={!!e.priceMax} {...register('priceMax', { valueAsNumber: true })} />
-            </Field>
+            {(
+              [
+                ['priceMin', 'products.f.from', 'products.f.priceFrom', '!pl-11'],
+                ['priceMax', 'products.f.to', 'products.f.priceTo', '!pl-12'],
+              ] as const
+            ).map(([name, prefix, label, pad]) => (
+              <Field key={name} error={e[name]?.message}>
+                <Controller
+                  control={control}
+                  name={name}
+                  render={({ field }) => (
+                    <MoneyInput
+                      ref={field.ref}
+                      name={field.name}
+                      value={field.value}
+                      // Empty stays NaN, as `valueAsNumber` did, so the schema reports it as required.
+                      onChange={(v) => field.onChange(v ?? Number.NaN)}
+                      onBlur={field.onBlur}
+                      prefix={t(prefix)}
+                      inputClassName={pad}
+                      suffix="đ"
+                      aria-label={t(label)}
+                      invalid={!!e[name]}
+                    />
+                  )}
+                />
+              </Field>
+            ))}
           </div>
         </fieldset>
         <fieldset className="flex flex-col gap-1.5">

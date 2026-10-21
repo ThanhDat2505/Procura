@@ -129,6 +129,7 @@
     "integer": "Vui lòng nhập số nguyên",
     "positive": "Giá trị phải lớn hơn 0",
     "dimensionsIncomplete": "Nhập đủ cả Dài, Rộng và Cao",
+    "validityTooShort": "Thời hạn hiệu lực ngắn hơn mức tối thiểu người mua yêu cầu",
     "titleMin": "Tiêu đề cần ít nhất 10 ký tự",
     "titleMax": "Tiêu đề tối đa 160 ký tự",
     "deadlineFuture": "Hạn nhận báo giá phải ở tương lai",
@@ -154,7 +155,8 @@
     "rfqClosed": "RFQ đã đóng nhận báo giá.",
     "duplicateSku": "Mã SKU đã tồn tại.",
     "primaryContact": "Không thể xóa người liên hệ chính.",
-    "loadFailed": "Không tải được dữ liệu."
+    "loadFailed": "Không tải được dữ liệu.",
+    "validityTooShort": "Thời hạn hiệu lực báo giá ngắn hơn mức tối thiểu của RFQ."
   },
   "states": {
     "loading": "Đang tải…",

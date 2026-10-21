@@ -1,6 +1,6 @@
 import { compareQuotations, paymentFlexibility } from './comparison';
 import { formatVnd } from './format';
-import { vndToWords } from './quotation';
+import { quotationFormSchemaFor, validityOptionsFor, vndToWords } from './quotation';
 import { deadlineInfo, dimensionsError, formatDimensions, readinessChecks, rfqDisplayStatus, splitDimensions } from './rfq';
 import { EMPTY_SUPPLIER_FILTERS, filterSuppliers, matchesMoqBand } from './supplierSearch';
 import { quotations, rfqs } from '@/services/mock/seed/rfqs';
@@ -52,6 +52,21 @@ describe('RFQ rules', () => {
 
   it('marks a sent RFQ as ready on every check', () => {
     expect(readinessChecks(rfq089, now).every((c) => c.ok)).toBe(true);
+  });
+});
+
+describe('quotation validity minimum', () => {
+  it('only offers validity options that meet the buyer minimum', () => {
+    expect(validityOptionsFor(30)).toEqual([30, 45, 60]);
+    expect(validityOptionsFor(15)).toEqual([15, 30, 45, 60]);
+    expect(validityOptionsFor(90)).toEqual([90]);
+  });
+
+  it('rejects a quotation below the minimum on the validity field', () => {
+    const base = { unitPrice: 8500, moq: 3000, leadTimeDays: 5, paymentTerms: 'Công nợ 30 ngày' };
+    const r = quotationFormSchemaFor(30).safeParse({ ...base, validityDays: 15 });
+    expect(r.error?.issues[0]).toMatchObject({ path: ['validityDays'], message: 'validation.validityTooShort' });
+    expect(quotationFormSchemaFor(30).safeParse({ ...base, validityDays: 30 }).success).toBe(true);
   });
 });
 

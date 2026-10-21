@@ -1,6 +1,6 @@
 import type { z } from 'zod';
 import { PAYMENT_TERM_OPTIONS } from '@/domain/catalog';
-import { canEditQuotation, VALIDITY_OPTIONS, type quotationFormSchema } from '@/domain/quotation';
+import { canEditQuotation, validityOptionsFor, type quotationFormSchema } from '@/domain/quotation';
 import { isPastDeadline } from '@/domain/rfq';
 import type { Quotation, Rfq } from '@/domain/types';
 
@@ -61,9 +61,9 @@ export function paymentTermOptions(buyerTerms: string, current?: string): string
   return list;
 }
 
-/** Smallest validity option that satisfies the buyer's minimum (falls back to the longest option). */
+/** Smallest validity option that satisfies the buyer's minimum. */
 export function defaultValidityDays(minValidityDays: number): number {
-  return VALIDITY_OPTIONS.find((d) => d >= minValidityDays) ?? VALIDITY_OPTIONS[VALIDITY_OPTIONS.length - 1];
+  return validityOptionsFor(minValidityDays)[0];
 }
 
 /** Prefill from the existing quotation (draft or submitted) or from the buyer's terms. */
@@ -73,7 +73,9 @@ export function defaultFormValues(rfq: Rfq, quotation?: Quotation): Partial<Quot
     unitPrice: positive(quotation?.unitPrice),
     moq: positive(quotation?.moq),
     leadTimeDays: positive(quotation?.leadTimeDays),
-    validityDays: quotation?.validityDays ?? defaultValidityDays(rfq.terms.minValidityDays),
+    // An older quotation below the buyer's minimum is bumped to the first allowed option.
+    validityDays:
+      quotation && quotation.validityDays >= rfq.terms.minValidityDays ? quotation.validityDays : defaultValidityDays(rfq.terms.minValidityDays),
     paymentTerms: quotation?.paymentTerms || rfq.terms.paymentTerms,
     offerNotes: quotation?.offerNotes ?? '',
     toolingCost: quotation?.toolingCost ?? 0,

@@ -129,6 +129,7 @@
     "integer": "Please enter a whole number",
     "positive": "Value must be greater than 0",
     "dimensionsIncomplete": "Enter length, width and height",
+    "validityTooShort": "Validity is shorter than the buyer’s minimum",
     "titleMin": "Title needs at least 10 characters",
     "titleMax": "Title can be at most 160 characters",
     "deadlineFuture": "The quote deadline must be in the future",
@@ -154,7 +155,8 @@
     "rfqClosed": "This RFQ no longer accepts quotations.",
     "duplicateSku": "This SKU already exists.",
     "primaryContact": "The primary contact can't be deleted.",
-    "loadFailed": "Couldn't load data."
+    "loadFailed": "Couldn't load data.",
+    "validityTooShort": "Quotation validity is shorter than the RFQ minimum."
   },
   "states": {
     "loading": "Loading…",

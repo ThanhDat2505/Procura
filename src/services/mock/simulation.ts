@@ -61,7 +61,7 @@ export function processSimulations(): void {
       unitPrice: roundPrice(referenceUnitPrice(rfq, supplier.id) * (0.86 + r * 0.22)),
       moq: Math.max(supplier.moq, 1) <= rfq.quantity || r > 0.5 ? Math.min(supplier.moq, rfq.quantity) : supplier.moq,
       leadTimeDays: supplier.leadTimeMinDays + Math.round(r * (supplier.leadTimeMaxDays - supplier.leadTimeMinDays)),
-      validityDays: r > 0.6 ? 45 : 30,
+      validityDays: Math.max(r > 0.6 ? 45 : 30, rfq.terms.minValidityDays),
       paymentTerms: r > 0.66 ? 'Thanh toán công nợ 15 ngày sau khi giao hàng' : r > 0.33 ? 'Tạm ứng 50%, thanh toán 50% khi giao hàng' : 'Tạm ứng 100% trước khi sản xuất',
       samplePolicy: rfq.terms.sampleRequired ? `Gửi ${rfq.terms.sampleQuantity} mẫu thử trong 72h` : '',
       toolingCost: r > 0.5 ? 0 : 1_000_000,

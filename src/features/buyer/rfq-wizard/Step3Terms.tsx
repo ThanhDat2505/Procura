@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import { useState } from 'react';
-import { useForm, type FieldErrors, type Resolver } from 'react-hook-form';
+import { Controller, useForm, type FieldErrors, type Resolver } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
-import { Avatar, Badge, Button, Callout, Card, Chip, Field, Icon, Input, Select, Switch, Textarea, useToast } from '@/components/ui';
+import { Avatar, Badge, Button, Callout, Card, Chip, Field, Icon, Input, MoneyInput, Select, Switch, Textarea, useToast } from '@/components/ui';
 import { CERTIFICATION_OPTIONS, PAYMENT_TERM_OPTIONS } from '@/domain/catalog';
 import { MAX_SUPPLIERS_PER_RFQ, rfqStep3Schema, weightsTotal } from '@/domain/rfq';
 import type { EvaluationWeights } from '@/domain/types';
@@ -71,6 +71,7 @@ export default function Step3Terms({ detail, goTo, registerSaver }: StepProps) {
 
   const {
     register,
+    control,
     watch,
     setValue,
     getValues,
@@ -327,12 +328,27 @@ export default function Step3Terms({ detail, goTo, registerSaver }: StepProps) {
           <div className="flex flex-col gap-1.5">
             <span className="text-label-md text-on-surface">{t('step3.budgetRange')}</span>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-[1fr_1fr_auto] sm:items-start">
-              <Field error={errors.budgetMin?.message}>
-                <Input type="number" min={0} step={100000} prefix="₫" {...register('budgetMin')} placeholder={t('step3.budgetMin')} aria-label={t('step3.budgetMin')} invalid={Boolean(errors.budgetMin)} />
-              </Field>
-              <Field error={errors.budgetMax?.message}>
-                <Input type="number" min={0} step={100000} prefix="₫" {...register('budgetMax')} placeholder={t('step3.budgetMax')} aria-label={t('step3.budgetMax')} invalid={Boolean(errors.budgetMax)} />
-              </Field>
+              {(['budgetMin', 'budgetMax'] as const).map((name) => (
+                <Field key={name} error={errors[name]?.message}>
+                  <Controller
+                    control={control}
+                    name={name}
+                    render={({ field }) => (
+                      <MoneyInput
+                        ref={field.ref}
+                        name={field.name}
+                        value={parseOptionalNumber(field.value)}
+                        onChange={(v) => field.onChange(v === undefined ? '' : String(v))}
+                        onBlur={field.onBlur}
+                        prefix="₫"
+                        placeholder={t(`step3.${name}`)}
+                        aria-label={t(`step3.${name}`)}
+                        invalid={Boolean(errors[name])}
+                      />
+                    )}
+                  />
+                </Field>
+              ))}
               <p className="flex h-9 items-center gap-1.5 rounded-lg border border-outline-variant bg-surface-container-low px-3 text-body-sm text-on-surface-variant">
                 <Icon name="lock" size={16} />
                 {t('step3.budgetHidden')}

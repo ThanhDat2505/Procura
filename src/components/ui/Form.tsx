@@ -1,6 +1,18 @@
 import clsx from 'clsx';
-import { forwardRef, useId, type InputHTMLAttributes, type ReactNode, type SelectHTMLAttributes, type TextareaHTMLAttributes } from 'react';
+import {
+  forwardRef,
+  useId,
+  useImperativeHandle,
+  useLayoutEffect,
+  useReducer,
+  useRef,
+  type InputHTMLAttributes,
+  type ReactNode,
+  type SelectHTMLAttributes,
+  type TextareaHTMLAttributes,
+} from 'react';
 import { useTranslation } from 'react-i18next';
+import { formatNumber } from '@/domain/format';
 import { Icon } from './Icon';
 
 /**
@@ -73,6 +85,64 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
       />
       {suffix && <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-body-sm text-on-surface-variant">{suffix}</span>}
     </div>
+  );
+});
+
+interface MoneyInputProps extends Omit<InputProps, 'value' | 'defaultValue' | 'onChange' | 'type'> {
+  /** Whole VND amount; undefined / NaN shows an empty field. */
+  value: number | undefined | null;
+  onChange: (value: number | undefined) => void;
+}
+
+/** VND amount field that groups thousands while typing, using the UI language's separator (vi "1.000.000", en "1,000,000"). */
+export const MoneyInput = forwardRef<HTMLInputElement, MoneyInputProps>(function MoneyInput({ value, onChange, ...rest }, ref) {
+  const { i18n } = useTranslation();
+  const locale = i18n.language === 'en' ? 'en' : 'vi';
+  const inner = useRef<HTMLInputElement | null>(null);
+  useImperativeHandle(ref, () => inner.current!, []);
+  /** Digits left of the caret after an edit; restored once the regrouped text renders. */
+  const caretDigits = useRef<number | null>(null);
+  const [, rerender] = useReducer((n: number) => n + 1, 0);
+  const text = value === undefined || value === null || !Number.isFinite(value) ? '' : formatNumber(value, locale);
+
+  useLayoutEffect(() => {
+    const el = inner.current;
+    const digits = caretDigits.current;
+    if (!el || digits === null || document.activeElement !== el) return;
+    caretDigits.current = null;
+    let pos = 0;
+    for (let seen = 0; pos < text.length && seen < digits; pos++) if (/\d/.test(text[pos])) seen++;
+    el.setSelectionRange(pos, pos);
+  });
+
+  return (
+    <Input
+      ref={inner}
+      type="text"
+      inputMode="numeric"
+      autoComplete="off"
+      value={text}
+      onChange={(e) => {
+        const raw = e.target.value;
+        let digits = raw.replace(/\D/g, '');
+        let caret = raw.slice(0, e.target.selectionStart ?? raw.length).replace(/\D/g, '').length;
+        // Backspace / Delete on a separator: remove the neighbouring digit instead of doing nothing.
+        if (digits === text.replace(/\D/g, '') && raw.length < text.length) {
+          const kind = (e.nativeEvent as InputEvent).inputType;
+          if (kind === 'deleteContentBackward' && caret > 0) {
+            digits = digits.slice(0, caret - 1) + digits.slice(caret);
+            caret -= 1;
+          } else if (kind === 'deleteContentForward') {
+            digits = digits.slice(0, caret) + digits.slice(caret + 1);
+          }
+        }
+        digits = digits.replace(/^0+(?=\d)/, '').slice(0, 15);
+        caretDigits.current = Math.min(caret, digits.length);
+        onChange(digits === '' ? undefined : Number(digits));
+        rerender();
+      }}
+      {...rest}
+    />
   );
 });
 

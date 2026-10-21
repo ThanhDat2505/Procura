@@ -17,6 +17,17 @@ export type QuotationFormValues = z.infer<typeof quotationFormSchema>;
 
 export const VALIDITY_OPTIONS = [15, 30, 45, 60] as const;
 
+/** Validity choices a supplier may pick for an RFQ: the standard options that meet the buyer's minimum. */
+export function validityOptionsFor(minValidityDays: number): number[] {
+  const allowed = VALIDITY_OPTIONS.filter((d) => d >= minValidityDays);
+  return allowed.length > 0 ? allowed : [minValidityDays];
+}
+
+/** The quotation form schema for one RFQ: the quotation must stay valid at least as long as the buyer asked. */
+export function quotationFormSchemaFor(minValidityDays: number) {
+  return quotationFormSchema.refine((v) => v.validityDays >= minValidityDays, { path: ['validityDays'], message: 'validation.validityTooShort' });
+}
+
 export function quotationTotal(unitPrice: number, quantity: number, moq: number): number {
   return unitPrice * Math.max(quantity, moq);
 }
